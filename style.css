@@ -1,0 +1,157 @@
+/* Juego creado sin ánimo de lucro por Wildcrow */
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(16px, 2vw, 24px); /* Escalable según pantalla */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    
+}
+
+/* CONTENEDOR PRINCIPAL */
+#app {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* TITULOS */
+#intro h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+
+
+/* SECCIONES PRINCIPALES */
+#quiz-container,
+#intro,
+#modo-menu {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* TEXTO Y LISTAS */
+#intro p {
+    margin: 0.5rem 0;
+}
+
+#intro ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+/* AUDIO */
+#audio {
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* CONTENEDOR DE PISTAS */
+#hints-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+}
+
+#hints-container > button,
+#hints-container > div {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* SPOILER */
+.spoiler {
+    display: none;
+    margin: 0.5rem 0;
+}
+
+/* BOTONES GENERALES */
+button {
+    margin: 0.8rem 0.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* INPUT + BOTÓN DE CONFIRMAR */
+#answer-input {
+    width: 60%;
+    margin-top: 1rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+#submit-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+/* BOTÓN DE RENDICIÓN */
+#surrender-btn {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+/* INPUT DE NOMBRE */
+#name-input {
+    font-size: 1.1rem;
+    height: 2rem;
+}
+
+/* RESULTADOS */
+.correcto,
+.incorrecto {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 1px black;
+}
+
+.correcto {
+    color: green;
+}
+
+.incorrecto {
+    color: red;
+}
+
+/* ESTADÍSTICAS */
+#score,
+#streak,
+#total-answered {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+/* Juego creado sin ánimo de lucro por Wildcrow */
