@@ -66,10 +66,22 @@ async function mostrarRanking(modo) {
       return;
     }
 
+    function formatearTiempo(ms) {
+      const minutos = Math.floor(ms / 60000);
+      const horas = Math.floor(minutos / 60);
+      const minutosRestantes = minutos % 60;
+
+      if (horas > 0) {
+        return `⏱️ Tiempo: ${horas} hora${horas > 1 ? 's' : ''} y ${minutosRestantes} min${minutosRestantes !== 1 ? 's' : ''}`;
+      } else {
+        return `⏱️ Tiempo: ${minutos} min${minutos !== 1 ? 's' : ''}`;
+      }
+    }
+
     let html = "<ol>";
     snapshot.forEach((doc) => {
       const data = doc.data();
-      const tiempo = data.tiempo ? `⏱️ ${Math.floor(data.tiempo / 1000)}s` : "";
+      const tiempo = data.tiempo ? formatearTiempo(data.tiempo) : "";
       html += `<li><strong>${data.nombre}</strong> — ${data.puntuacion} pts — 🔥 Racha: ${data.racha} ${tiempo}</li>`;
     });
     html += "</ol>";
@@ -79,6 +91,7 @@ async function mostrarRanking(modo) {
     console.error("Error al obtener ranking:", error);
   }
 }
+
 
 // Verificar conexión al cargar
 window.addEventListener("load", () => {
