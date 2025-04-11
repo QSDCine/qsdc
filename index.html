@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Juego creado sin ánimo de lucro por Wildcrow -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué sabes de cine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+</head>
+<body>
+     <div id="app">
+    <div id="intro">
+        <h1 id="titleWelcome"><span class="subtitulo">¿Qué sabes de cine?!</span></h1>
+        <p>Se mostrarán fragmentos de bandas sonoras o "themes" y tendrás que adivinar de qué película se trata. </p>
+        <br>
+        <p>Reglas:</p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>5 puntos por acertar sin pistas</li>
+            <li>Se resta 1 punto por cada pista usada</li>
+            <li>Rendirse no suma ni resta puntos</li>
+            <li>Racha legendaria: cada 10 películas acertadas recibirás un bonus que se irá incrementando. ¡No falles!... Si puedes.</li>
+        </ul>
+        <p>Introduce tu nombre:</p>
+        <input type="text" id="name-input" placeholder="Tu nombre aquí" autocomplete="off">
+        <br><br>
+ <button id="modo-btn">Seleccionar modo de juego</button>
+       
+
+        <br>
+        <button id="start-btn" style="display: none;">¡Empezar!</button>
+
+        
+       
+<div style="margin-top: 15px;">
+  
+  <button id="ranking-btn">Ver Ranking</button>
+   
+    <button id="info-btn">Información</button>
+    <button id="changelog-btn">Changelog</button>
+
+    <div id="info-box" style="display: none; margin-top: 10px;">
+        <p style="font-size: 0.9em;">
+            Este juego ha sido creado sin ánimo de lucro por Wildcrow. Todos los fragmentos de bandas sonoras
+            utilizados pertenecen a sus respectivos autores y propietarios.<br>
+            Para cualquier consulta, idea, sugerencia o solicitud, puedes mandar un email a quesabesdecine@gmail.com
+        </p>
+    </div>
+
+    <div id="changelog-box" style="display: none; margin-top: 10px;">
+        <p style="font-size: 0.9em;">
+            <strong>v1.0.0</strong> - Lanzamiento inicial con 100 películas.<br>
+            <strong>v1.1.0</strong> - Añadidas 200 películas.<br>
+            <strong>v1.2.0</strong> - Modo Contrarreloj y Extremo.<br>
+            <strong>v1.3.0</strong> - Fixes y correciones.<br>
+             <em>Próximamente más...</em>
+        </p>
+    </div>
+</div>
+
+
+    </div>
+ <div id="modo-menu" style="display: none; text-align: center; margin-top: 30px;">
+            <p><strong>Modo Normal:</strong> El clásico. Con pistas, sin tiempo, fallar no te hace perder puntos pero rendirse resta -3. Perfecto para jugar tranquilo.</p>
+            <button class="modo-opcion" data-modo="normal">Modo Normal</button>
+            <p><strong>Modo Contrarreloj:</strong> Se mide el tiempo que tardas en completar el juego, y suma puntos adicionales en función de lo rápido que lo completes. <br>El tiempo se contabiliza automáticamente desde que empieza el juego. Al final recibirás un bonus según lo rápido que hayas completado las películas. <br>¡Rapidez ante todo!<br> Fallar no te quita puntos pero rendirte resta -3.</p>
+            <button class="modo-opcion" data-modo="contrarreloj">Modo Contrarreloj</button>
+            <p><strong>Modo Extremo:</strong> Sin pistas. +7 puntos por acierto, -3 por fallo y -5 por rendirse. Solo para verdaderos expertos y amantes de los modos hardcore. ¿Te atreves?</p>
+            <button class="modo-opcion" data-modo="extremo">Modo Extremo</button>
+        </div>
+    <div id="quiz-container" style="display: none;">
+        <p id="description"></p>
+        <audio id="audio" controls controlsList="nodownload"></audio>
+        <div id="hints-container"></div>
+        <input type="text" id="answer-input" placeholder="Tu respuesta" autocomplete="off">
+        <button id="submit-btn">Confirmar</button>
+        <button id="surrender-btn">Me rindo</button>
+        <p id="result-message"></p>
+        <p id="score">Puntuación: 0</p>
+        <p id="streak">Racha: 0</p>
+        <p id="total-answered">Películas respondidas: 0</p>
+    </div>
+         </div>
+    <script src="script.js"></script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log("Service Worker registrado"));
+  }
+</script>
+</body>
+    <!-- Juego creado sin ánimo de lucro por Wildcrow -->
+</html>
+

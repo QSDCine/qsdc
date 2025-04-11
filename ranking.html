@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ranking - ¿Qué sabes de cine?</title>
+        <link rel="stylesheet" href="ranking.css" />
+    </head>
+    <body>
+        <div id="ranking-container">
+            <h1>🏆 Ranking 🏆</h1>
+            <p>Selecciona el modo:</p>
+            <button class="ranking-modo-btn" data-modo="normal">Normal</button>
+            <button class="ranking-modo-btn" data-modo="contrarreloj">Contrarreloj</button>
+            <button class="ranking-modo-btn" data-modo="extremo">Extremo</button>
+
+            <div id="ranking-list" style="margin-top: 1rem">Selecciona un modo para ver el top 10.</div>
+
+            <button id="volver-btn" style="margin-top: 2rem">Volver al juego</button>
+        </div>
+        <div id="offline-message" style="display: none; margin-top: 2rem">
+            <h2>🚫 Sin conexión a Internet 🚫</h2>
+            <p>No es posible acceder al ranking sin conexión.</p>
+            <button id="volver-juego-btn">Volver al juego</button>
+        </div>
+        <script type="module" src="ranking.js"></script>
+    </body>
+</html>
