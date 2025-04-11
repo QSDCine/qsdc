@@ -2158,11 +2158,11 @@ function loadNextMovie() {
 
     // Mensaje y botón de ranking
     const mensajeExtra = document.createElement("p");
-    mensajeExtra.textContent = "Tus datos han sido enviados automáticamente al ranking global.";
+    mensajeExtra.textContent = "Tus datos han sido enviados automáticamente al ranking.";
     mensajeExtra.style.marginTop = "1rem";
 
     const rankingBtnFinal = document.createElement("button");
-    rankingBtnFinal.textContent = "Ver Ranking Global";
+    rankingBtnFinal.textContent = "Ver Ranking";
     rankingBtnFinal.onclick = () => {
       window.location.href = "ranking.html";
     };
@@ -2190,7 +2190,7 @@ function loadNextMovie() {
   document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
 
   descriptionEl.textContent = currentMovie.description;
-  audioEl.src = `audio/${currentMovie.audio.toLowerCase()}`;
+  audioEl.src = currentMovie.audio;
   audioEl.style.display = "block";
   audioEl.play();
 
