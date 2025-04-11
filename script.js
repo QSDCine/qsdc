@@ -1,3 +1,4 @@
+import { guardarResultadoEnFirestore } from "./firestore-utils.js";
 // Juego creado sin ánimo de lucro por Wildcrow
 const movies = [
     {
@@ -2003,7 +2004,7 @@ let hintPenalty = 0;
 let startTime = null;
 let intentosRestantes = 3;
 let mejorRacha = 0;
-import { guardarResultadoEnFirestore } from "./firestore-utils.js";
+
 
 const introEl = document.getElementById("intro");
 const quizEl = document.getElementById("quiz-container");
