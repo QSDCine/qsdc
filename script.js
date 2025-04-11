@@ -2160,7 +2160,7 @@ function loadNextMovie() {
     document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
 
     descriptionEl.textContent = currentMovie.description;
-    audioEl.src = currentMovie.audio;
+    audioEl.src = `audio/${currentMovie.audio.toLowerCase()}`; // Añadida la linea para servidores linux que transforman nombres de fichero a minusculas (y no tener que renombrar todas las src de las peliculas del objeto movies)
     audioEl.style.display = "block";
     audioEl.play();
 
