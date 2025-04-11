@@ -48,3 +48,17 @@ button {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center;
+}
+
+ol li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
