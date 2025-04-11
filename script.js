@@ -2003,6 +2003,7 @@ let hintPenalty = 0;
 let startTime = null;
 let intentosRestantes = 3;
 let mejorRacha = 0;
+import { guardarResultadoEnFirestore } from "./firestore-utils.js";
 
 const introEl = document.getElementById("intro");
 const quizEl = document.getElementById("quiz-container");
@@ -2043,6 +2044,7 @@ function limpiarTexto(texto) {
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase();
 }
+
 
 modoBtn.onclick = () => {
     introEl.style.display = "none";
@@ -2114,83 +2116,112 @@ startBtn.onclick = () => {
 };
 
 function loadNextMovie() {
-    if (usedIndexes.length === movies.length) {
-        currentMovie = null;
+  if (usedIndexes.length === movies.length) {
+    currentMovie = null;
 
-        let mensajeFinal = "¡Has completado el juego por ahora, pero pronto habrá más películas!";
-        let bonus = 0;
+    let mensajeFinal = "¡Has completado el juego por ahora, pero pronto habrá más películas!";
+    let bonus = 0;
+    let tiempoTotalMs = null;
 
-        if (modo === "contrarreloj") {
-            const tiempoTotalMs = Date.now() - startTime;
-            const minutos = Math.floor(tiempoTotalMs / 60000);
+    if (modo === "contrarreloj") {
+      tiempoTotalMs = Date.now() - startTime;
+      const minutos = Math.floor(tiempoTotalMs / 60000);
 
-            if (minutos <= 60) {
-                bonus = 50;
-            } else if (minutos <= 120) {
-                bonus = 30;
-            } else if (minutos <= 180) {
-                bonus = 15;
-            }
+      if (minutos <= 60) bonus = 50;
+      else if (minutos <= 120) bonus = 30;
+      else if (minutos <= 180) bonus = 15;
 
-            currentScore += bonus;
-            scoreEl.textContent = `Puntuación de ${playerName}: ${currentScore}`;
-            mensajeFinal = `¡Has completado el juego en ${minutos} minutos.\nBonus por tiempo: +${bonus} puntos.`;
-        }
-
-        descriptionEl.textContent = mensajeFinal;
-        audioEl.style.display = "none";
-        hintsContainer.innerHTML = "";
-        answerInput.style.display = "none";
-        submitBtn.style.display = "none";
-        surrenderBtn.style.display = "none";
-        resultMessage.textContent = ""; // limpia cualquier mensaje previo
-        streakEl.textContent = `Racha más grande: ${mejorRacha}`;
-        return;
+      currentScore += bonus;
+      scoreEl.textContent = `Puntuación de ${playerName}: ${currentScore}`;
+      mensajeFinal = `¡Has completado el juego en ${minutos} minutos.\nBonus por tiempo: +${bonus} puntos.`;
     }
 
-    let index;
-    do {
-        index = Math.floor(Math.random() * movies.length);
-    } while (usedIndexes.includes(index));
-
-    usedIndexes.push(index);
-    currentMovie = movies[index];
-    hintPenalty = 0;
-    intentosRestantes = 3;
-    document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
-
-    descriptionEl.textContent = currentMovie.description;
-    audioEl.src = `audio/${currentMovie.audio.toLowerCase()}`; // Añadida la linea para servidores linux que transforman nombres de fichero a minusculas (y no tener que renombrar todas las src de las peliculas del objeto movies)
-    audioEl.style.display = "block";
-    audioEl.play();
-
+    descriptionEl.textContent = mensajeFinal;
+    audioEl.style.display = "none";
     hintsContainer.innerHTML = "";
-    if (modo !== "extremo") {
-        currentMovie.hints.forEach((hint, i) => {
-            const btn = document.createElement("button");
-            btn.textContent = `Mostrar pista ${i + 1}`;
-            const div = document.createElement("div");
-            div.className = "spoiler";
-            div.textContent = hint;
-
-            btn.onclick = () => {
-                const isHidden = window.getComputedStyle(div).display === "none";
-                div.style.display = isHidden ? "block" : "none";
-                if (isHidden && !btn.revealed) {
-                    hintPenalty++;
-                    btn.revealed = true;
-                    updateScore(0);
-                }
-            };
-
-            hintsContainer.appendChild(btn);
-            hintsContainer.appendChild(div);
-        });
-    }
-
+    answerInput.style.display = "none";
+    submitBtn.style.display = "none";
+    surrenderBtn.style.display = "none";
     resultMessage.textContent = "";
-    answerInput.value = "";
-    answerInput.focus();
+    streakEl.textContent = `Racha más grande: ${mejorRacha}`;
+
+    // Guardar resultado en Firestore
+    guardarResultadoEnFirestore(
+      playerName,
+      currentScore,
+      modo,
+      mejorRacha,
+      modo === "contrarreloj" ? tiempoTotalMs : null
+    );
+
+    // Mensaje y botón de ranking
+    const mensajeExtra = document.createElement("p");
+    mensajeExtra.textContent = "Tus datos han sido enviados automáticamente al ranking global.";
+    mensajeExtra.style.marginTop = "1rem";
+
+    const rankingBtnFinal = document.createElement("button");
+    rankingBtnFinal.textContent = "Ver Ranking Global";
+    rankingBtnFinal.onclick = () => {
+      window.location.href = "ranking.html";
+    };
+    rankingBtnFinal.style.display = "block";
+    rankingBtnFinal.style.margin = "2rem auto 0 auto";
+    rankingBtnFinal.style.padding = "0.75rem 1.5rem";
+    rankingBtnFinal.style.fontSize = "1.2rem";
+    rankingBtnFinal.style.cursor = "pointer";
+
+    quizEl.appendChild(mensajeExtra);
+    quizEl.appendChild(rankingBtnFinal);
+
+    return;
+  }
+
+  let index;
+  do {
+    index = Math.floor(Math.random() * movies.length);
+  } while (usedIndexes.includes(index));
+
+  usedIndexes.push(index);
+  currentMovie = movies[index];
+  hintPenalty = 0;
+  intentosRestantes = 3;
+  document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
+
+  descriptionEl.textContent = currentMovie.description;
+  audioEl.src = `audio/${currentMovie.audio.toLowerCase()}`;
+  audioEl.style.display = "block";
+  audioEl.play();
+
+  hintsContainer.innerHTML = "";
+  if (modo !== "extremo") {
+    currentMovie.hints.forEach((hint, i) => {
+      const btn = document.createElement("button");
+      btn.textContent = `Mostrar pista ${i + 1}`;
+      const div = document.createElement("div");
+      div.className = "spoiler";
+      div.textContent = hint;
+
+      btn.onclick = () => {
+        const isHidden = window.getComputedStyle(div).display === "none";
+        div.style.display = isHidden ? "block" : "none";
+        if (isHidden && !btn.revealed) {
+          hintPenalty++;
+          btn.revealed = true;
+          updateScore(0);
+        }
+      };
+
+      hintsContainer.appendChild(btn);
+      hintsContainer.appendChild(div);
+    });
+  }
+
+  resultMessage.textContent = "";
+  answerInput.value = "";
+  answerInput.focus();
+}
+
+
 }
 
 function updateScore(points) {
@@ -2279,24 +2310,6 @@ surrenderBtn.onclick = () => {
     updateStreak();
     setTimeout(loadNextMovie, 2000);
 };
-
-// Envío a ranking
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-
-async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
-  try {
-    await addDoc(collection(db, "ranking"), {
-      nombre,
-      puntuacion,
-      modo,
-      racha,
-      tiempo
-    });
-    console.log("Resultado guardado correctamente.");
-  } catch (e) {
-    console.error("Error al guardar el resultado: ", e);
-  }
-}
 
 
 // Juego creado sin ánimo de lucro por Wildcrow
