@@ -1,4 +1,20 @@
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+// Configuración de Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyAaHu8OXnzUg8c5ogYLwmvTRpGFGfOXZkM",
+  authDomain: "qsdcine.firebaseapp.com",
+  databaseURL: "https://qsdcine-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "qsdcine",
+  storageBucket: "qsdcine.firebasestorage.app",
+  messagingSenderId: "701195152100",
+  appId: "1:701195152100:web:2f77da946f74b441fadaf1"
+};
+
+// Inicializa Firebase y Firestore
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 /**
  * Guarda el resultado del jugador en Firestore.
@@ -9,19 +25,15 @@ import { collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.0/fi
  * @param {number|null} tiempo - Tiempo en milisegundos (solo para contrarreloj).
  */
 export async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
-  if (!window.db) {
-    console.error("❌ Firestore no está inicializado.");
-    return;
-  }
-
   try {
-    const ref = collection(window.db, "ranking");
+    const ref = collection(db, "ranking");
     const docRef = await addDoc(ref, {
       nombre,
       puntuacion,
       modo,
       racha,
-      tiempo
+      tiempo,
+      fecha: new Date()
     });
     console.log(`✅ Resultado guardado con ID: ${docRef.id}`);
   } catch (error) {
