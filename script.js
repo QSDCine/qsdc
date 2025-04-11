@@ -2222,9 +2222,6 @@ function loadNextMovie() {
   answerInput.focus();
 }
 
-
-}
-
 function updateScore(points) {
     if (points) currentScore += points;
     scoreEl.textContent = `Puntuación de ${playerName}: ${currentScore}`;
