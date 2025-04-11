@@ -125,6 +125,21 @@ button {
     padding: 0.5rem 0.5rem;
 }
 
+/* Boton Ranking */
+#ranking-btn {
+     display: block;
+    margin: 0.5rem auto 1rem auto;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+/* Botones intro */
+#info-btn, #changelog-btn {
+    margin: 0.5rem auto 1rem auto;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
 /* INPUT DE NOMBRE */
 #name-input {
     font-size: 1.1rem;
