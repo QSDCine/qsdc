@@ -2279,4 +2279,24 @@ surrenderBtn.onclick = () => {
     updateStreak();
     setTimeout(loadNextMovie, 2000);
 };
+
+// Envío a ranking
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+
+async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
+  try {
+    await addDoc(collection(db, "ranking"), {
+      nombre,
+      puntuacion,
+      modo,
+      racha,
+      tiempo
+    });
+    console.log("Resultado guardado correctamente.");
+  } catch (e) {
+    console.error("Error al guardar el resultado: ", e);
+  }
+}
+
+
 // Juego creado sin ánimo de lucro por Wildcrow
