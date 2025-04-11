@@ -4,7 +4,7 @@ const movies = [
     {
         title: ["Los Vengadores", "Avengers", "Vengadores", "The Avengers"],
         description: "Pelicula de superhéroes estrenada en 2012 que consolidaba el inicio de una gran saga.",
-        audio: "audio/Avengers.mp3",
+        audio: "audio/avengers.mp3",
         hints: [
             "Basada en un grupo de héroes de comic cuyas aventuras se comenzaron a publicar en 1963",
             "Dirigida por Joss Whedon",
@@ -14,7 +14,7 @@ const movies = [
     {
         title: ["Ice Age"],
         description: "Pelicula de animación del año 2002",
-        audio: "audio/IceAge.mp3",
+        audio: "audio/iceage.mp3",
         hints: [
             "Trata de las aventuras de una extraña manada",
             "En la película hay una ardilla bastante obsesionada con las bellotas",
@@ -24,7 +24,7 @@ const movies = [
     {
         title: ["Ip Man", "Ip-Man"],
         description: "Pelicula de acción estrenada en 2008",
-        audio: "audio/IpMan.mp3",
+        audio: "audio/ipman.mp3",
         hints: [
             "Protagonizada por Donnie Yen",
             "Basada en la decada de 1930 en Foshan, China",
@@ -34,7 +34,7 @@ const movies = [
     {
         title: ["Harry Potter"],
         description: "Saga de 8 películas de cine fantástico estrenadas en el decenio comprendido entre 2001-2011",
-        audio: "audio/HarryPotter.mp3",
+        audio: "audio/harrypotter.mp3",
         hints: [
             "Protagonizadas por Daniel Radcliffe, Rupert Grinty Emma Watson",
             "Basadas en las novelas homónimas de J.K. Rowling",
@@ -44,7 +44,7 @@ const movies = [
     {
         title: ["Star Wars", "La Guerra de las Galaxias"],
         description: 'Saga de culto del género de ciencia ficción "space opera" que comenzó en 1977',
-        audio: "audio/StarWars.mp3",
+        audio: "audio/starwars.mp3",
         hints: [
             'Las primeras 9 películas son consideradas la "saga de los Skaywalker"',
             "El transfondo, y la dirección y guión de algunas de ellas, fue creación de George Lucas",
@@ -54,7 +54,7 @@ const movies = [
     {
         title: ["John Q"],
         description: "Película dramática estrenada en 2002",
-        audio: "audio/JohnQ.mp3",
+        audio: "audio/johnq.mp3",
         hints: [
             "Basada en hechos reales, está protagonizada por Denzel Washington",
             "La acción tiene lugar en un hospital",
@@ -64,7 +64,7 @@ const movies = [
     {
         title: ["La Lista de Schindler"],
         description: "Película dramática e histórica estrenada en 1993",
-        audio: "audio/LaListaDeSchindler.mp3",
+        audio: "audio/lalistadeschindler.mp3",
         hints: [
             "Dirigida por Steven Spielberg y protagonizada por Liam Neeson",
             "John Williams es el encargado de la banda sonora",
@@ -74,7 +74,7 @@ const movies = [
     {
         title: ["El Señor de los Anillos", "The Lord Of The Rings", "LOTR"],
         description: "Trilogía de acción, fantasía y aventuras estrenada entre 2001 y 2003",
-        audio: "audio/ElSenorDeLosAnillos.mp3",
+        audio: "audio/elsenordelosanillos.mp3",
         hints: [
             "Dirigida por Peter Jackson",
             "La banda sonora es creación de Howard Shore",
@@ -84,7 +84,7 @@ const movies = [
     {
         title: ["Braveheart"],
         description: "Película histórica-dramática estrenada en 1995",
-        audio: "audio/Braveheart.mp3",
+        audio: "audio/braveheart.mp3",
         hints: [
             "Dirigida, producida y protagonizada por Mel Gibson",
             "Cuenta la leyenda de William Wallace",
@@ -94,7 +94,7 @@ const movies = [
     {
         title: ["Batman"],
         description: "Película de superhéroes estrenada en 1989",
-        audio: "audio/Batman.mp3",
+        audio: "audio/batman.mp3",
         hints: [
             "Protagonizada por Michael Keaton, Jack Nicholson y Kim Basinger",
             "Dirigida por Tim Burton",
@@ -104,7 +104,7 @@ const movies = [
     {
         title: ["El último Mohicano", "El último de los Mohicanos"],
         description: "Película épica ucrónica de 1992 del género aventuras",
-        audio: "audio/ElUltimoMohicano.mp3",
+        audio: "audio/elultimomohicano.mp3",
         hints: [
             "Protagonizada por Daniel Day-Lewis",
             "Es una historia sobre Indios durante la ocupación inglesa en América",
@@ -114,7 +114,7 @@ const movies = [
     {
         title: ["Superman"],
         description: "Película de superhéroes de 1978",
-        audio: "audio/Superman.mp3",
+        audio: "audio/superman.mp3",
         hints: [
             "Protagonizada por Christopher Reeve",
             "Es la historia de un alienígena en la Tierra",
@@ -124,7 +124,7 @@ const movies = [
     {
         title: ["Jurassic Park", "Parque Jurásico"],
         description: "Película de ciencia ficción y aventuras estrenada en 1993",
-        audio: "audio/ParqueJurasico.mp3",
+        audio: "audio/parquejurasico.mp3",
         hints: [
             "Dirigida por Steven Spielberg",
             "La banda sonora corre a cargo de John Williams",
@@ -134,7 +134,7 @@ const movies = [
     {
         title: ["Austin Powers"],
         description: "Saga de películas de acción y comedia estrenadas entre 1997 y 2002",
-        audio: "audio/AustinPowers.mp3",
+        audio: "audio/austinpowers.mp3",
         hints: [
             "Producidas, escritas y protagonizadas por Mike Myers",
             "Mike Myers realiza simultaneamente varios papeles en estas películas",
@@ -144,7 +144,7 @@ const movies = [
     {
         title: ["Misión Imposible"],
         description: "Saga de películas de acción que comenzó en 1996",
-        audio: "audio/MisionImposible.mp3",
+        audio: "audio/misionimposible.mp3",
         hints: [
             "Protagonizada por Tom Cruise como Ethan Hunt",
             "Es una película de acción y espionaje",
@@ -154,7 +154,7 @@ const movies = [
     {
         title: ["Eduardo Manostijeras"],
         description: "Película fantástica estrenada en 1990",
-        audio: "audio/EduardoManostijeras.mp3",
+        audio: "audio/eduardomanostijeras.mp3",
         hints: [
             "Dirigida por Tim Burton",
             "Protagonizada por Winona Ryder y Johnny Depp",
@@ -164,13 +164,13 @@ const movies = [
     {
         title: ["Beetlejuice", "Bitelchús"],
         description: "Película de comedia negra estrenada en 1988",
-        audio: "audio/Beetlejuice.mp3",
+        audio: "audio/beetlejuice.mp3",
         hints: ["Dirigida por Tim Burton", "Protagonizada por Michael Keaton", "Si dices su nombre 3 veces aparecerá"]
     },
     {
         title: ["RoboCop"],
         description: "Película de acción y ciencia ficción estrenada en 1987",
-        audio: "audio/RoboCop.mp3",
+        audio: "audio/robocop.mp3",
         hints: [
             "Dirigida por Paul Verhoeven",
             "Protagonizada por Peter Weller",
@@ -180,7 +180,7 @@ const movies = [
     {
         title: ["Waterworld"],
         description: "Película de acción y ciencia ficción post-apocalíptica estrenada en 1995",
-        audio: "audio/Waterworld.mp3",
+        audio: "audio/waterworld.mp3",
         hints: [
             "Protagonizada por Kevin Costner",
             "El nombre del protagonista, Mariner, solo se menciona una vez al final de la cinta y de manera discreta",
@@ -190,7 +190,7 @@ const movies = [
     {
         title: ["Predator", "Depredador"],
         description: "Película de acción y ciencia ficción estrenada en 1987",
-        audio: "audio/Predator.mp3",
+        audio: "audio/predator.mp3",
         hints: [
             "Protagonizada por Arnold Schwarzenegger",
             "Un equipo de élite debe enfrentarse a una amenaza alienígena",
@@ -200,7 +200,7 @@ const movies = [
     {
         title: ["Halloween"],
         description: "Saga de películas slasher que comenzó en 1978",
-        audio: "audio/Halloween.mp3",
+        audio: "audio/halloween.mp3",
         hints: [
             "Creada por John Carpenter",
             "La saga consta de 11 películas",
@@ -210,7 +210,7 @@ const movies = [
     {
         title: ["Viernes 13"],
         description: "Saga de películas slasher que comenzó en 1980",
-        audio: "audio/Viernes13.mp3",
+        audio: "audio/viernes13.mp3",
         hints: [
             "El asesino lleva un machete y una máscara de hockey",
             "Tuvo un crossover con otro malvado protagonista de películas de terror muy famoso",
@@ -220,7 +220,7 @@ const movies = [
     {
         title: ["The Matrix", "Matrix"],
         description: "Trilogía de ciencia ficción considerada de culto iniciada en 1999",
-        audio: "audio/Matrix.mp3",
+        audio: "audio/matrix.mp3",
         hints: [
             "Dirigidas por las hermanas Wachowsky",
             "Protagonizadas por Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss y Hugo Weaving",
@@ -230,7 +230,7 @@ const movies = [
     {
         title: ["Beowulf", "La Leyenda de Beowulf"],
         description: "Película de animación de 2007",
-        audio: "audio/Beowulf.mp3",
+        audio: "audio/beowulf.mp3",
         hints: [
             "Toda la animación se realizó mediante captura de movimiento",
             "La cinta está dirigida por Robert Zemeckis y protagonizada por Ray Winstone, Angelina Jolie, Anthony Hopkins, John Malkovich, Robin Wright Penn, Brendan Gleeson y Crispin Glover",
@@ -240,7 +240,7 @@ const movies = [
     {
         title: ["Gladiator", "The Gladiator", "El Gladiador", "Gladiador"],
         description: "Película épica del género péplum y acción estrenada en el año 2000",
-        audio: "audio/Gladiator.mp3",
+        audio: "audio/gladiator.mp3",
         hints: [
             "Dirigida por Ridley Scott",
             "Protagonizada por Russell Crowe y Joaquin Phoenix",
@@ -250,7 +250,7 @@ const movies = [
     {
         title: ["Gru, mi villano favorito", "Gru", "Despicable Me", "Gru mi villano favorito"],
         description: "Película de animación estrenada en 2010",
-        audio: "audio/Gru.mp3",
+        audio: "audio/gru.mp3",
         hints: [
             'El protagonista está acompañado de sus ayudantes de color amarillo llamados "minions"',
             "El protagonista adopta a 3 niñas",
@@ -260,7 +260,7 @@ const movies = [
     {
         title: ["Shaft"],
         description: "Película de acción del año 2000",
-        audio: "audio/Shaft.mp3",
+        audio: "audio/shaft.mp3",
         hints: [
             "Protagonizada por Samuel L. Jackson en el papel de un detective...",
             "Secuela de las Noches Rojas de Harlem de 1971",
@@ -270,7 +270,7 @@ const movies = [
     {
         title: ["Pulp Fiction"],
         description: "Película thriller estrenada en 1994",
-        audio: "audio/PulpFiction.mp3",
+        audio: "audio/pulpfiction.mp3",
         hints: [
             "Escrita y dirigida por Quentin Tarantino",
             "Protagonizada por: John Travolta, Samuel L. Jackson, Uma Thurman, Bruce Willis, Harvey Keitel y Ving Rhames entre otros.",
@@ -280,7 +280,7 @@ const movies = [
     {
         title: ["Reservoir Dogs"],
         description: "Película de suspense estrenada en 1992",
-        audio: "audio/ReservoirDogs.mp3",
+        audio: "audio/reservoirdogs.mp3",
         hints: [
             "Escrita y dirigida por Quentin Tarantino",
             "Supuso un hito para el cine independiente",
@@ -290,7 +290,7 @@ const movies = [
     {
         title: ["Amélie", "Amelie"],
         description: "Película de comedia romántica francesa estrenada en 2001",
-        audio: "audio/Amelie.mp3",
+        audio: "audio/amelie.mp3",
         hints: [
             "La banda sonora fue creada por Yann Tiersen",
             "Ganó 5 Óscar",
@@ -300,7 +300,7 @@ const movies = [
     {
         title: ["El Rey Escorpión"],
         description: "Película de acción y fantasía estrenada en 2002",
-        audio: "audio/ElReyEscorpion.mp3",
+        audio: "audio/elreyescorpion.mp3",
         hints: [
             'Esta protagonizada por Dwayne Johnson "The Rock"',
             'Es una precuela de "La Momia"',
@@ -310,7 +310,7 @@ const movies = [
     {
         title: ["El Rey León"],
         description: "Película de animación estrenada en 1994",
-        audio: "audio/ElReyLeon.mp3",
+        audio: "audio/elreyleon.mp3",
         hints: [
             "Hans Zimmer, Elton John y Tim Rice son los encargados de la banda sonora",
             "Ganó dos Óscar por su banda sonora",
@@ -320,7 +320,7 @@ const movies = [
     {
         title: ["Tarzán"],
         description: "Película de animación estrenada en 1999",
-        audio: "audio/Tarzan.mp3",
+        audio: "audio/tarzan.mp3",
         hints: [
             "Ganó un Óscar a la mejor canción",
             "La banda sonora es de Phil Collins",
@@ -330,7 +330,7 @@ const movies = [
     {
         title: ["La Historia Interminable", "The Neverending Story"],
         description: "Película fantástica estrenada en 1984",
-        audio: "audio/LaHistoriaInterminable.mp3",
+        audio: "audio/lahistoriainterminable.mp3",
         hints: [
             "Basada en la novela homónima de Michael Ende",
             "Con el tiempo se produjeron dos secuelas, formando una trilogía",
@@ -346,7 +346,7 @@ const movies = [
             "En busca de Camelot"
         ],
         description: "Película de animación estrenada en 1998",
-        audio: "audio/LaEspadaMagica.mp3",
+        audio: "audio/laespadamagica.mp3",
         hints: [
             "Basada en la novela de Vera Chapman",
             "Kayley y Garrett viajan junto con los torpes dragones Cornwall y Davon",
@@ -356,7 +356,7 @@ const movies = [
     {
         title: ["Willow"],
         description: "Película de culto fantástica estrenada en 1988",
-        audio: "audio/Willow.mp3",
+        audio: "audio/willow.mp3",
         hints: [
             "Dirigida por Ron Howard y producida por George Lucas",
             "Protagonizada por Warwick Davis y Val Kilmer",
@@ -366,7 +366,7 @@ const movies = [
     {
         title: ["El Santo", "The Saint"],
         description: "Película de acción y espionaje estrenada en 1997",
-        audio: "audio/ElSanto.mp3",
+        audio: "audio/elsanto.mp3",
         hints: [
             "Protagonizada por Val Kilmer",
             "Basada en una serie de libros de 1928",
@@ -376,7 +376,7 @@ const movies = [
     {
         title: ["Mentes Peligrosas", "Dangerous Minds"],
         description: "Película dramática estrenada en 1995",
-        audio: "audio/MentesPeligrosas.mp3",
+        audio: "audio/mentespeligrosas.mp3",
         hints: [
             "Protagonizada por Michelle Pfeiffer",
             "Basada en la historia real de la marine LouAnne Johnson",
@@ -386,7 +386,7 @@ const movies = [
     {
         title: ["Hook", "El Capitán Garfio", "Hook: El Capitán Garfio", "Hook (El Capitán Garfio)"],
         description: "Película de aventuras y fantasía estrenada en 1991",
-        audio: "audio/Hook.mp3",
+        audio: "audio/hook.mp3",
         hints: [
             "Protagonizada por Robin Williams y Dustin Hoffman",
             "Basada en un libro de J.M. Barrie de 1911",
@@ -396,7 +396,7 @@ const movies = [
     {
         title: ["Tiburón", "Jaws"],
         description: "Película de terror y aventuras estrenada en 1975",
-        audio: "audio/Tiburon.mp3",
+        audio: "audio/tiburon.mp3",
         hints: [
             "Dirigida por Steven Spielberg",
             "Protagonizada por Roy Scheider",
@@ -406,7 +406,7 @@ const movies = [
     {
         title: ["Deep Blue Sea"],
         description: "Película de terror y acción estrenada en 1999",
-        audio: "audio/DeepBlueSea.mp3",
+        audio: "audio/deepbluesea.mp3",
         hints: [
             "Protagonizada por Thomas Jane y Samuel L. Jackson",
             "La acción tiene lugar en una plataforma de investigación en mitad del oceano",
@@ -416,7 +416,7 @@ const movies = [
     {
         title: ["La Roca"],
         description: "Película de acción estrenada en 1996",
-        audio: "audio/LaRoca.mp3",
+        audio: "audio/laroca.mp3",
         hints: [
             "Dirigida por Michael Bay",
             "Protagonizada por Nicholas Cage, Sean Connery y Ed Harris",
@@ -426,7 +426,7 @@ const movies = [
     {
         title: ["Dragonheart"],
         description: "Película de aventuras y fantasía estrenada en 1996",
-        audio: "audio/Dragonheart.mp3",
+        audio: "audio/dragonheart.mp3",
         hints: [
             "Protagonizada por Dennis Quaid, contaba con la voz de Sean Connery también",
             "El protagonista, Quaid, se llama Bowen",
@@ -436,7 +436,7 @@ const movies = [
     {
         title: ["Regreso al Futuro", "Back to the Future"],
         description: "Película de ciencia ficción estrenada en 1985",
-        audio: "audio/RegresoAlFuturo.mp3",
+        audio: "audio/regresoalfuturo.mp3",
         hints: [
             "Dirigida y escrita por Robert Zemeckis",
             "Protagonizada por Michael J. Fox y Christopher Lloyd",
@@ -446,7 +446,7 @@ const movies = [
     {
         title: ["Aladdin"],
         description: "Película de animación estrenada en 1992",
-        audio: "audio/Aladdin.mp3",
+        audio: "audio/aladdin.mp3",
         hints: [
             "Inspirada en un cuento de las Mil y una noches",
             "Entre sus filas cuenta con Robin Williams",
@@ -456,7 +456,7 @@ const movies = [
     {
         title: ["Hércules"],
         description: "Película de animación estrenada en 1997",
-        audio: "audio/Hercules.mp3",
+        audio: "audio/hercules.mp3",
         hints: [
             "Inspirada en un famoso héroe griego",
             "Alan Menken se encarga de la banda sonora en esta película",
@@ -466,7 +466,7 @@ const movies = [
     {
         title: ["Mulan"],
         description: "Película de animación estrenada en 1998",
-        audio: "audio/Mulan.mp3",
+        audio: "audio/mulan.mp3",
         hints: [
             "Basada en una leyenda China",
             "Jackie Chan trabajó doblando voces al chino",
@@ -476,7 +476,7 @@ const movies = [
     {
         title: ["Kung Fu Panda", "Kung-Fu Panda"],
         description: "Película de animación estrenada en 2008",
-        audio: "audio/KungFuPanda.mp3",
+        audio: "audio/kungfupanda.mp3",
         hints: [
             "Todos los personajes son animales",
             "Protagonizada por Jack Black, Jackie Chan, Dustin Hoffman, Angelina Jolie, Ian McShane, Lucy Liu y David Cross",
@@ -486,13 +486,13 @@ const movies = [
     {
         title: ["Terminator"],
         description: "Película de ciencia ficción y acción estrenada en 1984",
-        audio: "audio/Terminator.mp3",
+        audio: "audio/terminator.mp3",
         hints: ["Dirigida por James Cameron", "Protagonizada por Arnold Schwarzenegger", "Skynet es malvada"]
     },
     {
         title: ["Rambo"],
         description: "Saga de películas de acción que comenzó en 1982",
-        audio: "audio/Rambo.mp3",
+        audio: "audio/rambo.mp3",
         hints: [
             "Protagonizadas por Sylvester Stallone",
             "Las películas se centran en un veterano de la guerra de Vietnam",
@@ -502,7 +502,7 @@ const movies = [
     {
         title: ["El Primer Caballero"],
         description: "Película de drama romántico y aventuras estrenada en 1995",
-        audio: "audio/ElPrimerCaballero.mp3",
+        audio: "audio/elprimercaballero.mp3",
         hints: [
             "Protagonizada por Richard Gere y Sean Connery",
             "Cuenta una historia de Lancelot y Ginebra",
@@ -512,7 +512,7 @@ const movies = [
     {
         title: ["Los Tres Mosqueteros", "Los 3 Mosqueteros"],
         description: "Película de acción y aventuras estrenada en 1993",
-        audio: "audio/LosTresMosqueteros.mp3",
+        audio: "audio/lostresmosqueteros.mp3",
         hints: [
             "Basada en una novela de Alejandro Dumas",
             "Para el tema principal de la película se contó con Bryan Adams, Rod Stewart y Sting",
@@ -522,7 +522,7 @@ const movies = [
     {
         title: ["Blade"],
         description: "Película de acción y superhéroes estrenada en 1998",
-        audio: "audio/Blade.mp3",
+        audio: "audio/blade.mp3",
         hints: [
             "Protagonizada por Wesley Snipes y Stephen Dorff",
             "Es parte de una trilogía",
@@ -532,7 +532,7 @@ const movies = [
     {
         title: ["Mensajero del Futuro", "The Postman"],
         description: "Película de drama y ciencia ficción post-apocalíptica estrenada en 1997",
-        audio: "audio/MensajeroDelFuturo.mp3",
+        audio: "audio/mensajerodelfuturo.mp3",
         hints: [
             "Protagonizada por Kevin Costner",
             "Basada en la novela homónima de David Brin",
@@ -542,13 +542,13 @@ const movies = [
     {
         title: ["Mad Max"],
         description: "Película de acción policíaca estrenada en 1979",
-        audio: "audio/MadMax.mp3",
+        audio: "audio/madmax.mp3",
         hints: ["Es el inicio de una trilogía", "Escrita y dirigida por George Miller", "Protagonizada por Mel Gibson"]
     },
     {
         title: ["El Cuervo", "The Crow"],
         description: "Película fantástica de culto estrenada en 1994",
-        audio: "audio/ElCuervo.mp3",
+        audio: "audio/elcuervo.mp3",
         hints: [
             "Basada en una serie de comics de James O'Barr",
             "Su protagonista fue el hijo de Bruce Lee, que lamentablemente falleció durante el rodaje de la película",
@@ -558,7 +558,7 @@ const movies = [
     {
         title: ["El Quinto Elemento"],
         description: "Película de acción y ciencia ficción estrenada en 1997",
-        audio: "audio/ElQuintoElemento.mp3",
+        audio: "audio/elquintoelemento.mp3",
         hints: [
             "Dirigida por Luc Besson",
             "Con Bruce Willis, Mila Jovovich y Gary Oldman en los papeles principales",
@@ -568,7 +568,7 @@ const movies = [
     {
         title: ["Rocky"],
         description: "Película dramática estrenada en 1976",
-        audio: "audio/Rocky.mp3",
+        audio: "audio/rocky.mp3",
         hints: [
             "Escrita y protagonizada por Sylvester Stallone",
             "Considerada una de las mejores películas sobre deportes de la historia",
@@ -578,7 +578,7 @@ const movies = [
     {
         title: ["Hellboy"],
         description: "Película de superhéroes sobrenaturales estrenada en 2004",
-        audio: "audio/Hellboy.mp3",
+        audio: "audio/hellboy.mp3",
         hints: [
             "Dirigida por Guillermo del Toro",
             "Protagonizada por Ron Pearlman",
@@ -588,7 +588,7 @@ const movies = [
     {
         title: ["Van Helsing"],
         description: "Película de fantasía estrenada en 2004",
-        audio: "audio/VanHelsing.mp3",
+        audio: "audio/vanhelsing.mp3",
         hints: [
             "Protagonizada por Hugh Jackman y Kate Beckinsale",
             "Los efectos especiales del filme son producto de la empresa Industrial Light & Magic",
@@ -598,7 +598,7 @@ const movies = [
     {
         title: ["Robin Hood: Príncipe de los Ladrones", "Robin Hood", "Robin Hood Principe de los Ladrones"],
         description: "Película de aventuras estrenada en 1991",
-        audio: "audio/RobinHood.mp3",
+        audio: "audio/robinhood.mp3",
         hints: [
             "Protagonizada Kevin Costner, Morgan Freeman, Alan Rickman y Christian Slater",
             "La banda sonora es producto de Michael Kamen",
@@ -608,7 +608,7 @@ const movies = [
     {
         title: ["Conan"],
         description: "Película fantástica de espada y brujería estrenada en 1982",
-        audio: "audio/Conan.mp3",
+        audio: "audio/conan.mp3",
         hints: [
             "El guión se basa en las historias de Robert E. Howard",
             "Protagonizada por Arnold Schwarzenegger",
@@ -618,7 +618,7 @@ const movies = [
     {
         title: ["El tren de las 3:10", "3:10 to Yuma", "El tren de las 3 y 10"],
         description: "Película western estrenada en 2007",
-        audio: "audio/ElTrenDeLas3y10.mp3",
+        audio: "audio/eltrendelas3y10.mp3",
         hints: [
             "Remake de la cinta del año 1957 con el mismo título",
             "Protagonizada por Christian Bale y Russell Crowe",
@@ -628,7 +628,7 @@ const movies = [
     {
         title: ["El bueno, el feo y el malo"],
         description: "Película western estrenada en 1966",
-        audio: "audio/ElBuenoElFeoYElMalo.mp3",
+        audio: "audio/elbuenoelfeoyelmalo.mp3",
         hints: [
             "Dirigida por Sergio Leone",
             "Protagonizada por Clint Eastwood",
@@ -638,7 +638,7 @@ const movies = [
     {
         title: ["El último Samurai"],
         description: "Película de acción y aventuras estrenada en 2003",
-        audio: "audio/ElUltimoSamurai.mp3",
+        audio: "audio/elultimosamurai.mp3",
         hints: [
             "Protagonizada por Tom Cruise",
             "El filme está basado ligeramente en los eventos de la Rebelión Satsuma",
@@ -648,7 +648,7 @@ const movies = [
     {
         title: ["El Guardaespaldas"],
         description: "Película romántica estrenada en 1992",
-        audio: "audio/ElGuardaespaldas.mp3",
+        audio: "audio/elguardaespaldas.mp3",
         hints: [
             "Protagonizada por Kevin Costner y Whitney Houston",
             "Se convirtió en la banda sonora más vendida de todos los tiempos",
@@ -658,7 +658,7 @@ const movies = [
     {
         title: ["La Misión"],
         description: "Película de drama histórico estrenada en 1986",
-        audio: "audio/LaMision.mp3",
+        audio: "audio/lamision.mp3",
         hints: [
             "Protagonizada por Robert De Niro, Jeremy Irons y Liam Neeson",
             "Tiene como telón de fondo el Tratado de Madrid (1750), entre España y Portugal",
@@ -668,7 +668,7 @@ const movies = [
     {
         title: ["Dentro del Laberinto"],
         description: "Película fantástica estrenada en 1986",
-        audio: "audio/DentroDelLaberinto.mp3",
+        audio: "audio/dentrodellaberinto.mp3",
         hints: [
             "Dirigida por Jim Henson, como en el resto de sus películas, la mayoría de sus personajes están representados por títeres",
             "Protagonizada por Jennifer Connelly y David Bowie",
@@ -678,7 +678,7 @@ const movies = [
     {
         title: ["Starman"],
         description: "Película de ciencia ficción estrenada en 1984",
-        audio: "audio/Starman.mp3",
+        audio: "audio/starman.mp3",
         hints: [
             "Dirigida por John Carpenter",
             "Protagonizada por Jeff Bridges y Karen Allen",
@@ -688,7 +688,7 @@ const movies = [
     {
         title: ["Pesadilla antes de Navidad", "Nightmare before Christmas", "The Nightmare before Christmas"],
         description: "Película de animación estrenada en 1993",
-        audio: "audio/PesadillaAntesDeNavidad.mp3",
+        audio: "audio/pesadillaantesdenavidad.mp3",
         hints: [
             'La película se rodó utilizando la técnica de animación de "stop motion"',
             "Producida por Tim Burton",
@@ -698,7 +698,7 @@ const movies = [
     {
         title: ["John Wick"],
         description: "Película de acción estrenada en el año 2014",
-        audio: "audio/JohnWick.mp3",
+        audio: "audio/johnwick.mp3",
         hints: [
             "Fue el inicio de una trilogía que se ha vuelto muy famosa",
             "Protagonizada por Keanu Reeves",
@@ -708,7 +708,7 @@ const movies = [
     {
         title: ["Pequeña Miss Sunshine"],
         description: "Película de comedia dramática estrenada en el año 2006",
-        audio: "audio/PequeñaMissSunshine.mp3",
+        audio: "audio/pequeñamisssunshine.mp3",
         hints: [
             'Esta grabada en formato de "road movie"',
             "Fue el debut como directores en equipo de Jonathan Dayton y Valerie Faris",
@@ -718,7 +718,7 @@ const movies = [
     {
         title: ["Los Ángeles de Charlie"],
         description: "Película de acción estrenada en el año 2000",
-        audio: "audio/LosAngelesDeCharlie.mp3",
+        audio: "audio/losangelesdecharlie.mp3",
         hints: [
             "Está basada en una serie de televisión de los años 70",
             "Protagonizada por Cameron Diaz, Lucy Liu y Drew Barrymore",
@@ -728,7 +728,7 @@ const movies = [
     {
         title: ["Una Mente Maravillosa"],
         description: "Película de drama biográfico estrenada en el año 2001",
-        audio: "audio/UnaMenteMaravillosa.mp3",
+        audio: "audio/unamentemaravillosa.mp3",
         hints: [
             "Está basada en la vida de John Forbes Nash, ganador del Premio Nobel de Economía en 1994",
             "Dirigida por Ron Howard",
@@ -738,7 +738,7 @@ const movies = [
     {
         title: ["Interstellar", "Interestelar"],
         description: "Película de ciencia ficción estrenada en el año 2014",
-        audio: "audio/Interestelar.mp3",
+        audio: "audio/interestelar.mp3",
         hints: [
             "Dirigida por Christopher Nolan",
             "Protagonizada por Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine y Matt Damon",
@@ -748,7 +748,7 @@ const movies = [
     {
         title: ["Forrest Gump"],
         description: "Película dramática estrenada en el año 1994",
-        audio: "audio/ForrestGump.mp3",
+        audio: "audio/forrestgump.mp3",
         hints: [
             "Basada en la novela homónima del escritor Winston Groom",
             "Dirigida por Robert Zemeckis y protagonizada por Tom Hanks, la banda sonora es de Alan Silvestri",
@@ -758,7 +758,7 @@ const movies = [
     {
         title: ["Godzilla", "Godzila"],
         description: "Película de ciencia ficción estrenada en el año 1998",
-        audio: "audio/Godzilla.mp3",
+        audio: "audio/godzilla.mp3",
         hints: [
             "Es un remake de una película japonesa",
             "Está protagonizada, entre otros, por Matthew Broderick y Jean Reno",
@@ -768,7 +768,7 @@ const movies = [
     {
         title: ["Erin Brockovich"],
         description: "Película dramática briográfica estrenada en el año 2000",
-        audio: "audio/ErinBrockovich.mp3",
+        audio: "audio/erinbrockovich.mp3",
         hints: [
             "Basada en una historia verídica",
             "Dirigida por Steven Soderbergh y producida por Danny DeVito",
@@ -778,7 +778,7 @@ const movies = [
     {
         title: ["Pretty Woman"],
         description: "Película de comedia romántica estrenada en el año 1990",
-        audio: "audio/PrettyWoman.mp3",
+        audio: "audio/prettywoman.mp3",
         hints: [
             "Protagonizada por Julia Roberts y Richard Gere",
             "Su canción principal fue realizada por Roy Orbison",
@@ -788,13 +788,13 @@ const movies = [
     {
         title: ["Ghost"],
         description: "Película de drama romántico estrenada en el año 1990",
-        audio: "audio/Ghost.mp3",
+        audio: "audio/ghost.mp3",
         hints: ["Protagonizada por Patrick Swayze y Demi Moore", "Ganó dos Óscars", '"Idem"']
     },
     {
         title: ["Dirty Dancing"],
         description: "Película romántica estrenada en el año 1987",
-        audio: "audio/DirtyDancing.mp3",
+        audio: "audio/dirtydancing.mp3",
         hints: [
             "Protagonizada por Patrick Swayze y Jennifer Grey",
             "Ganó un Óscar a la mejor canción",
@@ -810,7 +810,7 @@ const movies = [
             "Roadhouse"
         ],
         description: "Película de acción estrenada en el año 1989",
-        audio: "audio/DeProfesionDuro.mp3",
+        audio: "audio/deprofesionduro.mp3",
         hints: [
             "Protagonizada por Patrick Swayze, Sam Elliott y Kelly Lynch",
             "La banda sonora cuenta con Jeff Healey",
@@ -820,7 +820,7 @@ const movies = [
     {
         title: ["Origen (Inception)", "Origen", "Inception", "Origen Inception"],
         description: "Película de ciencia ficción estrenada en el año 2010",
-        audio: "audio/Origen.mp3",
+        audio: "audio/origen.mp3",
         hints: [
             "Escrita, producida y dirigida por Christopher Nolan",
             "Protagonizada por Leonardo DiCaprio, Ellen Page, Joseph Gordon-Levitt, Ken Watanabe, Tom Hardy, Marion Cotillard, Cillian Murphy, Tom Berenger y Michael Caine",
@@ -830,7 +830,7 @@ const movies = [
     {
         title: ["Little Nicky"],
         description: "Película de comedia estrenada en el año 2000",
-        audio: "audio/LittleNicky.mp3",
+        audio: "audio/littlenicky.mp3",
         hints: [
             "Escrita y protagonizada por Adam Sandler",
             "Ozzy Osbourne realiza un cameo",
@@ -840,7 +840,7 @@ const movies = [
     {
         title: ["Shrek"],
         description: "Película de animación estrenada en el año 2001",
-        audio: "audio/Shrek.mp3",
+        audio: "audio/shrek.mp3",
         hints: [
             "La película cuenta con las voces de Mike Myers, Cameron Diaz, Eddie Murphy y John Lithgow, entre otros",
             "La película ganó el Oscar a la Mejor Película de Animación",
@@ -850,7 +850,7 @@ const movies = [
     {
         title: ["Million Dollar Baby"],
         description: "Película dramática estrenada en el año 2004",
-        audio: "audio/MillionDollarBaby.mp3",
+        audio: "audio/milliondollarbaby.mp3",
         hints: [
             "Dirigida por Clint Eastwood, quien también participó en la producción, compuso la banda sonora e interpretó uno de los papeles principales",
             "Además de Eastwood, protagonizan la película Hilary Swank y Morgan Freeman",
@@ -860,7 +860,7 @@ const movies = [
     {
         title: ["The Raid (Redada Asesina)", "The Raid", "Redada Asesina", "La Redada Asesina"],
         description: "Película de acción y artes marciales estrenada en el año 2011",
-        audio: "audio/TheRaid.mp3",
+        audio: "audio/theraid.mp3",
         hints: [
             "Escrita y dirigida por Gareth Evans",
             "Protagonizada por Iko Uwais",
@@ -870,7 +870,7 @@ const movies = [
     {
         title: ["Sin City"],
         description: "Película de suspense y neo-noir estrenada en el año 2005",
-        audio: "audio/SinCity.mp3",
+        audio: "audio/sincity.mp3",
         hints: [
             "Dirigida por Robert Rodriguez, Frank Miller y Quentin Tarantino",
             "Son tres historias separadas que convergen por sus protagonistas, tuvo una secuela",
@@ -880,7 +880,7 @@ const movies = [
     {
         title: ["Big Fish"],
         description: "Película de drama fantástico estrenada en el año 2003",
-        audio: "audio/BigFish.mp3",
+        audio: "audio/bigfish.mp3",
         hints: [
             "Dirigida por Tim Burton",
             "Protagonizada por Ewan McGregor",
@@ -890,13 +890,13 @@ const movies = [
     {
         title: ["El Hobbit", "The Hobbit", "Hobbit"],
         description: "Trilogía épica de fantasía, acción y aventura estrenada entre los años 2012 y 2014",
-        audio: "audio/ElHobbit.mp3",
+        audio: "audio/elhobbit.mp3",
         hints: ["Dirigidas por Peter Jackson", "Basadas en un cuento de Tolkien", "La banda sonora es de Howard Shore"]
     },
     {
         title: ["Los Cazafantasmas", "Cazafantasmas", "Ghostbusters"],
         description: "Película de comedia y ciencia ficción estrenada en 1984",
-        audio: "audio/LosCazafantasmas.mp3",
+        audio: "audio/loscazafantasmas.mp3",
         hints: [
             "Protagonizada por Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis, Rick Moranis, Annie Potts, William Atherton y Ernie Hudson",
             "Su banda sonora fue compuesta por Elmer Bernstein",
@@ -906,7 +906,7 @@ const movies = [
     {
         title: ["Pokemon"],
         description: "Película de animación estrenada en 1998",
-        audio: "audio/Pokemon.mp3",
+        audio: "audio/pokemon.mp3",
         hints: [
             "Basada en una famosa serie de anime que comenzó en 1996",
             "La película se compone de 3 segmentos",
@@ -916,13 +916,13 @@ const movies = [
     {
         title: ["La casa de los 1000 cadaveres", "La Familia Firefly", "Los Firefly", "La casa de los mil cadáveres"],
         description: "Película de terror estrenada en 2003",
-        audio: "audio/LaCasaDeLos1000Cadaveres.mp3",
+        audio: "audio/lacasadelos1000cadaveres.mp3",
         hints: ["Escrita y dirigida por Rob Zombie", "Supuso su debut como cineasta", "Protagonizada por Sheri Moon"]
     },
     {
         title: ["Abierto hasta el Amanecer", "From Dusk Till Dawn"],
         description: "Película de culto de acción, comedia negra y terror estrenada en 1996",
-        audio: "audio/AbiertoHastaElAmanecer.mp3",
+        audio: "audio/abiertohastaelamanecer.mp3",
         hints: [
             "Dirigida por Robert Rodriguez y escrita por Quentin Tarantino",
             "Está protagonizada por George Clooney, Quentin Tarantino, Harvey Keitel, Juliette Lewis, Salma Hayek, Danny Trejo y Tom Savini",
@@ -932,7 +932,7 @@ const movies = [
     {
         title: ["Logan"],
         description: "Película dramática de superhéroes estrenada en 2017",
-        audio: "audio/Logan.mp3",
+        audio: "audio/logan.mp3",
         hints: [
             "Protagonizada por Hugh Jackman y Patrick Stewart",
             "Basada en una serie de comics de Marvel",
@@ -942,7 +942,7 @@ const movies = [
     {
         title: ["X-Men", "XMen", "X Men"],
         description: "Película de acción de superhéroes estrenada en 2000",
-        audio: "audio/XMen.mp3",
+        audio: "audio/xmen.mp3",
         hints: [
             "Dirigida por Bryan Singer",
             "Entre los actores que participaron en la cinta se encuentran Patrick Stewart, Hugh Jackman, Ian McKellen, Halle Berry, Famke Janssen, James Marsden, Rebecca Romijn y Anna Paquin",
@@ -952,7 +952,7 @@ const movies = [
     {
         title: ["Los Miserables"],
         description: "Película de musical dramático estrenada en 2012",
-        audio: "audio/LosMiserables.mp3",
+        audio: "audio/losmiserables.mp3",
         hints: [
             "Es un remake de la cinta homónima del año 1998 y de una novela escrita por Victor Hugo",
             "El protagonista fue encarcelado 19 años por robar una barra de pan",
@@ -962,7 +962,7 @@ const movies = [
     {
         title: ["Grease"],
         description: "Película de musical estrenada en 1978",
-        audio: "audio/Grease.mp3",
+        audio: "audio/grease.mp3",
         hints: [
             "La cinta está basada en el musical homónimo de 1972 creado por Jim Jacobs y Warren Casey",
             "Protagonizada por John Travolta y Olivia Newton-John",
@@ -972,13 +972,13 @@ const movies = [
     {
         title: ["28 Días Despues"],
         description: "Película de terror estrenada en 2002",
-        audio: "audio/28DiasDespues.mp3",
+        audio: "audio/28diasdespues.mp3",
         hints: ["Dirigida por Danny Boyle", "Está protagonizada por Cillian Murphy", "Es una película de zombies"]
     },
     {
         title: ["Alien"],
         description: "Película de terror y ciencia ficción estrenada en 1979",
-        audio: "audio/Alien.mp3",
+        audio: "audio/alien.mp3",
         hints: [
             "Dirigida por Ridley Scott",
             "Está protagonizada por Sigourney Weaver",
@@ -988,7 +988,7 @@ const movies = [
     {
         title: ["El Atlas de las Nubes"],
         description: "Película de ciencia ficción estrenada en 2012",
-        audio: "audio/ElAtlasDeLasNubes.mp3",
+        audio: "audio/elatlasdelasnubes.mp3",
         hints: [
             "La película se compone de seis historias interrelacionadas",
             "Dirigida por las hermanas Wachowski",
@@ -998,7 +998,7 @@ const movies = [
     {
         title: ["Venganza", "Taken"],
         description: "Película de acción estrenada en 2008",
-        audio: "audio/Venganza.mp3",
+        audio: "audio/venganza.mp3",
         hints: [
             "Protagonizada por Liam Neeson",
             "Escrita por Luc Besson",
@@ -1008,7 +1008,7 @@ const movies = [
     {
         title: ["Indiana Jones"],
         description: "Saga de películas de acción y aventuras que se inició en 1981",
-        audio: "audio/IndianaJones.mp3",
+        audio: "audio/indianajones.mp3",
         hints: [
             "Protagonizada por Harrison Ford",
             "Dirigida por Steven Spielberg y producida por George Lucas",
@@ -1018,7 +1018,7 @@ const movies = [
     {
         title: ["Toy Story"],
         description: "Película de animación estrenada en 1995",
-        audio: "audio/ToyStory.mp3",
+        audio: "audio/toystory.mp3",
         hints: [
             "Fue el primer largometraje de Pixar",
             "Fue la primera cinta animada completamente con efectos digitales en la historia del cine",
@@ -1028,7 +1028,7 @@ const movies = [
     {
         title: ["La joven del agua"],
         description: "Película fantástica estrenada en 2006",
-        audio: "audio/LaJovenDelAgua.mp3",
+        audio: "audio/lajovendelagua.mp3",
         hints: [
             "Protagonizada por Paul Giamatti y Bryce Dallas Howard",
             "Escrita y dirigida por M. Night Shyamalan",
@@ -1038,7 +1038,7 @@ const movies = [
     {
         title: ["Deadpool"],
         description: "Película de acción de superhéroes estrenada en 2016",
-        audio: "audio/Deadpool.mp3",
+        audio: "audio/deadpool.mp3",
         hints: [
             "Protagonizada por Ryan Reynolds",
             "La película empezó en 2004 pero tuvo muchísimos problemas hasta que consiguió estrenarse en 2016",
@@ -1048,7 +1048,7 @@ const movies = [
     {
         title: ["Evolution"],
         description: "Película de comedia estrenada en 2001",
-        audio: "audio/Evolution.mp3",
+        audio: "audio/evolution.mp3",
         hints: [
             "Protagonizada por David Duchovny, Julianne Moore, Orlando Jones y Seann William Scott",
             "Dirigida por Ivan Reitman",
@@ -1058,7 +1058,7 @@ const movies = [
     {
         title: ["8 Millas", "8 Mile", "Ocho Millas"],
         description: "Película dramática estrenada en 2002",
-        audio: "audio/8Millas.mp3",
+        audio: "audio/8millas.mp3",
         hints: [
             "Protagonizada, entre otros, por Eminem, Kim Basinger y Brittany Murphy",
             "Ganó un Óscar a la mejor canción original",
@@ -1068,7 +1068,7 @@ const movies = [
     {
         title: ["Fast And Furious (A todo gas)", "Fast And Furious", "A Todo Gas"],
         description: "Saga de películas de acción que comenzó en 2001",
-        audio: "audio/ATodoGas.mp3",
+        audio: "audio/atodogas.mp3",
         hints: [
             "Protagonizadas, entre otros, por Vin Diesel y Paul Walker",
             "Han confirmado que serán 10 películas en total",
@@ -1078,7 +1078,7 @@ const movies = [
     {
         title: ["Pitch Black"],
         description: "Película de ciencia ficción estrenada en el año 2000",
-        audio: "audio/PitchBlack.mp3",
+        audio: "audio/pitchblack.mp3",
         hints: [
             "Protagonizada por Vin Diesel",
             "Es la primera parte de una saga",
@@ -1088,7 +1088,7 @@ const movies = [
     {
         title: ["Baby Driver"],
         description: "Película de acción estrenada en el año 2017",
-        audio: "audio/BabyDriver.mp3",
+        audio: "audio/babydriver.mp3",
         hints: [
             "Escrita y dirigida por Edgar Wright",
             "Está protagonizada por Ansel Elgort, Kevin Spacey, Lily James, Eiza González, Jon Hamm, Jamie Foxx, y Jon Bernthal",
@@ -1098,7 +1098,7 @@ const movies = [
     {
         title: ["Drive"],
         description: "Película de suspense y neo-noir estrenada en el año 2011",
-        audio: "audio/Drive.mp3",
+        audio: "audio/drive.mp3",
         hints: [
             "Protagonizada por Ryan Gosling",
             "Basada en el libro de título homónimo escrito por James Sallis",
@@ -1108,7 +1108,7 @@ const movies = [
     {
         title: ["Blade Runner", "Bladerunner"],
         description: "Película de ciencia ficción y neo-noir estrenada en el año 1982",
-        audio: "audio/BladeRunner.mp3",
+        audio: "audio/bladerunner.mp3",
         hints: [
             "Dirigida por Ridley Scott",
             "Protagonizada por Harrison Ford y Rutger Hauer",
@@ -1118,7 +1118,7 @@ const movies = [
     {
         title: ["Jupiter Ascending (El ascenso de Júpiter)", "Jupiter Ascending", "El ascenso de Júpiter"],
         description: "Película de ciencia ficción estrenada en el año 2015",
-        audio: "audio/JupiterAscending.mp3",
+        audio: "audio/jupiterascending.mp3",
         hints: [
             "Escrita, producida y dirigida por las hermanas Wachowski",
             "Protagonizada por Mila Kunis y Channing Tatum entre otros",
@@ -1128,7 +1128,7 @@ const movies = [
     {
         title: ["Hora Punta", "Rush Hour"],
         description: "Película de comedia y acción estrenada en el año 1998",
-        audio: "audio/HoraPunta.mp3",
+        audio: "audio/horapunta.mp3",
         hints: [
             "Fue el inicio de una trilogía",
             "Protagonizada Jackie Chan y Chris Tucker",
@@ -1138,7 +1138,7 @@ const movies = [
     {
         title: ["King Kong"],
         description: "Película de acción y ciencia ficción estrenada en el año 2005",
-        audio: "audio/KingKong.mp3",
+        audio: "audio/kingkong.mp3",
         hints: [
             "Es un remake de una película de 1933",
             "Protagonizada por Naomi Watts, Jack Black, Adrien Brody y Andy Serkis",
@@ -1148,7 +1148,7 @@ const movies = [
     {
         title: ["Saw"],
         description: "Saga de películas de terror que comenzó en 2004",
-        audio: "audio/Saw.mp3",
+        audio: "audio/saw.mp3",
         hints: [
             "El director que comenzó toda la saga fue James Wan",
             "Tobin Bell protagonizó y abanderó la saga durante mucho tiempo",
@@ -1158,7 +1158,7 @@ const movies = [
     {
         title: ["Crepúsculo", "Twilight"],
         description: "Saga de películas de fantasía romántica que comenzó en 2008",
-        audio: "audio/Crepusculo.mp3",
+        audio: "audio/crepusculo.mp3",
         hints: [
             "Toda una generación ha quedado marcada por esta saga: algunos la adoran y otros la odian",
             "Basadas en las novelas de Stephenie Meyer",
@@ -1168,7 +1168,7 @@ const movies = [
     {
         title: ["Ocean's Eleven", "Oceans Eleven"],
         description: "Película de acción estrenada en 2001",
-        audio: "audio/OceansEleven.mp3",
+        audio: "audio/oceanseleven.mp3",
         hints: [
             "Dirigida por Steven Soderbergh",
             "Protagonizada por George Clooney, Brad Pitt, Matt Damon, Andy García y Julia Roberts",
@@ -1178,7 +1178,7 @@ const movies = [
     {
         title: ["Jungla de Cristal (Die Hard)", "Jungla de Cristal", "La Jungla de Cristal", "Die Hard"],
         description: "Película de acción estrenada en 1988",
-        audio: "audio/JunglaDeCristal.mp3",
+        audio: "audio/jungladecristal.mp3",
         hints: [
             "Dirigida por John McTiernan",
             "Protagonizada por Bruce Willis y Alan Rickman",
@@ -1188,7 +1188,7 @@ const movies = [
     {
         title: ["Arma Letal"],
         description: "Película de acción estrenada en 1987",
-        audio: "audio/ArmaLetal.mp3",
+        audio: "audio/armaletal.mp3",
         hints: [
             "Cuenta las aventuras de una pareja de detectives del departamento de policía de Los Ángeles",
             "Protagonizada por Mel Gibson y Danny Glover",
@@ -1198,7 +1198,7 @@ const movies = [
     {
         title: ["Master And Commander", "Master & Commander"],
         description: "Película de aventuras estrenada en 2003",
-        audio: "audio/MasterAndCommander.mp3",
+        audio: "audio/masterandcommander.mp3",
         hints: [
             "Es una película basada en las populares novelas de Patrick O'Brian",
             "Protagonizada por Russell Crowe y Paul Bettany",
@@ -1208,7 +1208,7 @@ const movies = [
     {
         title: ["Piratas del Caribe"],
         description: "Saga de películas de aventura que se inició en 2003",
-        audio: "audio/PiratasDelCaribe.mp3",
+        audio: "audio/piratasdelcaribe.mp3",
         hints: [
             "Las historias siguen las aventuras del Capitán Jack Sparrow",
             "Protagonizada por Johnny Depp, Orlando Bloom y Keira Knightley",
@@ -1218,7 +1218,7 @@ const movies = [
     {
         title: ["La Máscara"],
         description: "Película de comedia estrenada en 1994",
-        audio: "audio/LaMascara.mp3",
+        audio: "audio/lamascara.mp3",
         hints: [
             "La cinta es una libre adaptación del cómic del mismo nombre creado por Mike Richardson para Dark Horse Comics",
             "Protagonizada por Jim Carrey y Cameron Diaz",
@@ -1228,7 +1228,7 @@ const movies = [
     {
         title: ["Armageddon"],
         description: "Película de ciencia ficción estrenada en 1998",
-        audio: "audio/Armageddon.mp3",
+        audio: "audio/armageddon.mp3",
         hints: [
             "Dirigida por Michael Bay",
             "Protagonizada por Bruce Willis, Billy Bob Thornton, Ben Affleck, Liv Tyler, Owen Wilson, Will Patton, Michael Clarke Duncan, Peter Stormare y Steve Buscemi",
@@ -1238,7 +1238,7 @@ const movies = [
     {
         title: ["Spider-man", "Spiderman", "Spider man"],
         description: "Película de superhéroes estrenada en 2002",
-        audio: "audio/Spiderman.mp3",
+        audio: "audio/spiderman.mp3",
         hints: [
             "Dirigida por Sam Raimi",
             "Fue la primera de una trilogía, protagonizada por Tobey Maguire",
@@ -1248,7 +1248,7 @@ const movies = [
     {
         title: ["Men In Black", "MIB", "Los Hombres de Negro"],
         description: "Película de ciencia ficción estrenada en 1997",
-        audio: "audio/MenInBlack.mp3",
+        audio: "audio/meninblack.mp3",
         hints: [
             "Protagonizada por Tommy Lee Jones y Will Smith",
             "Ganó un Óscar por Mejor Maquillaje",
@@ -1258,7 +1258,7 @@ const movies = [
     {
         title: ["Dune"],
         description: "Película de ciencia ficción estrenada en 1984",
-        audio: "audio/Dune.mp3",
+        audio: "audio/dune.mp3",
         hints: [
             "Dirigida por David Lynch y basada en la novela homónima de Frank Herbert",
             "Tiene lugar en el desértico planeta Arrakis",
@@ -1268,7 +1268,7 @@ const movies = [
     {
         title: ["Pesadilla en Elm Street"],
         description: "Película de terror estrenada en 1984",
-        audio: "audio/PesadillaEnElmStreet.mp3",
+        audio: "audio/pesadillaenelmstreet.mp3",
         hints: [
             "Protagonizada por Robert Englund junto con Heather Langenkamp, John Saxon y Johnny Depp",
             "Escrita y dirigida por Wes Craven",
@@ -1278,7 +1278,7 @@ const movies = [
     {
         title: ["Speed"],
         description: "Película de acción estrenada en 1994",
-        audio: "audio/Speed.mp3",
+        audio: "audio/speed.mp3",
         hints: [
             "Protagonizada por Keanu Reeves, Sandra Bullock y Dennis Hopper",
             "Ganó dos premios Óscar",
@@ -1288,7 +1288,7 @@ const movies = [
     {
         title: ["Resident Evil"],
         description: "Película de suspenso y acción estrenada en 2002",
-        audio: "audio/ResidentEvil.mp3",
+        audio: "audio/residentevil.mp3",
         hints: [
             "Dirigida por Paul W. S. Anderson",
             "Protagonizada por Milla Jovovich",
@@ -1298,7 +1298,7 @@ const movies = [
     {
         title: ["James Bond"],
         description: "Saga de películas de acción y espionaje iniciada en 1962",
-        audio: "audio/JamesBond.mp3",
+        audio: "audio/jamesbond.mp3",
         hints: [
             "Basada en uno de los personajes de Ian Fleming",
             "Es la serie continua de películas más larga en la historia del cine",
@@ -1308,7 +1308,7 @@ const movies = [
     {
         title: ["Sherlock Holmes"],
         description: "Película de acción, suspense y aventuras estrenada en 2009",
-        audio: "audio/SherlockHolmes.mp3",
+        audio: "audio/sherlockholmes.mp3",
         hints: [
             "Basada en el personaje original de Sir Arthur Conan Doyle",
             "Tuvo una secuela en el año 2011",
@@ -1318,7 +1318,7 @@ const movies = [
     {
         title: ["Lo que el viento se llevó"],
         description: "Película romántica histórica estrenada en 1939",
-        audio: "audio/LoQueElVientoSeLLevo.mp3",
+        audio: "audio/loqueelvientosellevo.mp3",
         hints: [
             "Adaptación de la novela homónima de 1936 de Margaret Mitchell",
             "Dirigida por Victor Fleming",
@@ -1328,13 +1328,13 @@ const movies = [
     {
         title: ["El Padrino", "The Godfather"],
         description: "Película dramática estrenada en 1972",
-        audio: "audio/ElPadrino.mp3",
+        audio: "audio/elpadrino.mp3",
         hints: ["Dirigida por Francis Ford Coppola", "Protagonizada por Marlon Brando", "Ganó tres Óscar"]
     },
     {
         title: ["Space Jam"],
         description: "Película de animación y aventuras estrenada en 1996",
-        audio: "audio/SpaceJam.mp3",
+        audio: "audio/spacejam.mp3",
         hints: [
             "Combina acción real y dibujos animados",
             "Fue protagonizada por el jugador de baloncesto Michael Jordan y por los dibujos animados de la Warner Bros., los Looney Tunes",
@@ -1344,7 +1344,7 @@ const movies = [
     {
         title: ["La Momia", "The Mummy"],
         description: "Película de aventuras estrenada en 1999",
-        audio: "audio/LaMomia.mp3",
+        audio: "audio/lamomia.mp3",
         hints: [
             "Rodada, escrita y dirigida por Stephen Sommers",
             "Interpretada por Brendan Fraser, Rachel Weisz, John Hannah, Oded Fehr y Kevin J. O'Connor, con Arnold Vosloo en el papel del villano",
@@ -1354,7 +1354,7 @@ const movies = [
     {
         title: ["Maverick"],
         description: "Película western estrenada en 1994",
-        audio: "audio/Maverick.mp3",
+        audio: "audio/maverick.mp3",
         hints: [
             "Interpretada por Mel Gibson, Jodie Foster, James Garner, Alfred Molina y James Coburn",
             "Dirigida por Richard Donner",
@@ -1364,7 +1364,7 @@ const movies = [
     {
         title: ["60 Segundos", "sesenta segundos"],
         description: "Película de acción estrenada en el año 2000",
-        audio: "audio/60Segundos.mp3",
+        audio: "audio/60segundos.mp3",
         hints: [
             "Dirigida por Dominic Sena y escrita por Scott Rosenberg como una adaptación de una película de 1974 del mismo nombre",
             "Protagonizada por Nicolas Cage, Angelina Jolie y Robert Duvall",
@@ -1374,7 +1374,7 @@ const movies = [
     {
         title: ["Orgullo y Prejuicio"],
         description: "Película romántica estrenada en el año 2005",
-        audio: "audio/OrgulloYPrejuicio.mp3",
+        audio: "audio/orgulloyprejuicio.mp3",
         hints: [
             "Basada en la novela homónima de Jane Austen publicada en 1813",
             "Dirigida por Joe Wright",
@@ -1384,7 +1384,7 @@ const movies = [
     {
         title: ["Loca Academia de Policía"],
         description: "Película de comedia estrenada en el año 1984",
-        audio: "audio/LocaAcademiaDePolicia.mp3",
+        audio: "audio/locaacademiadepolicia.mp3",
         hints: [
             "Protagonizada por Steve Guttenberg, Kim Cattrall, David Graf y G. W. Bailey",
             "Dirigida por Hugh Wilson",
@@ -1394,7 +1394,7 @@ const movies = [
     {
         title: ["El Equipo A", "Equipo A"],
         description: "Película de acción estrenada en el año 2010",
-        audio: "audio/ElEquipoA.mp3",
+        audio: "audio/elequipoa.mp3",
         hints: [
             "Basada en la serie de los 80 del mismo nombre",
             "Producida por Tony Scott y Ridley Scott",
@@ -1404,7 +1404,7 @@ const movies = [
     {
         title: ["Comando"],
         description: "Película de acción estrenada en el año 1985",
-        audio: "audio/Comando.mp3",
+        audio: "audio/comando.mp3",
         hints: [
             "Protagonizada por Arnold Schwarzenegger y Alyssa Milano",
             "Está considerada como uno de los pilares del cine de acción",
@@ -1414,7 +1414,7 @@ const movies = [
     {
         title: ["Mary Poppins"],
         description: "Película musical de fantasía estrenada en el año 1964",
-        audio: "audio/MaryPoppins.mp3",
+        audio: "audio/marypoppins.mp3",
         hints: [
             "Dirigida por Robert Stevenson",
             "Con canciones escritas por los hermanos Sherman",
@@ -1424,7 +1424,7 @@ const movies = [
     {
         title: ["La Búsqueda"],
         description: "Película de aventuras y thriller estrenada en el año 2004",
-        audio: "audio/LaBusqueda.mp3",
+        audio: "audio/labusqueda.mp3",
         hints: [
             "Protagonizada por Nicolas Cage y Diane Kruger",
             "Tuvo una secuela en el año 2007",
@@ -1434,7 +1434,7 @@ const movies = [
     {
         title: ["Las Tortugas Ninja"],
         description: "Película de aventuras estrenada en el año 1990",
-        audio: "audio/LasTortugasNinja.mp3",
+        audio: "audio/lastortugasninja.mp3",
         hints: [
             "Basada en una popular serie de televisión y cómic homónimos",
             "Fue el film independiente más taquillero de todos los tiempos, hasta que The Blair Witch Project lo superó",
@@ -1444,7 +1444,7 @@ const movies = [
     {
         title: ["Los Picapiedra (The Flintstones)", "Los Picapiedra", "The Flintstones"],
         description: "Película de aventuras estrenada en el año 1994",
-        audio: "audio/LosPicapiedra.mp3",
+        audio: "audio/lospicapiedra.mp3",
         hints: [
             "Es una versión en imagen real de la serie homónima de animación que se emitió por televisión entre 1960 y 1966",
             "Protagoniza por John Goodman entre otros",
@@ -1454,7 +1454,7 @@ const movies = [
     {
         title: ["Drácula, de Bram Stoker", "Drácula", "Drácula de Bram Stoker"],
         description: "Película de terror y romance estrenada en el año 1992",
-        audio: "audio/Dracula.mp3",
+        audio: "audio/dracula.mp3",
         hints: [
             "Dirigida por Francis Ford Coppola",
             "Fue protagonizada por Gary Oldman, Winona Ryder, Keanu Reeves y Antony Hopkins",
@@ -1464,13 +1464,13 @@ const movies = [
     {
         title: ["XXX"],
         description: "Película de acción estrenada en el año 2002",
-        audio: "audio/Xxx.mp3",
+        audio: "audio/xxx.mp3",
         hints: ["Dirigida por Rob Cohen", "Fue protagonizada por Vin Diesel y Samuel L. Jackson", "Tuvo dos secuelas"]
     },
     {
         title: ["Desperado"],
         description: "Película de acción estrenada en el año 1995",
-        audio: "audio/Desperado.mp3",
+        audio: "audio/desperado.mp3",
         hints: [
             "Escrita y dirigida por Robert Rodriguez",
             "Fue protagonizada por Antonio Banderas y Salma Hayek",
@@ -1480,7 +1480,7 @@ const movies = [
     {
         title: ["E.T.", "ET", "ET El Extraterrestre", "E.T. El Extraterrestre"],
         description: "Película de ciencia ficción estrenada en el año 1982",
-        audio: "audio/ET.mp3",
+        audio: "audio/et.mp3",
         hints: [
             "Dirigida por Steven Spielberg",
             "La cinta está basada en un amigo imaginario del propio director, creado tras el divorcio de sus padres",
@@ -1490,7 +1490,7 @@ const movies = [
     {
         title: ["El Pacto de los Lobos"],
         description: "Película de suspense y acción estrenada en el año 2001",
-        audio: "audio/ElPactoDeLosLobos.mp3",
+        audio: "audio/elpactodeloslobos.mp3",
         hints: [
             "Es una película francesa dirigida por Christophe Gans",
             "Basada en el año 1765",
@@ -1500,7 +1500,7 @@ const movies = [
     {
         title: ["Salvar al soldado Ryan"],
         description: "Película bélica épica estrenada en el año 1998",
-        audio: "audio/SalvarAlSoldadoRyan.mp3",
+        audio: "audio/salvaralsoldadoryan.mp3",
         hints: [
             "Ambientada en la invasión de Normandía durante la Segunda Guerra Mundial",
             "Dirigida por Steven Spielberg",
@@ -1510,7 +1510,7 @@ const movies = [
     {
         title: ["El Patriota"],
         description: "Película bélica estrenada en el año 2000",
-        audio: "audio/ElPatriota.mp3",
+        audio: "audio/elpatriota.mp3",
         hints: [
             "Dirigida por Roland Emmerich",
             "Protagonizada por Mel Gibson y Heath Ledger",
@@ -1520,7 +1520,7 @@ const movies = [
     {
         title: ["Gangs Of New York"],
         description: "Película de drama histórico estrenada en el año 2002",
-        audio: "audio/GangsOfNewYork.mp3",
+        audio: "audio/gangsofnewyork.mp3",
         hints: [
             "Dirigida por Martin Scorsese",
             "Protagonizada por Daniel Day-Lewis y Leonardo DiCaprio",
@@ -1530,7 +1530,7 @@ const movies = [
     {
         title: ["Cadena Perpetua"],
         description: "Película de drama estrenada en el año 1994",
-        audio: "audio/CadenaPerpetua.mp3",
+        audio: "audio/cadenaperpetua.mp3",
         hints: [
             "Protagonizada por Tim Robbins y Morgan Freeman",
             "Basada en una novela corta de Stephen King",
@@ -1540,7 +1540,7 @@ const movies = [
     {
         title: ["American Beauty"],
         description: "Película de drama estrenada en el año 1999",
-        audio: "audio/AmericanBeauty.mp3",
+        audio: "audio/americanbeauty.mp3",
         hints: [
             "Dirigida por Sam Mendes",
             "Protagonizada por Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley, Mena Suvari y Chris Cooper",
@@ -1550,7 +1550,7 @@ const movies = [
     {
         title: ["Malditos Bastardos"],
         description: "Película de drama bélico estrenada en el año 2009",
-        audio: "audio/MalditosBastardos.mp3",
+        audio: "audio/malditosbastardos.mp3",
         hints: [
             "Escrita y dirigida por Quentin Tarantino",
             "Protagonizada por Brad Pitt, Christoph Waltz y Mélanie Laurent",
@@ -1560,7 +1560,7 @@ const movies = [
     {
         title: ["La Gran Evasión"],
         description: "Película bélica estrenada en el año 1963",
-        audio: "audio/LaGranEvasion.mp3",
+        audio: "audio/lagranevasion.mp3",
         hints: [
             "Protagonizada por Steve McQueen",
             "Basada en los hechos sucedidos en el campo de prisioneros de guerra de Stalag",
@@ -1570,7 +1570,7 @@ const movies = [
     {
         title: ["La delgada linea roja"],
         description: "Película bélica estrenada en el año 1998",
-        audio: "audio/LaDelgadaLineaRoja.mp3",
+        audio: "audio/ladelgadalinearoja.mp3",
         hints: [
             "La película narra la historia de las tropas militares estadounidenses en la Batalla de Guadalcanal en la Segunda Guerra Mundial",
             "Su banda sonora es de Hans Zimmer",
@@ -1580,7 +1580,7 @@ const movies = [
     {
         title: ["Los Goonies"],
         description: "Película de culto de aventuras estrenada en el año 1985",
-        audio: "audio/LosGoonies.mp3",
+        audio: "audio/losgoonies.mp3",
         hints: [
             "Basada en una historia de Steven Spielberg",
             "La película relata el viaje de un grupo de niños amigos en busca de un tesoro perdido",
@@ -1595,7 +1595,7 @@ const movies = [
             "Birdman o la inexperada virtud de la ignorancia"
         ],
         description: "Película de humor negro estrenada en el año 2014",
-        audio: "audio/Birdman.mp3",
+        audio: "audio/birdman.mp3",
         hints: [
             "Dirigida por Alejandro González Iñárritu",
             "Protagonizada por Michael Keaton, Emma Stone, Edward Norton, Andrea Riseborough, Zach Galifianakis, Naomi Watts y Amy Ryan",
@@ -1605,7 +1605,7 @@ const movies = [
     {
         title: ["Mad Max: Fury Road", "Mad Max", "Fury Road", "Mad Max Fury Road"],
         description: "Película de acción post-apocalíptica estrenada en el año 2015",
-        audio: "audio/MadMaxFuryRoad.mp3",
+        audio: "audio/madmaxfuryroad.mp3",
         hints: [
             "Dirigida, producida y coescrita por George Miller",
             "Protagonizada por Tom Hardy junto a Charlize Theron",
@@ -1615,7 +1615,7 @@ const movies = [
     {
         title: ["La Princesa Prometida"],
         description: "Película de aventuras estrenada en el año 1987",
-        audio: "audio/LaPrincesaPrometida.mp3",
+        audio: "audio/laprincesaprometida.mp3",
         hints: [
             "Dirigida por Rob Reiner",
             "Protagonizada por Cary Elwes, Robin Wright, Chris Sarandon, Mandy Patinkin, Wallace Shawn, Christopher Guest y André el Gigante",
@@ -1625,7 +1625,7 @@ const movies = [
     {
         title: ["Memorias de África"],
         description: "Película de aventuras romántica estrenada en el año 1985",
-        audio: "audio/MemoriasDeAfrica.mp3",
+        audio: "audio/memoriasdeafrica.mp3",
         hints: [
             "Dirigida por Sydney Pollack",
             "Protagonizada por Meryl Streep y Robert Redford",
@@ -1635,7 +1635,7 @@ const movies = [
     {
         title: ["Carros de Fuego"],
         description: "Película de drama histórico y deportivo estrenada en el año 1981",
-        audio: "audio/CarrosDeFuego.mp3",
+        audio: "audio/carrosdefuego.mp3",
         hints: [
             "Basada en la historia real de los atletas británicos preparándose para competir en los Juegos Olímpicos de París 1924",
             "Vangelis es el creador de la banda sonora",
@@ -1645,7 +1645,7 @@ const movies = [
     {
         title: ["El Castigador (The Punisher)", "Punisher", "El Castigador"],
         description: "Película de superhéroes, acción y drama estrenada en el año 2004",
-        audio: "audio/ThePunisher.mp3",
+        audio: "audio/thepunisher.mp3",
         hints: [
             "Protagonizada por Thomas Jane y John Travolta",
             "Basada en un personaje de Marvel",
@@ -1655,7 +1655,7 @@ const movies = [
     {
         title: ["Solo en casa"],
         description: "Película de comedia familiar estrenada en el año 1990",
-        audio: "audio/SoloEnCasa.mp3",
+        audio: "audio/soloencasa.mp3",
         hints: [
             "Dirigida por Chris Columbus",
             "Protagonizada por Macaulay Culkin, Joe Pesci, Daniel Stern, Catherine O'Hara, Roberts Blossom, John Heard y John Candy",
@@ -1665,7 +1665,7 @@ const movies = [
     {
         title: ["El último gran heroe"],
         description: "Película de culto de acción estrenada en el año 1993",
-        audio: "audio/ElUltimoGranHeroe.mp3",
+        audio: "audio/elultimogranheroe.mp3",
         hints: [
             "Dirigida por John McTiernan",
             "La película está protagonizada por Arnold Schwarzenegger",
@@ -1675,7 +1675,7 @@ const movies = [
     {
         title: ["El hombre de la máscara de hierro"],
         description: "Película dramática y de ficción histórica estrenada en el año 1998",
-        audio: "audio/ElHombreDeLaMascaraDeHierro.mp3",
+        audio: "audio/elhombredelamascaradehierro.mp3",
         hints: [
             "Interpretada por Leonardo DiCaprio, Jeremy Irons, John Malkovich, Gabriel Byrne, Gérard Depardieu y Anne Parillaud",
             "Está basada en la obra El vizconde de Bragelonne de Alexandre Dumas",
@@ -1685,7 +1685,7 @@ const movies = [
     {
         title: ["Bailando con lobos"],
         description: "Película dramática y de aventuras estrenada en el año 1990",
-        audio: "audio/BailandoConLobos.mp3",
+        audio: "audio/bailandoconlobos.mp3",
         hints: [
             "Dirigida y protagonizada por Kevin Costner",
             "Está basada en la novela homónima de Michael Blake",
@@ -1695,7 +1695,7 @@ const movies = [
     {
         title: ["American History X"],
         description: "Película dramática estrenada en el año 1998",
-        audio: "audio/AmericanHistoryX.mp3",
+        audio: "audio/americanhistoryx.mp3",
         hints: [
             "Dirigida por Tony Kaye",
             "Protagonizada por Edward Norton y Edward Furlong",
@@ -1715,7 +1715,7 @@ const movies = [
     {
         title: ["El gran Stan (Big Stan)", "El gran Stan", "Big Stan"],
         description: "Película de comedia estrenada en el año 2007",
-        audio: "audio/GranStan.mp3",
+        audio: "audio/granstan.mp3",
         hints: [
             "Dirigida e interpretada por Rob Schneider",
             "Trata sobre un agente inmobiliario estafador al le que entra el pánico cuando se entera de que va a la cárcel por fraude",
@@ -1725,7 +1725,7 @@ const movies = [
     {
         title: ["La vida es bella"],
         description: "Película dramática estrenada en el año 1997",
-        audio: "audio/LaVidaEsBella.mp3",
+        audio: "audio/lavidaesbella.mp3",
         hints: [
             "Escrita, dirigida y protagonizada por Roberto Benigni",
             "Ganó tres Óscar",
@@ -1735,7 +1735,7 @@ const movies = [
     {
         title: ["Flashdance"],
         description: "Película romántica estrenada en el año 1983",
-        audio: "audio/Flashdance.mp3",
+        audio: "audio/flashdance.mp3",
         hints: [
             "Protagonizada por Jennifer Beals y Michael Nouri",
             "Es considerada un clásico de la década de los 80",
@@ -1745,7 +1745,7 @@ const movies = [
     {
         title: ["Footloose"],
         description: "Película romántica estrenada en el año 1984",
-        audio: "audio/Footloose.mp3",
+        audio: "audio/footloose.mp3",
         hints: [
             "Protagonizada por Kevin Bacon, Lori Singer, Dianne Wiest, John Lithgow y Frances Lee McCain",
             "Ligeramente inspirada en hechos reales ocurridos en la pequeña comunidad rural religiosa de Elmore City, Oklahoma",
@@ -1755,7 +1755,7 @@ const movies = [
     {
         title: ["Lady Halcón", "Ladyhawke"],
         description: "Película de fantasía, romance y aventura estrenada en el año 1985",
-        audio: "audio/LadyHalcon.mp3",
+        audio: "audio/ladyhalcon.mp3",
         hints: [
             "Está protagonizada por Matthew Broderick, Rutger Hauer y Michelle Pfeiffer",
             "Relata la historia de un amor trágico entre dos personas que no pueden estar juntas a causa de un terrible hechizo",
@@ -1765,7 +1765,7 @@ const movies = [
     {
         title: ["Ace Ventura"],
         description: "Película de comedia estrenada en el año 1994",
-        audio: "audio/AceVentura.mp3",
+        audio: "audio/aceventura.mp3",
         hints: [
             "Está protagonizada por Jim Carrey",
             "Jim Carrey interpreta a un detective de mascotas un tanto excéntrico",
@@ -1775,7 +1775,7 @@ const movies = [
     {
         title: ["The Watchmen", "Watchmen"],
         description: "Película de acción, drama y ciencia ficción estrenada en el año 2009",
-        audio: "audio/Watchmen.mp3",
+        audio: "audio/watchmen.mp3",
         hints: [
             "Dirigida por Zack Snyder",
             "Adaptación fílmica de la serie limitada de cómics homónima, escrita y dibujada por Alan Moore y Dave Gibbons",
@@ -1790,7 +1790,7 @@ const movies = [
             "He Man y los Masters del Universo"
         ],
         description: "Película de culto de acción y fantasía estrenada en el año 1987",
-        audio: "audio/MastersDelUniverso.mp3",
+        audio: "audio/mastersdeluniverso.mp3",
         hints: [
             "Protagonizada por Dolph Lundgren, Frank Langella, Jon Cypher, Chelsea Field, Billy Barty y Courteney Cox",
             "Adaptación fílmica de la serie homónima emitida desde 1983 hasta 1985",
@@ -1800,7 +1800,7 @@ const movies = [
     {
         title: ["Stardust"],
         description: "Película de fantasía estrenada en el año 2007",
-        audio: "audio/Stardust.mp3",
+        audio: "audio/stardust.mp3",
         hints: [
             "Dirigida por Matthew Vaughn",
             "Está basada en la novela de mismo título, escrita por Neil Gaiman",
@@ -1816,7 +1816,7 @@ const movies = [
             "Zohan licencia para peinar"
         ],
         description: "Película de comedia estrenada en el año 2008",
-        audio: "audio/Zohan.mp3",
+        audio: "audio/zohan.mp3",
         hints: [
             "El guion fue escrito por Adam Sandler",
             "El protagonista finge su propia muerte tratando de alcanzar su sueño: convertirse en estilista",
@@ -1826,7 +1826,7 @@ const movies = [
     {
         title: ["La caza del Octubre Rojo"],
         description: "Película bélica estrenada en el año 1990",
-        audio: "audio/LaCazaDelOctubreRojo.mp3",
+        audio: "audio/lacazadeloctubrerojo.mp3",
         hints: [
             "Fue la primera adaptación cinematográfica del Dr. Jack Ryan, interpretado por Alec Baldwin",
             "El papel protagonista se ve eclipsado por la interpretación por parte de Sean Connery como Marko Ramius",
@@ -1836,7 +1836,7 @@ const movies = [
     {
         title: ["Demolition Man"],
         description: "Película de acción y ciencia ficción estrenada en el año 1993",
-        audio: "audio/DemolitionMan.mp3",
+        audio: "audio/demolitionman.mp3",
         hints: [
             "Protagonizada por Sylvester Stallone, Wesley Snipes y Sandra Bullock",
             "La acción tiene lugar en el año 2032 en Los Ángeles",
@@ -1846,7 +1846,7 @@ const movies = [
     {
         title: ["Scream"],
         description: "Película slasher estrenada en el año 1996",
-        audio: "audio/Scream.mp3",
+        audio: "audio/scream.mp3",
         hints: [
             "Dirigida por Wes Craven",
             "La película está protagonizada por un elenco conformado por Neve Campbell, David Arquette y Courteney Cox",
@@ -1856,7 +1856,7 @@ const movies = [
     {
         title: ["Atlantis: El imperio perdido", "Atlantis", "Atlantis el imperio perdido"],
         description: "Película animada de tipo steampunk estrenada en el año 2001",
-        audio: "audio/Atlantis.mp3",
+        audio: "audio/atlantis.mp3",
         hints: [
             "Está basada en la historia de los hermanos Bryze y Jackie Zabel",
             "El guión es de Joss Whedon",
@@ -1866,7 +1866,7 @@ const movies = [
     {
         title: ["El Mago de Oz"],
         description: "Película musical fantástica estrenada en el año 1939",
-        audio: "audio/ElMagoDeOz.mp3",
+        audio: "audio/elmagodeoz.mp3",
         hints: [
             "Protagonizada por Judy Garland, Frank Morgan, Ray Bolger, Jack Haley, Bert Lahr, Billie Burke y Margaret Hamilton",
             "En la actualidad, es considerada una película de culto, a pesar de su proyecto inicial como fábula cinematográfica infantil",
@@ -1876,7 +1876,7 @@ const movies = [
     {
         title: ["Frozen"],
         description: "Película de animación estrenada en el año 2013",
-        audio: "audio/Frozen.mp3",
+        audio: "audio/frozen.mp3",
         hints: [
             "Ganadora de dos premios Óscar",
             "Inspirada en la historia de La reina de las nieves de Hans Christian Andersen",
@@ -1886,7 +1886,7 @@ const movies = [
     {
         title: ["Dredd (Juez Dredd)", "Dredd", "Juez Dredd", "El Juez Dredd"],
         description: "Película de acción y ciencia ficción estrenada en el año 2012",
-        audio: "audio/Dredd.mp3",
+        audio: "audio/dredd.mp3",
         hints: [
             "Remake de la película homónima protagonizada por Sylvester Stallone en el año 1995",
             "Inspirada en una serie de comics",
@@ -1906,7 +1906,7 @@ const movies = [
     {
         title: ["You're Next (Eres el siguiente)", "You're Next", "You are next", "Eres el siguiente"],
         description: "Película de terror estrenada en el año 2013",
-        audio: "audio/YouAreNext.mp3",
+        audio: "audio/youarenext.mp3",
         hints: [
             "Protagonizada por Sharni Vinson, Nicholas Tucci, Wendy Glenn, A.J. Bowen y Joe Swanberg",
             "La película tuvo su estreno mundial en el Programa Madness de Medianoche del Festival Internacional de Cine de Toronto 2011",
@@ -1916,7 +1916,7 @@ const movies = [
     {
         title: ["Hero (Héroe)", "Hero", "Héroe"],
         description: "Película dramática de artes marciales estrenada en el año 2002",
-        audio: "audio/Hero.mp3",
+        audio: "audio/hero.mp3",
         hints: [
             "Protagonizada Jet Li",
             "Es un film del género wuxia (héroes de las artes marciales)",
@@ -1926,7 +1926,7 @@ const movies = [
     {
         title: ["Tiempo de matar"],
         description: "Película de thriller, suspense y drama estrenada en el año 1996",
-        audio: "audio/TiempoDeMatar.mp3",
+        audio: "audio/tiempodematar.mp3",
         hints: [
             "Fue protagonizada por Sandra Bullock, Samuel L. Jackson, Matthew McConaughey y Kevin Spacey",
             "Dirigida por Joel Schumacher",
@@ -1936,7 +1936,7 @@ const movies = [
     {
         title: ["El Lobo de Wall Street"],
         description: "Película biográfica y de comedia negra estrenada en el año 2013",
-        audio: "audio/ElLoboDeWallStreet.mp3",
+        audio: "audio/ellobodewallstreet.mp3",
         hints: [
             "Dirigida por Martin Scorsese",
             "Basada en las memorias del mismo nombre de Jordan Belfort",
@@ -1946,7 +1946,7 @@ const movies = [
     {
         title: ["The Revenant (El Renacido)", "The Revenant", "El Renacido"],
         description: "Película de drama y acción estrenada en el año 2016",
-        audio: "audio/TheRevenant.mp3",
+        audio: "audio/therevenant.mp3",
         hints: [
             "Dirigida por Alejandro González Iñárritu, ganó tres Óscar",
             "Está basada en un personaje histórico, Hugh Glass, trampero y explorador de inicios del siglo XIX",
@@ -1956,7 +1956,7 @@ const movies = [
     {
         title: ["Bohemian Rhapsody"],
         description: "Película biográfica estrenada en el año 2018",
-        audio: "audio/BohemianRhapsody.mp3",
+        audio: "audio/bohemianrhapsody.mp3",
         hints: [
             "Trata sobre el cantante británico Freddie Mercury y el grupo de rock Queen",
             "El guion fue escrito por Anthony McCarten y fue producida por Graham King y Jim Beach, antiguo mánager de Queen",
@@ -1966,7 +1966,7 @@ const movies = [
     {
         title: ["Le llaman Bodhi (Point Break)", "Point Break", "Le llaman Bodhi"],
         description: "Película de acción estrenada en el año 1991",
-        audio: "audio/LeLlamanBodhi.mp3",
+        audio: "audio/lellamanbodhi.mp3",
         hints: [
             "Protagonizada por Patrick Swayze y Keanu Reeves",
             "En la actualidad esta considerada como una película de culto",
@@ -1976,7 +1976,7 @@ const movies = [
     {
         title: ["Romeo Y Julieta", "Romeo + Juliet", "Romeo + Julieta"],
         description: "Película de drama y romance estrenada en el año 1996",
-        audio: "audio/RomeoYJulieta.mp3",
+        audio: "audio/romeoyjulieta.mp3",
         hints: [
             "Basada en una obra de William Shakespeare",
             "Protagonizada por Leonardo DiCaprio y Claire Danes",
@@ -1986,13 +1986,14 @@ const movies = [
     {
         title: ["Titanic"],
         description: "Película de drama y romance estrenada en el año 1997",
-        audio: "audio/Titanic.mp3",
+        audio: "audio/titanic.mp3",
         hints: [
             "Dirigida y escrita por James Cameron",
             "Protagonizada por Leonardo DiCaprio y Kate Winslet",
             "Ganó once premios Óscar"
         ]
     }
+
 ];
 
 // Juego creado sin ánimo de lucro por Wildcrow
