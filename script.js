@@ -2140,6 +2140,8 @@ function loadNextMovie() {
         surrenderBtn.style.display = "none";
         resultMessage.textContent = ""; // limpia cualquier mensaje previo
         streakEl.textContent = `Racha más grande: ${mejorRacha}`;
+        guardarResultadoEnFirestore(playerName, currentScore, modo, mejorRacha, modo === "contrarreloj" ? Date.now() - startTime : null);
+
         return;
     }
 
@@ -2274,4 +2276,20 @@ surrenderBtn.onclick = () => {
     updateStreak();
     setTimeout(loadNextMovie, 2000);
 };
+// BASE DE DATOS
+async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
+    try {
+        const docRef = await addDoc(collection(db, "ranking"), {
+            nombre,
+            puntuacion,
+            modo,
+            racha,
+            tiempo
+            });
+        console.log("Resultado guardado con ID: ", docRef.id);
+    } catch (e) {
+        console.error("Error al guardar el resultado: ", e);
+    }
+}
+
 // Juego creado sin ánimo de lucro por Wildcrow
