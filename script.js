@@ -2042,6 +2042,7 @@ function updateStreak() {
 
 function limpiarTexto(texto) {
     return texto
+        .trim() // Elimina espacios al principio y al final
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase();
