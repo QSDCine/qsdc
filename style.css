@@ -172,31 +172,31 @@ button {
     border-radius: 5px;
 }
 
-body.dark {
+body.dark-mode {
     background-color: #0d1b2a;
     color: #e0e1dd;
 }
 
-body.dark #quiz-container,
-body.dark #intro,
-body.dark #modo-menu {
+body.dark-mode #quiz-container,
+body.dark-mode #intro,
+body.dark-mode #modo-menu {
     background-color: #1b263b;
     color: #e0e1dd;
 }
 
-body.dark input,
-body.dark button {
+body.dark-mode input,
+body.dark-mode button {
     background-color: #415a77;
     color: #e0e1dd;
     border: none;
 }
 
-body.dark .spoiler {
+body.dark-mode .spoiler {
     background-color: #778da9;
     color: #0d1b2a;
 }
 
-body.dark button:hover {
+body.dark-mode button:hover {
     background-color: #3a506b;
 }
 
