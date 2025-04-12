@@ -62,3 +62,24 @@ ol li {
 ol li::marker {
   font-weight: bold;
 }
+
+
+body.dark-mode {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+}
+
+body.dark-mode #ranking-container {
+    background-color: #1b263b;
+    color: #e0e1dd;
+}
+
+body.dark-mode button {
+    background-color: #415a77;
+    color: #e0e1dd;
+    border: none;
+}
+
+body.dark-mode button:hover {
+    background-color: #3a506b;
+}
