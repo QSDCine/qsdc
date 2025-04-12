@@ -2276,6 +2276,38 @@ submitBtn.onclick = () => {
         updateStreak();
         setTimeout(loadNextMovie, 2000);
     } else {
+        if (modo === "locura") {
+  if (isCorrect) {
+    let score = 10;
+    rachaCorrectas++;
+    if (rachaCorrectas > mejorRacha) {
+      mejorRacha = rachaCorrectas;
+    }
+
+    // Bonus por racha
+    if (rachaCorrectas % 10 === 0 && rachaCorrectas <= movies.length) {
+      resultMessage.textContent = `¡Correcto! 🔥 Bonificación por racha de ${rachaCorrectas}: +${rachaCorrectas} puntos extra!`;
+      score += rachaCorrectas;
+    } else {
+      resultMessage.textContent = "¡Correcto!";
+    }
+
+    resultMessage.className = "correcto";
+    updateScore(score);
+    updateStreak();
+  } else {
+    updateScore(-20);
+    rachaCorrectas = 0;
+    updateStreak();
+    const mostrarTitulo = Array.isArray(currentMovie.title) ? currentMovie.title[0] : currentMovie.title;
+    resultMessage.textContent = "Incorrecto. Era: " + mostrarTitulo;
+    resultMessage.className = "incorrecto";
+  }
+
+  setTimeout(loadNextMovie, 2000);
+  return;
+}
+
         if (modo === "extremo") {
             intentosRestantes--;
 
