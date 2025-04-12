@@ -101,6 +101,23 @@
       .then(() => console.log("Service Worker registrado"));
   }
 </script>
+    <script>
+  const themeBtn = document.getElementById("theme-toggle-btn");
+
+  // Cargar preferencia guardada
+  if (localStorage.getItem("tema") === "oscuro") {
+    document.body.classList.add("dark-mode");
+    themeBtn.textContent = "☀️";
+  }
+
+  themeBtn.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    const modoActual = document.body.classList.contains("dark-mode") ? "oscuro" : "claro";
+    themeBtn.textContent = modoActual === "oscuro" ? "☀️" : "🌙";
+    localStorage.setItem("tema", modoActual);
+  };
+</script>
+
 </body>
     <!-- Juego creado sin ánimo de lucro por Wildcrow -->
 </html>
