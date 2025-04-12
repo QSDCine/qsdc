@@ -170,11 +170,33 @@ button {
     margin-top: 1rem;
 }
 
-#respuesta-container input,
-#respuesta-container button {
-    width: 60%;
-    max-width: 300px;
-    margin: 0.5rem 0;
+/* Línea del input + botón confirmar */
+#input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#answer-input {
+    flex: 1;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+#submit-btn {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Botón de rendición aparte */
+#surrender-btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
 }
 
 
