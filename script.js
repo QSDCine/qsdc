@@ -2069,6 +2069,7 @@ modoOpciones.forEach((btn) => {
         if (modo === "normal") textoModo = "Modo seleccionado: Normal";
         else if (modo === "contrarreloj") textoModo = "Modo seleccionado: Contrarreloj";
         else if (modo === "extremo") textoModo = "Modo seleccionado: Extremo";
+        else if (modo === "locura") textoModo = "Modo seleccionado: Locura";
 
         modoBtn.textContent = textoModo;
     });
