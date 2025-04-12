@@ -2,7 +2,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebas
 import { getFirestore, collection, getDocs, query, where, orderBy, limit } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
 import { guardarResultadoEnFirestore } from "./firestore-utils.js";
 
-
 // Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAaHu8OXnzUg8c5ogYLwmvTRpGFGfOXZkM",
@@ -16,7 +15,20 @@ const firebaseConfig = {
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-window.db = db; // por si necesitas acceso global desde otros scripts
+window.db = db; // acceso global
+
+// Función auxiliar para mostrar tiempo formateado
+function formatearTiempo(ms) {
+  const minutos = Math.floor(ms / 60000);
+  const horas = Math.floor(minutos / 60);
+  const minutosRestantes = minutos % 60;
+
+  if (horas > 0) {
+    return `⏱️ Tiempo: ${horas} hora${horas > 1 ? 's' : ''} y ${minutosRestantes} min${minutosRestantes !== 1 ? 's' : ''}`;
+  } else {
+    return `⏱️ Tiempo: ${minutos} min${minutos !== 1 ? 's' : ''}`;
+  }
+}
 
 // Elementos del DOM
 const rankingBtn = document.getElementById("ranking-btn");
@@ -30,7 +42,7 @@ const introEl = document.getElementById("intro");
 const modoMenu = document.getElementById("modo-menu");
 const quizEl = document.getElementById("quiz-container");
 
-// Mostrar ranking
+// Mostrar ranking (desde index.html si se usa el botón)
 if (rankingBtn) {
   rankingBtn.addEventListener("click", () => {
     introEl.style.display = "none";
@@ -40,12 +52,12 @@ if (rankingBtn) {
   });
 }
 
-// Volver al inicio
-document.getElementById("volver-btn").onclick = () => {
+// Botón de volver
+volverBtn.onclick = () => {
   window.location.href = "index.html";
 };
 
-// Mostrar ranking por modo
+// Mostrar ranking según modo
 rankingModoBtns.forEach((btn) => {
   btn.addEventListener("click", async () => {
     const modo = btn.dataset.modo;
@@ -53,6 +65,7 @@ rankingModoBtns.forEach((btn) => {
   });
 });
 
+// Función principal para mostrar el ranking
 async function mostrarRanking(modo) {
   rankingList.innerHTML = "Cargando...";
 
@@ -64,18 +77,6 @@ async function mostrarRanking(modo) {
     if (snapshot.empty) {
       rankingList.innerHTML = "<p>No hay resultados aún para este modo.</p>";
       return;
-    }
-
-    function formatearTiempo(ms) {
-      const minutos = Math.floor(ms / 60000);
-      const horas = Math.floor(minutos / 60);
-      const minutosRestantes = minutos % 60;
-
-      if (horas > 0) {
-        return `⏱️ Tiempo: ${horas} hora${horas > 1 ? 's' : ''} y ${minutosRestantes} min${minutosRestantes !== 1 ? 's' : ''}`;
-      } else {
-        return `⏱️ Tiempo: ${minutos} min${minutos !== 1 ? 's' : ''}`;
-      }
     }
 
     let html = "<ol>";
@@ -92,7 +93,6 @@ async function mostrarRanking(modo) {
   }
 }
 
-
 // Verificar conexión al cargar
 window.addEventListener("load", () => {
   if (!navigator.onLine) {
@@ -101,7 +101,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// Volver desde el mensaje offline
+// Volver desde modo sin conexión
 volverJuegoBtn?.addEventListener("click", () => {
   window.location.href = "index.html";
 });
