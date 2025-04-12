@@ -530,7 +530,7 @@ const movies = [
         ]
     },
     {
-        title: ["Mensajero del Futuro", "The Postman", "El Mensajero del Fururo"],
+        title: ["Mensajero del Futuro", "The Postman", "El Mensajero del Futuro"],
         description: "Película de drama y ciencia ficción post-apocalíptica estrenada en 1997",
         audio: "audio/mensajerodelfuturo.mp3",
         hints: [
@@ -596,7 +596,7 @@ const movies = [
         ]
     },
     {
-        title: ["Robin Hood: Príncipe de los Ladrones", "Robin Hood", "Robin Hood Principe de los Ladrones"],
+        title: ["Robin Hood: Príncipe de los Ladrones", "Robin Hood", "Robin Hood Principe de los Ladrones", "Robin Hood el principe de los ladrones"],
         description: "Película de aventuras estrenada en 1991",
         audio: "audio/robinhood.mp3",
         hints: [
@@ -736,7 +736,7 @@ const movies = [
         ]
     },
     {
-        title: ["Interstellar", "Interestelar"],
+        title: ["Interstellar", "Interestelar", "Interestellar"],
         description: "Película de ciencia ficción estrenada en el año 2014",
         audio: "audio/interestelar.mp3",
         hints: [
@@ -1226,7 +1226,7 @@ const movies = [
         ]
     },
     {
-        title: ["Armageddon"],
+        title: ["Armageddon", "Armagedon", "Armaggedon", "Armaggeddon"],
         description: "Película de ciencia ficción estrenada en 1998",
         audio: "audio/armageddon.mp3",
         hints: [
@@ -1246,7 +1246,7 @@ const movies = [
         ]
     },
     {
-        title: ["Men In Black", "MIB", "Los Hombres de Negro"],
+        title: ["Men In Black", "MIB", "Los Hombres de Negro", "Hombres de Negro"],
         description: "Película de ciencia ficción estrenada en 1997",
         audio: "audio/meninblack.mp3",
         hints: [
@@ -1296,7 +1296,7 @@ const movies = [
         ]
     },
     {
-        title: ["James Bond"],
+        title: ["James Bond", "007"],
         description: "Saga de películas de acción y espionaje iniciada en 1962",
         audio: "audio/jamesbond.mp3",
         hints: [
