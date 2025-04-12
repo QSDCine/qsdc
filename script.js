@@ -2191,12 +2191,15 @@ function loadNextMovie() {
   intentosRestantes = 3;
   document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
 
+if (modo === "locura") {
+  descriptionEl.textContent = ""; // sin descripción
+  hintsContainer.innerHTML = ""; // sin pistas
+  surrenderBtn.style.display = "none"; // sin botón de rendirse
+  intentosRestantes = 1; // solo un intento
+} else {
   descriptionEl.textContent = currentMovie.description;
-  audioEl.src = currentMovie.audio;
-  audioEl.style.display = "block";
-  audioEl.play();
-
   hintsContainer.innerHTML = "";
+
   if (modo !== "extremo") {
     currentMovie.hints.forEach((hint, i) => {
       const btn = document.createElement("button");
@@ -2219,6 +2222,15 @@ function loadNextMovie() {
       hintsContainer.appendChild(div);
     });
   }
+
+  surrenderBtn.style.display = "inline-block";
+  intentosRestantes = 3; // por defecto
+}
+
+audioEl.src = currentMovie.audio;
+audioEl.style.display = "block";
+audioEl.play();
+
 
   resultMessage.textContent = "";
   answerInput.value = "";
