@@ -616,7 +616,7 @@ const movies = [
         ]
     },
     {
-        title: ["El tren de las 3:10", "3:10 to Yuma", "El tren de las 3 y 10"],
+        title: ["El tren de las 3:10", "3:10 to Yuma", "El tren de las 3 y 10", "El tren de las 3 10", "3 10 to yuma"],
         description: "Película western estrenada en 2007",
         audio: "audio/eltrendelas3y10.mp3",
         hints: [
@@ -626,7 +626,7 @@ const movies = [
         ]
     },
     {
-        title: ["El bueno, el feo y el malo"],
+        title: ["El bueno, el feo y el malo", "el bueno el feo y el malo"],
         description: "Película western estrenada en 1966",
         audio: "audio/elbuenoelfeoyelmalo.mp3",
         hints: [
