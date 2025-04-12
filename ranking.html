@@ -26,5 +26,12 @@
             <button id="volver-juego-btn">Volver al juego</button>
         </div>
         <script type="module" src="ranking.js"></script>
+        <script>
+  // Aplicar modo oscuro si está activado
+  if (localStorage.getItem("tema") === "oscuro") {
+    document.body.classList.add("dark-mode");
+  }
+</script>
+
     </body>
 </html>
