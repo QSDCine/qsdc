@@ -163,6 +163,25 @@ button {
     margin-top: 0.5rem;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode #quiz-container,
+body.dark-mode #intro,
+body.dark-mode #modo-menu {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
 
 
 /* Juego creado sin ánimo de lucro por Wildcrow */
