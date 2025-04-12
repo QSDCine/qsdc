@@ -163,25 +163,42 @@ button {
     margin-top: 0.5rem;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+/* Botón claro/oscuro */
+#theme-toggle-btn {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-body.dark-mode #quiz-container,
-body.dark-mode #intro,
-body.dark-mode #modo-menu {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+body.dark {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
 }
 
-body.dark-mode input,
-body.dark-mode button {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #555;
+body.dark #quiz-container,
+body.dark #intro,
+body.dark #modo-menu {
+    background-color: #1b263b;
+    color: #e0e1dd;
 }
 
+body.dark input,
+body.dark button {
+    background-color: #415a77;
+    color: #e0e1dd;
+    border: none;
+}
+
+body.dark .spoiler {
+    background-color: #778da9;
+    color: #0d1b2a;
+}
+
+body.dark button:hover {
+    background-color: #3a506b;
+}
 
 
 /* Juego creado sin ánimo de lucro por Wildcrow */
