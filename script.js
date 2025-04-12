@@ -2249,33 +2249,6 @@ submitBtn.onclick = () => {
     const titles = Array.isArray(currentMovie.title) ? currentMovie.title : [currentMovie.title];
     const isCorrect = titles.some((t) => limpiarTexto(t) === answer);
 
-    if (isCorrect) {
-        let score;
-        if (modo === "extremo") {
-            score = 7;
-        } else {
-            score = 5 - hintPenalty;
-            if (score < 0) score = 0;
-        }
-
-        rachaCorrectas++;
-        if (rachaCorrectas > mejorRacha) {
-            mejorRacha = rachaCorrectas;
-        }
-
-        // Bonificación por racha
-        if (rachaCorrectas % 10 === 0 && rachaCorrectas <= movies.length) {
-            resultMessage.textContent = `¡Correcto! 🔥 Bonificación por racha de ${rachaCorrectas}: +${rachaCorrectas} puntos extra!`;
-            score += rachaCorrectas;
-        } else {
-            resultMessage.textContent = "¡Correcto!";
-        }
-
-        resultMessage.className = "correcto";
-        updateScore(score);
-        updateStreak();
-        setTimeout(loadNextMovie, 2000);
-    } else {
         if (modo === "locura") {
   if (isCorrect) {
     let score = 10;
@@ -2307,7 +2280,35 @@ submitBtn.onclick = () => {
   setTimeout(loadNextMovie, 2000);
   return;
 }
+    
+    
+    if (isCorrect) {
+        let score;
+        if (modo === "extremo") {
+            score = 7;
+        } else {
+            score = 5 - hintPenalty;
+            if (score < 0) score = 0;
+        }
 
+        rachaCorrectas++;
+        if (rachaCorrectas > mejorRacha) {
+            mejorRacha = rachaCorrectas;
+        }
+
+        // Bonificación por racha
+        if (rachaCorrectas % 10 === 0 && rachaCorrectas <= movies.length) {
+            resultMessage.textContent = `¡Correcto! 🔥 Bonificación por racha de ${rachaCorrectas}: +${rachaCorrectas} puntos extra!`;
+            score += rachaCorrectas;
+        } else {
+            resultMessage.textContent = "¡Correcto!";
+        }
+
+        resultMessage.className = "correcto";
+        updateScore(score);
+        updateStreak();
+        setTimeout(loadNextMovie, 2000);
+    } else {
         if (modo === "extremo") {
             intentosRestantes--;
 
