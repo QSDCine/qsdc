@@ -530,7 +530,7 @@ const movies = [
         ]
     },
     {
-        title: ["Mensajero del Futuro", "The Postman"],
+        title: ["Mensajero del Futuro", "The Postman", "El Mensajero del Fururo"],
         description: "Película de drama y ciencia ficción post-apocalíptica estrenada en 1997",
         audio: "audio/mensajerodelfuturo.mp3",
         hints: [
@@ -746,7 +746,7 @@ const movies = [
         ]
     },
     {
-        title: ["Forrest Gump"],
+        title: ["Forrest Gump", "Forest Gump"],
         description: "Película dramática estrenada en el año 1994",
         audio: "audio/forrestgump.mp3",
         hints: [
@@ -1402,7 +1402,7 @@ const movies = [
         ]
     },
     {
-        title: ["Comando"],
+        title: ["Comando", "Commando"],
         description: "Película de acción estrenada en el año 1985",
         audio: "audio/comando.mp3",
         hints: [
@@ -1478,7 +1478,7 @@ const movies = [
         ]
     },
     {
-        title: ["E.T.", "ET", "ET El Extraterrestre", "E.T. El Extraterrestre"],
+        title: ["E.T. El Extraterrestre", "ET", "ET El Extraterrestre", "E.T."],
         description: "Película de ciencia ficción estrenada en el año 1982",
         audio: "audio/et.mp3",
         hints: [
@@ -1603,7 +1603,7 @@ const movies = [
         ]
     },
     {
-        title: ["Mad Max: Fury Road", "Mad Max", "Fury Road", "Mad Max Fury Road"],
+        title: ["Mad Max: Fury Road", "Mad Max", "Fury Road", "Mad Max Fury Road", "Mad Max Furia en la Carretera", "Furia en la Carretera"],
         description: "Película de acción post-apocalíptica estrenada en el año 2015",
         audio: "audio/madmaxfuryroad.mp3",
         hints: [
@@ -1643,7 +1643,7 @@ const movies = [
         ]
     },
     {
-        title: ["El Castigador (The Punisher)", "Punisher", "El Castigador"],
+        title: ["El Castigador (The Punisher)", "Punisher", "El Castigador", "The Punisher", "Castigador"],
         description: "Película de superhéroes, acción y drama estrenada en el año 2004",
         audio: "audio/thepunisher.mp3",
         hints: [
