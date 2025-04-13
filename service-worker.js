@@ -3,7 +3,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('qsdcine').then(cache => {
       return cache.addAll([
-"/audio/2001.mp3",
+    "/audio/2001.mp3",
     "/audio/28diasdespues.mp3",
     "/audio/300.mp3",
     "/audio/60segundos.mp3",
@@ -203,7 +203,9 @@ self.addEventListener('install', e => {
     "/audio/xxx.mp3",
     "/audio/youarenext.mp3",
     "/audio/zohan.mp3"
-      ]);
+      ]).catch(err => {
+        console.error('Error al cachear archivos:', err);
+        throw err; // fuerza el fallo para evitar que se instale si hay errores. Cambiar luego por ;
     })
   );
 });
