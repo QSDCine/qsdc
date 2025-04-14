@@ -2233,24 +2233,29 @@ if (modo === "locura") {
 
 const audioUrl = currentMovie.audio;
 
-try {
-  const cache = await caches.open('qsdcine');
-  const response = await cache.match(audioUrl);
+(async () => {
+  try {
+    const cache = await caches.open('qsdcine');
+    const response = await cache.match(audioUrl);
 
-  if (response) {
-    const blob = await response.blob();
-    const objectUrl = URL.createObjectURL(blob);
-    audioEl.src = objectUrl;
+    if (response) {
+      const blob = await response.blob();
+      const objectUrl = URL.createObjectURL(blob);
+      audioEl.src = objectUrl;
+    } else {
+      audioEl.src = audioUrl; // fallback
+    }
+
     audioEl.style.display = "block";
     audioEl.play();
-  } else {
-    audioEl.src = audioUrl; // fallback
+  } catch (error) {
+    console.error("Error al cargar el audio:", error);
+    audioEl.src = audioUrl; // por si acaso
     audioEl.style.display = "block";
     audioEl.play();
   }
-} catch (error) {
-  console.error("Error al cargar el audio:", error);
-}
+})();
+
 
 
 
