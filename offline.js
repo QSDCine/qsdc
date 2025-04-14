@@ -1,20 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   const progresoEl = document.getElementById("progreso");
   const botonDescarga = document.getElementById("descargar-btn");
-  const checkIcon = document.getElementById("check-icon");
-  const errorIcon = document.getElementById("error-icon");
-  const offlineMessage = document.getElementById("offline-message");
+  const successMsg = document.getElementById("success");
+  const errorMsg = document.getElementById("error");
   const volverJuegoBtn = document.getElementById("volver-juego-btn");
+  const volverJuegoOnlineBtn = document.getElementById("volver-juego-online");
+  const offlineWarning = document.getElementById("offline-warning");
+  const onlineUI = document.getElementById("online-ui");
 
-  // Mostrar mensaje si está offline
+  // Si está offline, mostrar aviso y ocultar UI online
   if (!navigator.onLine) {
-    document.getElementById("descarga-container").style.display = "none";
-    offlineMessage.style.display = "block";
+    if (offlineWarning) offlineWarning.style.display = "block";
+    if (onlineUI) onlineUI.style.display = "none";
+    if (volverJuegoBtn) {
+      volverJuegoBtn.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    }
     return;
   }
 
-  const audios = [
-    "audio/2001.mp3","audio/28diasdespues.mp3","audio/300.mp3","audio/60segundos.mp3",
+  if (volverJuegoOnlineBtn) {
+    volverJuegoOnlineBtn.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
+
+  const audios = ["audio/2001.mp3","audio/28diasdespues.mp3","audio/300.mp3","audio/60segundos.mp3",
     "audio/8millas.mp3","audio/atodogas.mp3","audio/abiertohastaelamanecer.mp3",
     "audio/aceventura.mp3","audio/aladdin.mp3","audio/alien.mp3","audio/amelie.mp3",
     "audio/americanbeauty.mp3","audio/americanhistoryx.mp3","audio/armaletal.mp3",
@@ -67,16 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "audio/tiempodematar.mp3","audio/titanic.mp3","audio/toystory.mp3","audio/unamentemaravillosa.mp3",
     "audio/vanhelsing.mp3","audio/venganza.mp3","audio/viernes13.mp3","audio/watchmen.mp3",
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
-    "audio/zohan.mp3"
-  ];
-
+    "audio/zohan.mp3"];
   const totalAudios = audios.length;
   let descargados = 0;
 
   botonDescarga.addEventListener("click", async () => {
     botonDescarga.disabled = true;
-    checkIcon.style.display = "none";
-    errorIcon.style.display = "none";
+    if (successMsg) successMsg.style.display = "none";
+    if (errorMsg) errorMsg.style.display = "none";
     progresoEl.textContent = `0 MB de 380 MB`;
 
     try {
@@ -84,18 +94,15 @@ document.addEventListener("DOMContentLoaded", () => {
       for (let i = 0; i < audios.length; i++) {
         await cache.add(audios[i]);
         descargados++;
-        const progresoMB = ((descargados * 1.9).toFixed(1)); // Estimación 1.9 MB por audio
+        const progresoMB = (descargados * 1.9).toFixed(1); // Estimación
         progresoEl.textContent = `${progresoMB} MB de 380 MB`;
       }
 
-      checkIcon.style.display = "inline";
+      if (successMsg) successMsg.style.display = "block";
     } catch (error) {
       console.error("Error al descargar:", error);
-      errorIcon.style.display = "inline";
+      if (errorMsg) errorMsg.style.display = "block";
     }
   });
-
-  volverJuegoBtn.addEventListener("click", () => {
-    window.location.href = "index.html";
-  });
 });
+
