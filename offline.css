@@ -6,95 +6,88 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: clamp(16px, 2vw, 24px);
+:root {
+  --bg-light: #f4f4f4;
+  --text-light: #222;
+  --bg-dark: #121212;
+  --text-dark: #f4f4f4;
+  --success: green;
+  --error: red;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-    color: #000;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* CONTENEDOR */
-#offline-container {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* BOTONES */
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
 button {
-    padding: 0.8rem 1.2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 0.3rem;
-    background-color: #007bff;
-    color: #fff;
-    margin: 1rem 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+button:hover:not(:disabled) {
+  background-color: #666;
 }
 
-/* INDICADORES DE ESTADO */
-#check,
-#error {
-    font-size: 2rem;
-    margin-top: 1rem;
-    display: none;
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-#check {
-    color: green;
-}
-
-#error {
-    color: red;
-}
-
-/* PROGRESO */
 #progreso {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
-/* TEMA OSCURO */
-body.dark-mode {
-    background-color: #0d1b2a;
-    color: #e0e1dd;
+#success {
+  color: var(--success);
+  font-size: 2rem;
+  display: none;
 }
 
-body.dark-mode #offline-container {
-    background-color: #1b263b;
-    color: #e0e1dd;
+#error {
+  color: var(--error);
+  font-size: 2rem;
+  display: none;
 }
 
-body.dark-mode button {
-    background-color: #415a77;
-    color: #e0e1dd;
+#offline-warning {
+  display: none;
+  color: var(--error);
 }
 
-body.dark-mode button:hover {
-    background-color: #3a506b;
+@media (max-width: 400px) {
+  button {
+    font-size: 0.95rem;
+    margin: 0.5rem;
+  }
 }
 
-body.dark-mode #check {
-    color: #4caf50;
-}
-
-body.dark-mode #error {
-    color: #f44336;
+/* Tema oscuro */
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
