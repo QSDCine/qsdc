@@ -81,6 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
     "audio/zohan.mp3"];
   const totalAudios = audios.length;
+  const estimacionMB = Math.ceil(totalAudios * 1.9); // Estimación 1.9 MB por audio
+progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
   let descargados = 0;
 
   botonDescarga.addEventListener("click", async () => {
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         await cache.add(audios[i]);
         descargados++;
         const progresoMB = (descargados * 1.9).toFixed(1); // Estimación
-        progresoEl.textContent = `${progresoMB} MB de 380 MB`;
+        progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
       }
 
       if (successMsg) successMsg.style.display = "block";
