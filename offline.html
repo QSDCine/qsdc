@@ -26,6 +26,12 @@
   </div>
 
   <script type="module" src="offline.js"></script>
+  <script>
+// Aplicar tema claro/oscuro según localStorage
+if (localStorage.getItem("tema") === "oscuro") {
+  document.body.classList.add("dark");
+}
+</script>
 </body>
 </html>
 
