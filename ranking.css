@@ -7,8 +7,8 @@ body {
 }
 
 #ranking-container {
-    max-width: 90%;
     width: 100%;
+    max-width: 1000px;
     margin: auto;
     background: white;
     padding: 2rem;
