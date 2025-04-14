@@ -1,10 +1,26 @@
+html {
+    font-size: clamp(16px, 2vw, 24px);
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     text-align: center;
     font-size: clamp(1rem, 2.5vw, 1.4rem); /* Tamaño de fuente adaptable */
+   min-height: 100vh;
+    overflow-x: hidden;
 }
+
+#app {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 
 #ranking-container {
      max-width: 90%;
@@ -83,3 +99,4 @@ body.dark-mode button {
 body.dark-mode button:hover {
     background-color: #3a506b;
 }
+
