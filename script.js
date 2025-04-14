@@ -2090,6 +2090,10 @@ changelogBtn.onclick = () => {
     changelogBox.style.display = changelogBox.style.display === "none" ? "block" : "none";
 };
 
+document.getElementById("offline-btn").onclick = () => {
+  window.location.href = "offline.html";
+};
+
 nameInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         startBtn.click();
