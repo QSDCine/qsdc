@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const progresoEl = document.getElementById("progreso");
   const botonDescarga = document.getElementById("descargar-btn");
   const successMsg = document.getElementById("success");
@@ -81,8 +81,26 @@ document.addEventListener("DOMContentLoaded", () => {
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
     "audio/zohan.mp3"];
   const totalAudios = audios.length;
-  const estimacionMB = Math.ceil(totalAudios * 1.95); // Estimación 1.95 MB por audio
-progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
+  const estimacionMB = Math.ceil(totalAudios * 1.95);
+  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
+
+  // Comprobar si ya están cacheados todos los audios
+  try {
+    const cache = await caches.open("qsdcine");
+    const keys = await cache.keys();
+    const audiosCacheados = audios.filter(audio =>
+      keys.some(request => request.url.includes(audio))
+    );
+    if (audiosCacheados.length === audios.length) {
+      botonDescarga.textContent = "Ya descargado";
+      botonDescarga.disabled = true;
+      if (successMsg) successMsg.style.display = "block";
+      return;
+    }
+  } catch (err) {
+    console.warn("No se pudo comprobar la caché:", err);
+  }
+
   let descargados = 0;
 
   botonDescarga.addEventListener("click", async () => {
@@ -97,7 +115,7 @@ progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
       for (let i = 0; i < audios.length; i++) {
         await cache.add(audios[i]);
         descargados++;
-        const progresoMB = (descargados * 1.95).toFixed(1); // Estimación
+        const progresoMB = (descargados * 1.95).toFixed(1);
         progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
       }
 
@@ -112,4 +130,5 @@ progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
     }
   });
 });
+
 
