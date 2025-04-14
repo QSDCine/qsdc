@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="offline.css" />
 </head>
 <body>
+  <div id="offline-container">
   <h1>Modo Offline</h1>
   <p>Desde aquí puedes descargar todos los audios del juego para poder jugar sin conexión.</p>
 
@@ -24,7 +25,7 @@
     </div>
     <button id="volver-juego-online">Volver al juego</button>
   </div>
-
+    </div>
   <script type="module" src="offline.js"></script>
   <script>
 // Aplicar tema claro/oscuro según localStorage
@@ -34,4 +35,5 @@ if (localStorage.getItem("tema") === "oscuro") {
 </script>
 </body>
 </html>
+
 
