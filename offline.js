@@ -119,7 +119,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       const cache = await caches.open("qsdcine");
       for (let i = 0; i < audios.length; i++) {
-        await cache.add(audios[i]);
+       const response = await fetch(audios[i]);
+if (response.ok) {
+  await cache.put(audios[i], response.clone());
+}
         descargados++;
         const progresoMB = (descargados * 1.95).toFixed(1);
         progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
