@@ -7,10 +7,6 @@ body {
 }
 
 #ranking-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow-y: auto;
     width: 100%;
     max-width: 1000px;
     margin: auto;
