@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "audio/elpactodeloslobos.mp3","audio/elpadrino.mp3","audio/elpatriota.mp3",
     "audio/elprimercaballero.mp3","audio/elquintoelemento.mp3","audio/elreyescorpion.mp3",
     "audio/elreyleon.mp3","audio/elsanto.mp3","audio/elsenordelosanillos.mp3",
-    "audio/eltrendelastresydiez.mp3","audio/elultimogranheroe.mp3","audio/elultimomohicano.mp3",
+    "audio/eltrendelas3y10.mp3","audio/elultimogranheroe.mp3","audio/elultimomohicano.mp3",
     "audio/elultimosamurai.mp3","audio/erinbrockovich.mp3","audio/evolution.mp3","audio/flashdance.mp3",
     "audio/footloose.mp3","audio/forrestgump.mp3","audio/frozen.mp3","audio/gangsofnewyork.mp3",
     "audio/ghost.mp3","audio/gladiator.mp3","audio/godzilla.mp3","audio/granstan.mp3","audio/grease.mp3",
