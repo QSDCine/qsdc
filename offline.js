@@ -8,24 +8,29 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
-  // DETECCIÓN Y GESTIÓN DE MODO OFFLINE
-  if (!navigator.onLine) {
-    if (offlineWarning) offlineWarning.style.display = "block";
-    if (onlineUI) onlineUI.style.display = "none";
-    if (volverJuegoBtn) {
-      volverJuegoBtn.addEventListener("click", () => {
-        window.location.href = "index.html";
-      });
+  // Comprobación offline
+  setTimeout(() => {
+    if (!navigator.onLine) {
+      if (offlineWarning) offlineWarning.style.display = "block";
+      if (onlineUI) onlineUI.style.display = "none";
+      if (volverJuegoBtn) {
+        volverJuegoBtn.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+      }
+    } else {
+      if (volverJuegoOnlineBtn) {
+        volverJuegoOnlineBtn.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+      }
     }
-    return;
-  }
+  }, 100); // Delay para asegurar carga
 
-  // Botón volver (modo online)
-  if (volverJuegoOnlineBtn) {
-    volverJuegoOnlineBtn.addEventListener("click", () => {
-      window.location.href = "index.html";
-    });
-  }
+  // Espera mínima antes de continuar si estás en línea
+  if (!navigator.onLine) return;
+
+
 
   const audios = ["audio/2001.mp3","audio/28diasdespues.mp3","audio/300.mp3","audio/60segundos.mp3",
     "audio/8millas.mp3","audio/atodogas.mp3","audio/abiertohastaelamanecer.mp3",
