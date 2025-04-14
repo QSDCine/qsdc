@@ -89,7 +89,7 @@ progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
     botonDescarga.disabled = true;
     if (successMsg) successMsg.style.display = "none";
     if (errorMsg) errorMsg.style.display = "none";
-    progresoEl.textContent = `0 MB de 380 MB`;
+    progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
     try {
       const cache = await caches.open("qsdcine");
