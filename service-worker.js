@@ -40,9 +40,12 @@ self.addEventListener('activate', (e) => {
 });
 
 // Fetch: usa cache si está, si no, pide al servidor
-self.addEventListener('fetch', (e) => {
-  e.respondWith(
-    caches.match(e.request).then((res) => res || fetch(e.request))
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      // Si hay en cualquier caché (qsdcine o qsdcine-core-vx), lo devuelve
+      return response || fetch(event.request);
+    })
   );
 });
 
