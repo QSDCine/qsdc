@@ -1,3 +1,13 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#ranking-container {
+  box-sizing: border-box;
+}
+
+
 html {
     font-size: clamp(16px, 2vw, 24px);
 }
@@ -8,7 +18,7 @@ body {
     margin: 0;
     text-align: center;
     font-size: clamp(1rem, 2.5vw, 1.4rem); /* Tamaño de fuente adaptable */
-   min-height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -18,8 +28,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
-
 
 
 #ranking-container {
@@ -99,4 +107,3 @@ body.dark-mode button {
 body.dark-mode button:hover {
     background-color: #3a506b;
 }
-
