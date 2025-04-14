@@ -4,6 +4,12 @@ const CORE_ASSETS = [
   'index.html',
   'style.css',
   'script.js',
+   'ranking.html',
+  'ranking.css',
+  'ranking.js',
+    'offline.html',
+  'offline.css',
+  'offline.js',
   'manifest.json',
   'icon-192.png',
   'icon-512.png'
