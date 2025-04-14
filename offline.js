@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "audio/meninblack.mp3","audio/mensajerodelfuturo.mp3","audio/mentespeligrosas.mp3",
     "audio/milliondollarbaby.mp3","audio/misionimposible.mp3","audio/mulan.mp3","audio/oceanseleven.mp3",
     "audio/orgulloyprejuicio.mp3","audio/origen.mp3","audio/parquejurasico.mp3",
-    "audio/pequeñamisssunshine.mp3","audio/pesadillaantesdenavidad.mp3","audio/pesadillanenelmstreet.mp3",
+    "audio/pequeñamisssunshine.mp3","audio/pesadillaantesdenavidad.mp3","audio/pesadillaenelmstreet.mp3",
     "audio/piratasdelcaribe.mp3","audio/pitchblack.mp3","audio/pokemon.mp3","audio/predator.mp3",
     "audio/prettywoman.mp3","audio/pulpfiction.mp3","audio/rambo.mp3","audio/regresoalfuturo.mp3",
     "audio/reservoirdogs.mp3","audio/residentevil.mp3","audio/robinhood.mp3","audio/robocop.mp3",
