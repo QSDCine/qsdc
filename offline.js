@@ -86,8 +86,8 @@ progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
   let descargados = 0;
 
   botonDescarga.addEventListener("click", async () => {
-    botonDescarga.disabled = true;
     botonDescarga.textContent = "Descargando...";
+    botonDescarga.disabled = true;
     if (successMsg) successMsg.style.display = "none";
     if (errorMsg) errorMsg.style.display = "none";
     progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
@@ -103,6 +103,7 @@ progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
       if (successMsg) successMsg.style.display = "block";
       botonDescarga.textContent = "Completado";
+      botonDescarga.disabled = true;
     } catch (error) {
       console.error("Error al descargar:", error);
       if (errorMsg) errorMsg.style.display = "block";
