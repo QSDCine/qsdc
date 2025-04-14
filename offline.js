@@ -135,7 +135,7 @@ if (response.ok) {
       console.error("Error al descargar:", error);
       if (errorMsg) errorMsg.style.display = "block";
       botonDescarga.textContent = "Error al descargar";
-      botonDescarga.disabled = true;
+      
     }
   });
 });
