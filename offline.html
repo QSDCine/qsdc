@@ -9,16 +9,14 @@
 <body>
   <div id="app">
   <div id="offline-container">
+     <div id="offline-warning" style="display: none;">
+    <p>No tienes conexión a Internet. No se puede realizar la descarga.</p>
+    <button id="volver-juego-btn">Volver al juego</button>
+  </div>
     <div id="online-ui">
   <h1>Modo Offline</h1>
   <p>Desde aquí puedes descargar todos los audios del juego para poder jugar sin conexión.</p>
 
-  <div id="offline-warning" style="display: none;">
-    <p>No tienes conexión a Internet. No se puede realizar la descarga.</p>
-    <button id="volver-juego-btn">Volver al juego</button>
-  </div>
-
-  
     <button id="descargar-btn">Iniciar descarga</button>
     <div id="status">
       <div id="progreso">0 MB de 380 MB</div>
