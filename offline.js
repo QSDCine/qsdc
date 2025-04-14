@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
-  // Si está offline, mostrar aviso y ocultar UI online
+  // DETECCIÓN Y GESTIÓN DE MODO OFFLINE
   if (!navigator.onLine) {
     if (offlineWarning) offlineWarning.style.display = "block";
     if (onlineUI) onlineUI.style.display = "none";
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
+  // Botón volver (modo online)
   if (volverJuegoOnlineBtn) {
     volverJuegoOnlineBtn.addEventListener("click", () => {
       window.location.href = "index.html";
