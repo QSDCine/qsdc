@@ -2231,9 +2231,27 @@ if (modo === "locura") {
   intentosRestantes = 3; // por defecto
 }
 
-audioEl.src = currentMovie.audio;
-audioEl.style.display = "block";
-audioEl.play();
+const audioUrl = currentMovie.audio;
+
+try {
+  const cache = await caches.open('qsdcine');
+  const response = await cache.match(audioUrl);
+
+  if (response) {
+    const blob = await response.blob();
+    const objectUrl = URL.createObjectURL(blob);
+    audioEl.src = objectUrl;
+    audioEl.style.display = "block";
+    audioEl.play();
+  } else {
+    audioEl.src = audioUrl; // fallback
+    audioEl.style.display = "block";
+    audioEl.play();
+  }
+} catch (error) {
+  console.error("Error al cargar el audio:", error);
+}
+
 
 
   resultMessage.textContent = "";
