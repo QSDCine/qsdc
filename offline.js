@@ -7,6 +7,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   const volverJuegoOnlineBtn = document.getElementById("volver-juego-online");
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
+  async function obtenerTamanoTotalAudios(audios) {
+  let totalBytes = 0;
+
+  for (let i = 0; i < audios.length; i++) {
+    try {
+      const response = await fetch(audios[i], { method: 'HEAD' });
+      const contentLength = response.headers.get('Content-Length');
+
+      if (contentLength) {
+        totalBytes += parseInt(contentLength, 10);
+      } else {
+        console.warn(`No se pudo obtener el tamaño de ${audios[i]}`);
+      }
+    } catch (err) {
+      console.warn(`Error al obtener HEAD de ${audios[i]}`, err);
+    }
+  }
+
+  return totalBytes;
+}
+
 
 
   // Comprobación offline
