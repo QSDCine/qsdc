@@ -148,7 +148,8 @@ botonDescarga.addEventListener("click", async () => {
   botonDescarga.disabled = true;
   if (successMsg) successMsg.style.display = "none";
   if (errorMsg) errorMsg.style.display = "none";
-  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
+  progresoEl.textContent = `0 MB de ${totalMB} MB`;
+
 
   try {
     const cache = await caches.open("qsdcine");
