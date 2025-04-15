@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     "audio/americanbeauty.mp3","audio/americanhistoryx.mp3","audio/armaletal.mp3",
     "audio/armageddon.mp3","audio/atlantis.mp3","audio/austinpowers.mp3","audio/avengers.mp3",
     "audio/babydriver.mp3","audio/bailandoconlobos.mp3","audio/batman.mp3","audio/beetlejuice.mp3",
-    "audio/baeowulf.mp3","audio/bigfish.mp3","audio/birdman.mp3","audio/blade.mp3",
+    "audio/beowulf.mp3","audio/bigfish.mp3","audio/birdman.mp3","audio/blade.mp3",
     "audio/bladerunner.mp3","audio/bohemianrhapsody.mp3","audio/braveheart.mp3",
     "audio/cadenaperpetua.mp3","audio/carrosdefuego.mp3","audio/comando.mp3","audio/conan.mp3",
     "audio/crepusculo.mp3","audio/deprofesionduro.mp3","audio/deadpool.mp3","audio/deepbluesea.mp3",
