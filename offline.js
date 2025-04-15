@@ -115,24 +115,6 @@ try {
 }
 
 
-  
-  // Comprobar si ya están cacheados todos los audios
-  try {
-    const cache = await caches.open("qsdcine");
-    const keys = await cache.keys();
-    const audiosCacheados = audios.filter(audio =>
-      keys.some(request => request.url.includes(audio))
-    );
-    if (audiosCacheados.length === audios.length) {
-      botonDescarga.textContent = "Ya descargado";
-      botonDescarga.disabled = true;
-      if (successMsg) successMsg.style.display = "block";
-      return;
-    }
-  } catch (err) {
-    console.warn("No se pudo comprobar la caché:", err);
-  }
-
   let descargados = 0;
 
 botonDescarga.addEventListener("click", async () => {
