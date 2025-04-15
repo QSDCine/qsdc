@@ -122,6 +122,7 @@ const faltan = audios.some(audio =>
   let descargados = 0;
 
 botonDescarga.addEventListener("click", async () => {
+  descargados = 0;
   botonDescarga.textContent = "Descargando...";
   botonDescarga.disabled = true;
   if (successMsg) successMsg.style.display = "none";
