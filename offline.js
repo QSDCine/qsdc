@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const cachedRequests = await cache.keys();
 
     const faltan = audios.some(audio => {
-      const fullUrl = location.origin + "/qsdc/" + audio;
+     const fullUrl = new URL(audio, location.href).href;
       return !cachedRequests.find(req => req.url === fullUrl);
     });
 
