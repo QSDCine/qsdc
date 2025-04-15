@@ -108,7 +108,6 @@ try {
       botonDescarga.disabled = true;
       botonDescarga.textContent = "Completado";
     }
-    return; // Evita volver a hacer la segunda comprobación más abajo
   }
 } catch (err) {
   console.error("Error comprobando la caché:", err);
