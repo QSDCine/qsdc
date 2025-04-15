@@ -125,9 +125,6 @@ const faltan = audios.some(audio =>
   !cachedRequests.some(req => decodeURIComponent(req.url).endsWith(audio))
 );
 
-  
-
-
   if (!faltan) {
       
     if (successMsg) {
