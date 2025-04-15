@@ -8,31 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
- try {
-  const cache = await caches.open("qsdcine");
-  const cachedRequests = await cache.keys();
 
-  const faltan = audios.some(audio =>
-    !cachedRequests.some(req => req.url.includes(audio))
-  );
-
-  if (!faltan) {
-    if (successMsg) {
-      successMsg.style.display = "block";
-      successMsg.textContent = "✅ Todos los audios están descargados";
-    }
-    if (botonDescarga) {
-      botonDescarga.disabled = true;
-      botonDescarga.textContent = "Completado";
-    }
-  }
-} catch (err) {
-  console.error("Error comprobando la caché:", err);
-}
-
-
-  
-  
   // Comprobación offline
   setTimeout(() => {
     if (!navigator.onLine) {
@@ -115,6 +91,31 @@ document.addEventListener("DOMContentLoaded", async () => {
   const estimacionMB = Math.ceil(totalAudios * 1.95);
   progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
+try {
+  const cache = await caches.open("qsdcine");
+  const cachedRequests = await cache.keys();
+
+  const faltan = audios.some(audio =>
+    !cachedRequests.some(req => req.url.includes(audio))
+  );
+
+  if (!faltan) {
+    if (successMsg) {
+      successMsg.style.display = "block";
+      successMsg.textContent = "✅ Todos los audios están descargados";
+    }
+    if (botonDescarga) {
+      botonDescarga.disabled = true;
+      botonDescarga.textContent = "Completado";
+    }
+    return; // Evita volver a hacer la segunda comprobación más abajo
+  }
+} catch (err) {
+  console.error("Error comprobando la caché:", err);
+}
+
+
+  
   // Comprobar si ya están cacheados todos los audios
   try {
     const cache = await caches.open("qsdcine");
