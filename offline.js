@@ -8,6 +8,32 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
+  // Verificar si todos los audios están ya en caché
+  try {
+    const cache = await caches.open("qsdcine");
+    const cachedRequests = await cache.keys();
+
+    const faltan = audios.some(audio => {
+      const fullUrl = location.origin + "/qsdc/" + audio;
+      return !cachedRequests.find(req => req.url === fullUrl);
+    });
+
+    if (!faltan) {
+      if (successMsg) {
+        successMsg.style.display = "block";
+        successMsg.textContent = "✅ Todos los audios están descargados";
+      }
+      if (botonDescarga) {
+        botonDescarga.disabled = true;
+        botonDescarga.textContent = "Completado";
+      }
+    }
+  } catch (err) {
+    console.error("Error comprobando la caché:", err);
+  }
+
+  
+  
   // Comprobación offline
   setTimeout(() => {
     if (!navigator.onLine) {
