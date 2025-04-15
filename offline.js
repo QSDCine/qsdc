@@ -163,7 +163,7 @@ botonDescarga.addEventListener("click", async () => {
       }
     }
 
-    // ✅ Si todo va bien
+    // Si todo va bien
     if (successMsg) successMsg.style.display = "block";
     botonDescarga.textContent = "Completado";
     botonDescarga.disabled = true;
