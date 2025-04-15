@@ -140,7 +140,7 @@ const faltan = audios.some(audio =>
 }
 
 
-  let descargados = 0;
+  let bytesDescargados = 0;
 
 botonDescarga.addEventListener("click", async () => {
   descargados = 0;
@@ -163,9 +163,9 @@ botonDescarga.addEventListener("click", async () => {
     
         const contentLength = response.headers.get('Content-Length');
 if (contentLength) {
-  descargados += parseInt(contentLength, 10);
+  bytesDescargados += parseInt(contentLength, 10);
 }
-const progresoMB = (descargados / (1024 * 1024)).toFixed(1);
+const progresoMB = (bytesDescargados / (1024 * 1024)).toFixed(1);
 progresoEl.textContent = `${progresoMB} MB de ${totalMB} MB`;
 
       } catch (err) {
