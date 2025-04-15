@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
-  console.log("🟢 DOM completamente cargado");
-console.log("📦 Botón de descarga:", botonDescarga);
-
 
   // Comprobación offline
   setTimeout(() => {
@@ -37,7 +34,7 @@ console.log("📦 Botón de descarga:", botonDescarga);
     "audio/americanbeauty.mp3","audio/americanhistoryx.mp3","audio/armaletal.mp3",
     "audio/armageddon.mp3","audio/atlantis.mp3","audio/austinpowers.mp3","audio/avengers.mp3",
     "audio/babydriver.mp3","audio/bailandoconlobos.mp3","audio/batman.mp3","audio/beetlejuice.mp3",
-    "audio/baeowulf.mp3","audio/bigfish.mp3","audio/birdman.mp3","audio/blade.mp3",
+    "audio/beowulf.mp3","audio/bigfish.mp3","audio/birdman.mp3","audio/blade.mp3",
     "audio/bladerunner.mp3","audio/bohemianrhapsody.mp3","audio/braveheart.mp3",
     "audio/cadenaperpetua.mp3","audio/carrosdefuego.mp3","audio/comando.mp3","audio/conan.mp3",
     "audio/crepusculo.mp3","audio/deprofesionduro.mp3","audio/deadpool.mp3","audio/deepbluesea.mp3",
@@ -88,11 +85,11 @@ console.log("📦 Botón de descarga:", botonDescarga);
   const totalAudios = audios.length;
   const estimacionMB = Math.ceil(totalAudios * 1.95);
   progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
-console.log("✅ Entrando en comprobación de caché")
+
 try {
   const cache = await caches.open("qsdcine");
   const cachedRequests = await cache.keys();
-  console.log("🧠 Cached URLs:");
+
 cachedRequests.forEach(req => console.log(req.url));
 
 
@@ -100,11 +97,11 @@ const faltan = audios.some(audio =>
   !cachedRequests.some(req => decodeURIComponent(req.url).endsWith(audio))
 );
 
-  console.log("¿Faltan audios?", faltan);
+  
 
 
   if (!faltan) {
-      console.log("✅ Todos los audios están en caché");
+      
     if (successMsg) {
       successMsg.style.display = "block";
       successMsg.textContent = "✅ Todos los audios están descargados";
@@ -144,7 +141,7 @@ botonDescarga.addEventListener("click", async () => {
       } catch (err) {
         console.error("Error al descargar archivo:", err);
         if (errorMsg) errorMsg.style.display = "block";
-        botonDescarga.textContent = "Error al descargar";
+        botonDescarga.textContent = "Descargar";
         botonDescarga.disabled = false; // Permitir reintentar
         return; // Detener descarga si falla uno
       }
