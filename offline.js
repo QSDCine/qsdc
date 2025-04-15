@@ -141,7 +141,7 @@ botonDescarga.addEventListener("click", async () => {
       } catch (err) {
         console.error("Error al descargar archivo:", err);
         if (errorMsg) errorMsg.style.display = "block";
-        botonDescarga.textContent = "Descargar";
+        botonDescarga.textContent = "Reintentar";
         botonDescarga.disabled = false; // Permitir reintentar
         return; // Detener descarga si falla uno
       }
@@ -155,7 +155,7 @@ botonDescarga.addEventListener("click", async () => {
   } catch (error) {
     console.error("Error general en la descarga:", error);
     if (errorMsg) errorMsg.style.display = "block";
-    botonDescarga.textContent = "Error al descargar";
+    botonDescarga.textContent = "Reintentar";
     botonDescarga.disabled = false;
   }
 });
