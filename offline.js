@@ -97,8 +97,9 @@ cachedRequests.forEach(req => console.log(req.url));
 
 
 const faltan = audios.some(audio =>
-  !cachedRequests.some(req => req.url.endsWith(audio))
+  !cachedRequests.some(req => decodeURIComponent(req.url).endsWith(audio))
 );
+
   console.log("¿Faltan audios?", faltan);
 
 
