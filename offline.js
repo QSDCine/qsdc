@@ -159,7 +159,7 @@ botonDescarga.addEventListener("click", async () => {
         if (!response.ok) throw new Error(`Fallo en ${audios[i]}`);
 
         await cache.put(audios[i], response.clone());
-        descargados++;
+    
         const contentLength = response.headers.get('Content-Length');
 if (contentLength) {
   descargados += parseInt(contentLength, 10);
