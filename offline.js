@@ -104,6 +104,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
     "audio/zohan.mp3"];
   const totalAudios = audios.length;
+let totalBytes = 0;
+
+// Calculamos el tamaño real antes de mostrar el progreso inicial
+totalBytes = await obtenerTamanoTotalAudios(audios);
+const totalMB = (totalBytes / (1024 * 1024)).toFixed(1);
+progresoEl.textContent = `0 MB de ${totalMB} MB`;
+
   const estimacionMB = Math.ceil(totalAudios * 1.95);
   progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
@@ -157,8 +164,13 @@ botonDescarga.addEventListener("click", async () => {
 
         await cache.put(audios[i], response.clone());
         descargados++;
-        const progresoMB = (descargados * 1.95).toFixed(1);
-        progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
+        const contentLength = response.headers.get('Content-Length');
+if (contentLength) {
+  descargados += parseInt(contentLength, 10);
+}
+const progresoMB = (descargados / (1024 * 1024)).toFixed(1);
+progresoEl.textContent = `${progresoMB} MB de ${totalMB} MB`;
+
       } catch (err) {
         console.error("Error al descargar archivo:", err);
         if (errorMsg) errorMsg.style.display = "block";
