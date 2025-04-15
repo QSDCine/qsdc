@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
+  console.log("🟢 DOM completamente cargado");
+console.log("📦 Botón de descarga:", botonDescarga);
+
 
   // Comprobación offline
   setTimeout(() => {
@@ -90,10 +93,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const totalAudios = audios.length;
   const estimacionMB = Math.ceil(totalAudios * 1.95);
   progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
-
+console.log("✅ Entrando en comprobación de caché")
 try {
   const cache = await caches.open("qsdcine");
   const cachedRequests = await cache.keys();
+  console.log("🧠 Cached URLs:");
+cachedRequests.forEach(req => console.log(req.url));
+console.log("¿Faltan audios?", faltan);
 
 const faltan = audios.some(audio =>
   !cachedRequests.some(req => req.url.endsWith(audio))
@@ -101,6 +107,7 @@ const faltan = audios.some(audio =>
 
 
   if (!faltan) {
+      console.log("✅ Todos los audios están en caché");
     if (successMsg) {
       successMsg.style.display = "block";
       successMsg.textContent = "✅ Todos los audios están descargados";
