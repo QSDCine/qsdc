@@ -1,4 +1,4 @@
-const CACHE_NAME = 'qsdcine-core-v1';
+const CACHE_NAME = 'qsdcine';
 const CORE_ASSETS = [
   './',
   'index.html',
