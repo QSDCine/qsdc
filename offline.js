@@ -99,11 +99,12 @@ try {
   const cachedRequests = await cache.keys();
   console.log("🧠 Cached URLs:");
 cachedRequests.forEach(req => console.log(req.url));
-console.log("¿Faltan audios?", faltan);
+
 
 const faltan = audios.some(audio =>
   !cachedRequests.some(req => req.url.endsWith(audio))
 );
+  console.log("¿Faltan audios?", faltan);
 
 
   if (!faltan) {
