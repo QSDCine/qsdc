@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     "audio/zohan.mp3"];
   const totalAudios = audios.length;
   const estimacionMB = Math.ceil(totalAudios * 1.95);
-  progresoEl.textContent = 0 MB de ${estimacionMB} MB;
+  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
 try {
   const cache = await caches.open("qsdcine");
@@ -124,7 +124,7 @@ botonDescarga.addEventListener("click", async () => {
   botonDescarga.disabled = true;
   if (successMsg) successMsg.style.display = "none";
   if (errorMsg) errorMsg.style.display = "none";
-  progresoEl.textContent = 0 MB de ${estimacionMB} MB;
+  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
   try {
     const cache = await caches.open("qsdcine");
@@ -132,12 +132,12 @@ botonDescarga.addEventListener("click", async () => {
     for (let i = 0; i < audios.length; i++) {
       try {
         const response = await fetch(audios[i]);
-        if (!response.ok) throw new Error(Fallo en ${audios[i]});
+        if (!response.ok) throw new Error(`Fallo en ${audios[i]}`);
 
         await cache.put(audios[i], response.clone());
         descargados++;
         const progresoMB = (descargados * 1.95).toFixed(1);
-        progresoEl.textContent = ${progresoMB} MB de ${estimacionMB} MB;
+        progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
       } catch (err) {
         console.error("Error al descargar archivo:", err);
         if (errorMsg) errorMsg.style.display = "block";
@@ -161,3 +161,4 @@ botonDescarga.addEventListener("click", async () => {
 });
 
 });
+
