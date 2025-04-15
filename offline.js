@@ -111,8 +111,7 @@ totalBytes = await obtenerTamanoTotalAudios(audios);
 const totalMB = (totalBytes / (1024 * 1024)).toFixed(1);
 progresoEl.textContent = `0 MB de ${totalMB} MB`;
 
-  const estimacionMB = Math.ceil(totalAudios * 1.95);
-  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
+  
 
 try {
   const cache = await caches.open("qsdcine");
