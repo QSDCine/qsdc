@@ -135,35 +135,47 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let descargados = 0;
 
-  botonDescarga.addEventListener("click", async () => {
-    botonDescarga.textContent = "Descargando...";
-    botonDescarga.disabled = true;
-    if (successMsg) successMsg.style.display = "none";
-    if (errorMsg) errorMsg.style.display = "none";
-    progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
+botonDescarga.addEventListener("click", async () => {
+  botonDescarga.textContent = "Descargando...";
+  botonDescarga.disabled = true;
+  if (successMsg) successMsg.style.display = "none";
+  if (errorMsg) errorMsg.style.display = "none";
+  progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
 
-    try {
-      const cache = await caches.open("qsdcine");
-      for (let i = 0; i < audios.length; i++) {
-       const response = await fetch(audios[i]);
-if (response.ok) {
-  await cache.put(audios[i], response.clone());
-}
+  try {
+    const cache = await caches.open("qsdcine");
+
+    for (let i = 0; i < audios.length; i++) {
+      try {
+        const response = await fetch(audios[i]);
+        if (!response.ok) throw new Error(`Fallo en ${audios[i]}`);
+
+        await cache.put(audios[i], response.clone());
         descargados++;
         const progresoMB = (descargados * 1.95).toFixed(1);
         progresoEl.textContent = `${progresoMB} MB de ${estimacionMB} MB`;
+      } catch (err) {
+        console.error("Error al descargar archivo:", err);
+        if (errorMsg) errorMsg.style.display = "block";
+        botonDescarga.textContent = "Error al descargar";
+        botonDescarga.disabled = false; // Permitir reintentar
+        return; // Detener descarga si falla uno
       }
-
-      if (successMsg) successMsg.style.display = "block";
-      botonDescarga.textContent = "Completado";
-      botonDescarga.disabled = true;
-    } catch (error) {
-      console.error("Error al descargar:", error);
-      if (errorMsg) errorMsg.style.display = "block";
-      botonDescarga.textContent = "Error al descargar";
-      
     }
-  });
+
+    // ✅ Si todo va bien
+    if (successMsg) successMsg.style.display = "block";
+    botonDescarga.textContent = "Completado";
+    botonDescarga.disabled = true;
+
+  } catch (error) {
+    console.error("Error general en la descarga:", error);
+    if (errorMsg) errorMsg.style.display = "block";
+    botonDescarga.textContent = "Error al descargar";
+    botonDescarga.disabled = false;
+  }
+});
+
 });
 
 
