@@ -8,42 +8,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   const offlineWarning = document.getElementById("offline-warning");
   const onlineUI = document.getElementById("online-ui");
 
-  // Función para obtener tamaños de todos los audios
-  async function obtenerTamanoTotalAudios(audios) {
-    let totalBytes = 0;
-    let tamaños = [];
-
-    for (let i = 0; i < audios.length; i++) {
-      try {
-        const response = await fetch(audios[i], { method: 'HEAD' });
-        const contentLength = response.headers.get('Content-Length');
-        if (contentLength) {
-          const bytes = parseInt(contentLength, 10);
-          tamaños.push(bytes);
-          totalBytes += bytes;
-        } else {
-          tamaños.push(0);
-          console.warn(`No se pudo obtener el tamaño de ${audios[i]}`);
-        }
-      } catch (err) {
-        tamaños.push(0);
-        console.warn(`Error al obtener HEAD de ${audios[i]}`, err);
-      }
-    }
-
-    return { totalBytes, tamaños };
-  }
 
   // Comprobación offline
   setTimeout(() => {
     if (!navigator.onLine) {
-      offlineWarning?.style.setProperty("display", "block");
-      onlineUI?.style.setProperty("display", "none");
-      volverJuegoBtn?.addEventListener("click", () => window.location.href = "index.html");
+      if (offlineWarning) offlineWarning.style.display = "block";
+      if (onlineUI) onlineUI.style.display = "none";
+      if (volverJuegoBtn) {
+        volverJuegoBtn.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+      }
     } else {
-      volverJuegoOnlineBtn?.addEventListener("click", () => window.location.href = "index.html");
+      if (volverJuegoOnlineBtn) {
+        volverJuegoOnlineBtn.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+      }
     }
-  }, 100);
+  }, 100); // Delay para asegurar carga
 
   const audios = ["audio/2001.mp3","audio/28diasdespues.mp3","audio/300.mp3","audio/60segundos.mp3",
     "audio/8millas.mp3","audio/atodogas.mp3","audio/abiertohastaelamanecer.mp3",
@@ -99,73 +82,82 @@ document.addEventListener("DOMContentLoaded", async () => {
     "audio/vanhelsing.mp3","audio/venganza.mp3","audio/viernes13.mp3","audio/watchmen.mp3",
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
     "audio/zohan.mp3"];
+  const totalAudios = audios.length;
+  const estimacionMB = Math.ceil(totalAudios * 1.95);
+  progresoEl.textContent = 0 MB de ${estimacionMB} MB;
 
-  // Obtener tamaños
-  const { totalBytes, tamaños } = await obtenerTamanoTotalAudios(audios);
-  const totalMB = (totalBytes / (1024 * 1024)).toFixed(1);
-  progresoEl.textContent = `0 MB de ${totalMB} MB`;
+try {
+  const cache = await caches.open("qsdcine");
+  const cachedRequests = await cache.keys();
 
-  // Comprobar si ya están en caché
-  try {
-    const cache = await caches.open("qsdcine");
-    const cachedRequests = await cache.keys();
+cachedRequests.forEach(req => console.log(req.url));
 
-    const faltan = audios.some(audio =>
-      !cachedRequests.some(req => decodeURIComponent(req.url).endsWith(audio))
-    );
 
-    if (!faltan) {
+const faltan = audios.some(audio =>
+  !cachedRequests.some(req => decodeURIComponent(req.url).endsWith(audio))
+);
+
+  
+
+
+  if (!faltan) {
+      
+    if (successMsg) {
       successMsg.style.display = "block";
       successMsg.textContent = "✅ Todos los audios están descargados";
+    }
+    if (botonDescarga) {
       botonDescarga.disabled = true;
       botonDescarga.textContent = "Completado";
     }
-  } catch (err) {
-    console.error("Error comprobando la caché:", err);
   }
+} catch (err) {
+  console.error("Error comprobando la caché:", err);
+}
 
-  // Descarga
-  botonDescarga.addEventListener("click", async () => {
-    let bytesDescargados = 0;
-    botonDescarga.textContent = "Descargando...";
-    botonDescarga.disabled = true;
-    successMsg.style.display = "none";
-    errorMsg.style.display = "none";
-    progresoEl.textContent = `0 MB de ${totalMB} MB`;
 
-    try {
-      const cache = await caches.open("qsdcine");
+  let descargados = 0;
 
-      for (let i = 0; i < audios.length; i++) {
-        try {
-          const response = await fetch(audios[i]);
-          if (!response.ok) throw new Error(`Fallo en ${audios[i]}`);
+botonDescarga.addEventListener("click", async () => {
+  descargados = 0;
+  botonDescarga.textContent = "Descargando...";
+  botonDescarga.disabled = true;
+  if (successMsg) successMsg.style.display = "none";
+  if (errorMsg) errorMsg.style.display = "none";
+  progresoEl.textContent = 0 MB de ${estimacionMB} MB;
 
-          await cache.put(audios[i], response.clone());
+  try {
+    const cache = await caches.open("qsdcine");
 
-          bytesDescargados += tamaños[i];
-          const progresoMB = (bytesDescargados / (1024 * 1024)).toFixed(1);
-          progresoEl.textContent = `${progresoMB} MB de ${totalMB} MB`;
+    for (let i = 0; i < audios.length; i++) {
+      try {
+        const response = await fetch(audios[i]);
+        if (!response.ok) throw new Error(Fallo en ${audios[i]});
 
-        } catch (err) {
-          console.error("Error al descargar archivo:", err);
-          errorMsg.style.display = "block";
-          botonDescarga.textContent = "Reintentar";
-          botonDescarga.disabled = false;
-          return;
-        }
+        await cache.put(audios[i], response.clone());
+        descargados++;
+        const progresoMB = (descargados * 1.95).toFixed(1);
+        progresoEl.textContent = ${progresoMB} MB de ${estimacionMB} MB;
+      } catch (err) {
+        console.error("Error al descargar archivo:", err);
+        if (errorMsg) errorMsg.style.display = "block";
+        botonDescarga.textContent = "Reintentar";
+        botonDescarga.disabled = false; // Permitir reintentar
+        return; // Detener descarga si falla uno
       }
-
-      successMsg.style.display = "block";
-      botonDescarga.textContent = "Completado";
-      botonDescarga.disabled = true;
-
-    } catch (error) {
-      console.error("Error general en la descarga:", error);
-      errorMsg.style.display = "block";
-      botonDescarga.textContent = "Reintentar";
-      botonDescarga.disabled = false;
     }
-  });
+
+    // Si todo va bien
+    if (successMsg) successMsg.style.display = "block";
+    botonDescarga.textContent = "Completado";
+    botonDescarga.disabled = true;
+
+  } catch (error) {
+    console.error("Error general en la descarga:", error);
+    if (errorMsg) errorMsg.style.display = "block";
+    botonDescarga.textContent = "Reintentar";
+    botonDescarga.disabled = false;
+  }
 });
 
+});
