@@ -31,11 +31,6 @@ console.log("📦 Botón de descarga:", botonDescarga);
     }
   }, 100); // Delay para asegurar carga
 
-  // Espera mínima antes de continuar si estás en línea
-  if (!navigator.onLine) return;
-
-
-
   const audios = ["audio/2001.mp3","audio/28diasdespues.mp3","audio/300.mp3","audio/60segundos.mp3",
     "audio/8millas.mp3","audio/atodogas.mp3","audio/abiertohastaelamanecer.mp3",
     "audio/aceventura.mp3","audio/aladdin.mp3","audio/alien.mp3","audio/amelie.mp3",
