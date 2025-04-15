@@ -95,9 +95,10 @@ try {
   const cache = await caches.open("qsdcine");
   const cachedRequests = await cache.keys();
 
-  const faltan = audios.some(audio =>
-    !cachedRequests.some(req => req.url.includes(audio))
-  );
+const faltan = audios.some(audio =>
+  !cachedRequests.some(req => req.url.endsWith(audio))
+);
+
 
   if (!faltan) {
     if (successMsg) {
