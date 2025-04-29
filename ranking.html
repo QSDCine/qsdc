@@ -31,7 +31,16 @@
 <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore-compat.js"></script>
 
-<script src="firestore-utils.js"></script>
+<script>
+  if (navigator.onLine) {
+    const script = document.createElement("script");
+    script.src = "firestore-utils.js";
+    document.head.appendChild(script);
+  } else {
+    console.warn("Sin conexión.");
+  }
+</script>
+
 <script src="ranking.js"></script>
 
         <script>
