@@ -35,13 +35,19 @@
   if (navigator.onLine) {
     const script = document.createElement("script");
     script.src = "firestore-utils.js";
-    document.head.appendChild(script);
+    script.onload = () => {
+      const rankingScript = document.createElement("script");
+      rankingScript.src = "ranking.js";
+      document.head.appendChild(rankingScript);
+    };
   } else {
     console.warn("Sin conexión.");
+    const rankingScript = document.createElement("script");
+    rankingScript.src = "ranking.js";
+    document.head.appendChild(rankingScript);
   }
 </script>
 
-<script src="ranking.js"></script>
 
         <script>
   // Aplicar modo oscuro si está activado
