@@ -1,4 +1,3 @@
-import { guardarResultadoEnFirestore } from "./firestore-utils.js";
 // Juego creado sin ánimo de lucro por Wildcrow
 const movies = [
     {
@@ -2154,6 +2153,9 @@ function loadNextMovie() {
     streakEl.textContent = `Racha más grande: ${mejorRacha}`;
 
     // Guardar resultado en Firestore
+// Guardar resultado en Firestore
+if (typeof guardarResultadoEnFirestore === 'function') {
+  try {
     guardarResultadoEnFirestore(
       playerName,
       currentScore,
@@ -2161,6 +2163,13 @@ function loadNextMovie() {
       mejorRacha,
       modo === "contrarreloj" ? tiempoTotalMs : null
     );
+  } catch (error) {
+    console.error("❌ No se pudo guardar el resultado en Firestore:", error);
+  }
+} else {
+  console.warn("⚠️ La función guardarResultadoEnFirestore no está disponible.");
+}
+
 
     // Mensaje y botón de ranking
     const mensajeExtra = document.createElement("p");
