@@ -1,4 +1,3 @@
-// firestore-utils.js
 
 let db = null;
 
