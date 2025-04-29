@@ -52,9 +52,10 @@ async function mostrarRanking(modo) {
   rankingList.innerHTML = "Cargando...";
 
   try {
-    if (!db) {
-      throw new Error("Base de datos no disponible.");
-    }
+if (typeof db === "undefined" || !db) {
+  throw new Error("Base de datos no disponible.");
+}
+
 
     const ref = db.collection("ranking");
     const q = ref.where("modo", "==", modo).orderBy("puntuacion", "desc").limit(10);
