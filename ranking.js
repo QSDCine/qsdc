@@ -10,9 +10,9 @@ const firebaseConfig = {
   appId: "1:701195152100:web:2f77da946f74b441fadaf1"
 };
 
-// Inicializar Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// Inicializar Firebase usando "firebase."
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore(app);
 window.db = db; // acceso global
 
 // Función auxiliar para mostrar tiempo formateado
@@ -68,9 +68,13 @@ async function mostrarRanking(modo) {
   rankingList.innerHTML = "Cargando...";
 
   try {
-    const ref = collection(db, "ranking");
-    const q = query(ref, where("modo", "==", modo), orderBy("puntuacion", "desc"), limit(10));
-    const snapshot = await getDocs(q);
+    if (!db) {
+      throw new Error("Base de datos no disponible.");
+    }
+
+    const ref = firebase.firestore().collection("ranking");
+    const q = ref.where("modo", "==", modo).orderBy("puntuacion", "desc").limit(10);
+    const snapshot = await q.get();
 
     if (snapshot.empty) {
       rankingList.innerHTML = "<p>No hay resultados aún para este modo.</p>";
@@ -85,6 +89,7 @@ async function mostrarRanking(modo) {
     });
     html += "</ol>";
     rankingList.innerHTML = html;
+
   } catch (error) {
     rankingList.innerHTML = "<p>Error al cargar el ranking. Inténtalo más tarde.</p>";
     console.error("Error al obtener ranking:", error);
