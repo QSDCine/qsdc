@@ -26,10 +26,11 @@ const quizEl = document.getElementById("quiz-container");
 // Mostrar ranking (desde index.html si se usa el botón)
 if (rankingBtn) {
   rankingBtn.addEventListener("click", () => {
-    introEl?.style.display = "none";
-    modoMenu?.style.display = "none";
-    quizEl?.style.display = "none";
-    rankingContainer.style.display = "block";
+   if (introEl) introEl.style.display = "none";
+if (modoMenu) modoMenu.style.display = "none";
+if (quizEl) quizEl.style.display = "none";
+rankingContainer.style.display = "block";
+
   });
 }
 
