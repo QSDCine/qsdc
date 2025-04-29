@@ -1,20 +1,3 @@
-import { guardarResultadoEnFirestore } from "./firestore-utils.js";
-
-// Configuración de Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyAaHu8OXnzUg8c5ogYLwmvTRpGFGfOXZkM",
-  authDomain: "qsdcine.firebaseapp.com",
-  projectId: "qsdcine",
-  storageBucket: "qsdcine.firebasestorage.app",
-  messagingSenderId: "701195152100",
-  appId: "1:701195152100:web:2f77da946f74b441fadaf1"
-};
-
-// Inicializar Firebase usando "firebase."
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore(app);
-window.db = db; // acceso global
-
 // Función auxiliar para mostrar tiempo formateado
 function formatearTiempo(ms) {
   const minutos = Math.floor(ms / 60000);
@@ -43,9 +26,9 @@ const quizEl = document.getElementById("quiz-container");
 // Mostrar ranking (desde index.html si se usa el botón)
 if (rankingBtn) {
   rankingBtn.addEventListener("click", () => {
-    introEl.style.display = "none";
-    modoMenu.style.display = "none";
-    quizEl.style.display = "none";
+    introEl?.style.display = "none";
+    modoMenu?.style.display = "none";
+    quizEl?.style.display = "none";
     rankingContainer.style.display = "block";
   });
 }
@@ -72,7 +55,7 @@ async function mostrarRanking(modo) {
       throw new Error("Base de datos no disponible.");
     }
 
-    const ref = firebase.firestore().collection("ranking");
+    const ref = db.collection("ranking");
     const q = ref.where("modo", "==", modo).orderBy("puntuacion", "desc").limit(10);
     const snapshot = await q.get();
 
@@ -91,8 +74,8 @@ async function mostrarRanking(modo) {
     rankingList.innerHTML = html;
 
   } catch (error) {
-    rankingList.innerHTML = "<p>Error al cargar el ranking. Inténtalo más tarde.</p>";
     console.error("Error al obtener ranking:", error);
+    rankingList.innerHTML = "<p>Error al cargar el ranking. Inténtalo más tarde o revisa tu conexión.</p>";
   }
 }
 
