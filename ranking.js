@@ -12,27 +12,12 @@ function formatearTiempo(ms) {
 }
 
 // Elementos del DOM
-const rankingBtn = document.getElementById("ranking-btn");
 const rankingContainer = document.getElementById("ranking-container");
 const rankingList = document.getElementById("ranking-list");
 const volverBtn = document.getElementById("volver-btn");
 const rankingModoBtns = document.querySelectorAll(".ranking-modo-btn");
 const offlineMessage = document.getElementById("offline-message");
 const volverJuegoBtn = document.getElementById("volver-juego-btn");
-const introEl = document.getElementById("intro");
-const modoMenu = document.getElementById("modo-menu");
-const quizEl = document.getElementById("quiz-container");
-
-// Mostrar ranking (desde index.html si se usa el botón)
-if (rankingBtn) {
-  rankingBtn.addEventListener("click", () => {
-    if (introEl) introEl.style.display = "none";
-    if (modoMenu) modoMenu.style.display = "none";
-    if (quizEl) quizEl.style.display = "none";
-    rankingContainer.style.display = "block";
-  });
-}
-
 
 // Botón de volver
 volverBtn.onclick = () => {
@@ -52,12 +37,9 @@ async function mostrarRanking(modo) {
   rankingList.innerHTML = "Cargando...";
 
   try {
-if (typeof db === "undefined" || !db) {
-  throw new Error("Base de datos no disponible.");
-}
+    const ref = window.db?.collection?.("ranking");
+    if (!ref) throw new Error("Firestore no disponible.");
 
-
-    const ref = db.collection("ranking");
     const q = ref.where("modo", "==", modo).orderBy("puntuacion", "desc").limit(10);
     const snapshot = await q.get();
 
@@ -93,3 +75,4 @@ window.addEventListener("load", () => {
 volverJuegoBtn?.addEventListener("click", () => {
   window.location.href = "index.html";
 });
+
