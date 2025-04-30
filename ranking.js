@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-function formatearTiempo(ms) {
-  const minutos = Math.floor(ms / 60000);
-  const horas = Math.floor(minutos / 60);
-  const minutosRestantes = minutos % 60;
-
-  if (horas > 0) {
-    return `⏱️ Tiempo: ${horas} hora${horas > 1 ? 's' : ''} y ${minutosRestantes} min${minutosRestantes !== 1 ? 's' : ''}`;
-  } else {
-    return `⏱️ Tiempo: ${minutos} min${minutos !== 1 ? 's' : ''}`;
+  // Función auxiliar
+  function formatearTiempo(ms) {
+    const minutos = Math.floor(ms / 60000);
+    const horas = Math.floor(minutos / 60);
+    const minutosRestantes = minutos % 60;
+    return horas > 0
+      ? `⏱️ Tiempo: ${horas} hora${horas > 1 ? 's' : ''} y ${minutosRestantes} min${minutosRestantes !== 1 ? 's' : ''}`
+      : `⏱️ Tiempo: ${minutos} min${minutos !== 1 ? 's' : ''}`;
   }
-}
 
-window.addEventListener("DOMContentLoaded", () => {
+  // Elementos del DOM
   const rankingContainer = document.getElementById("ranking-container");
   const rankingList = document.getElementById("ranking-list");
   const volverBtn = document.getElementById("volver-btn");
@@ -19,12 +17,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const offlineMessage = document.getElementById("offline-message");
   const volverJuegoBtn = document.getElementById("volver-juego-btn");
 
-  // Botón de volver
+  //  Volver al juego
   volverBtn.onclick = () => {
     window.location.href = "index.html";
   };
 
-  // Mostrar ranking según modo
+  //  Mostrar ranking según modo
   rankingModoBtns.forEach((btn) => {
     btn.addEventListener("click", async () => {
       const modo = btn.dataset.modo;
@@ -32,10 +30,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mostrar ranking
+  //  Función para mostrar el ranking
   async function mostrarRanking(modo) {
     rankingList.innerHTML = "Cargando...";
-
     try {
       const ref = window.db?.collection?.("ranking");
       if (!ref) throw new Error("Firestore no disponible.");
@@ -63,16 +60,15 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Verificar conexión al cargar
+  //  Verificar conexión
   if (!navigator.onLine) {
     rankingContainer.style.display = "none";
     offlineMessage.style.display = "block";
   }
 
-  // Volver desde modo sin conexión
+  //  Botón de volver si está offline
   volverJuegoBtn?.addEventListener("click", () => {
     window.location.href = "index.html";
   });
-});
 });
 
