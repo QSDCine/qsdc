@@ -17,15 +17,20 @@ function initFirestore() {
       appId: "1:701195152100:web:2f77da946f74b441fadaf1"
     };
 
-    firebase.initializeApp(firebaseConfig);
+    // Evita inicializar Firebase más de una vez
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+      console.log("[Firestore] Firebase inicializado.");
+    } else {
+      console.log("[Firestore] Firebase ya estaba inicializado.");
+    }
+
     db = firebase.firestore();
-    console.log("[Firestore] Inicializado correctamente.");
+    window.db = db;
 
   } catch (error) {
     console.error("[Firestore] No se pudo inicializar:", error);
   }
-
-  window.db = db;
 }
 
 initFirestore();
