@@ -38,13 +38,13 @@
     script.onload = () => {
       const rankingScript = document.createElement("script");
       rankingScript.src = "ranking.js";
-      document.head.appendChild(rankingScript);
+      document.body.appendChild(rankingScript);
     };
   } else {
     console.warn("Sin conexión.");
     const rankingScript = document.createElement("script");
     rankingScript.src = "ranking.js";
-    document.head.appendChild(rankingScript);
+    document.body.appendChild(rankingScript);
   }
 </script>
 
