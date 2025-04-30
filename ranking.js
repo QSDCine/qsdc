@@ -1,5 +1,4 @@
-// ranking.js
-
+document.addEventListener("DOMContentLoaded", () => {
 function formatearTiempo(ms) {
   const minutos = Math.floor(ms / 60000);
   const horas = Math.floor(minutos / 60);
@@ -75,5 +74,5 @@ window.addEventListener("DOMContentLoaded", () => {
     window.location.href = "index.html";
   });
 });
-
+});
 
