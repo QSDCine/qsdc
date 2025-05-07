@@ -81,7 +81,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     "audio/tiempodematar.mp3","audio/titanic.mp3","audio/toystory.mp3","audio/unamentemaravillosa.mp3",
     "audio/vanhelsing.mp3","audio/venganza.mp3","audio/viernes13.mp3","audio/watchmen.mp3",
     "audio/waterworld.mp3","audio/willow.mp3","audio/xmen.mp3","audio/xxx.mp3","audio/youarenext.mp3",
-    "audio/zohan.mp3"];
+    "audio/zohan.mp3","audio/tunonegro.mp3","audio/killbill.mp3","audio/mortalkombat.mp3","audio/diasextraños.mp3","audio/avatar.mp3",
+    "audio/eventhorizon.mp3","audio/fantasmaopera.mp3","audio/silenciocorderos.mp3","audio/elexorcista.mp3","audio/laprofecia.mp3","audio/dragonball.mp3",
+    "audio/intocable.mp3","audio/carrie.mp3","audio/laniebla.mp3","audio/alita.mp3","audio/whiplash.mp3","audio/guardianesgalaxia.mp3","audio/norbit.mp3",
+    "audio/startrek.mp3","audio/langdon.mp3","audio/karatekid.mp3","audio/temblores.mp3","audio/rec.mp3","audio/burlesque.mp3","audio/moulinrouge.mp3",
+    "audio/nannymcphee.mp3","audio/warcraft.mp3","audio/tenet.mp3","audio/bullettrain.mp3","audio/dnd.mp3","audio/thevoid.mp3",
+    "audio/latrampa.mp3","audio/dune2.mp3","audio/rohirrim.mp3","audio/lasirenita.mp3","audio/bellaybestia.mp3","audio/barbie.mp3",
+    "audio/showgirls.mp3","audio/13fantasmas.mp3","audio/uncharted.mp3","audio/thesadness.mp3","audio/hellraiser.mp3","audio/alfilodelmañana.mp3",
+    "audio/elvis.mp3","audio/topgun.mp3","audio/midsommar.mp3","audio/batmannolan.mp3","audio/batmanpattinson.mp3","audio/jackiebrown.mp3",
+    "audio/royale.mp3","audio/hacksawridge.mp3","audio/millennium.mp3","audio/doubtfire.mp3","audio/vietnam.mp3","audio/theone.mp3",
+    "audio/badboys.mp3","audio/escapefrom.mp3","audio/chacal.mp3","audio/sextosentido.mp3","audio/cocodrilodundee.mp3",
+    "audio/doom.mp3","audio/powder.mp3","audio/insomnio.mp3","audio/zoolander.mp3","audio/thecell.mp3","audio/silenthill.mp3",
+    "audio/laliga.mp3","audio/jeeperscreepers.mp3","audio/ravenous.mp3","audio/milmanerasoeste.mp3","audio/vampiros.mp3",
+    "audio/rockstar.mp3","audio/rockofages.mp3","audio/losinmortales.mp3","audio/rubiaspelo.mp3","audio/battleroyale.mp3",
+    "audio/veronica.mp3","audio/priscilla.mp3","audio/leyendasdepasion.mp3","audio/sleepyhollow.mp3","audio/vidabrian.mp3",
+    "audio/entrevistavampiro.mp3","audio/amistadespeligrosas.mp3","audio/poltergeist.mp3","audio/starshiptroopers.mp3",
+    "audio/blackswan.mp3","audio/pi.mp3","audio/encuentros.mp3","audio/excalibur.mp3","audio/beethoven.mp3",
+    "audio/guerramundialz.mp3","audio/antichrist.mp3","audio/dannythedog.mp3","audio/semilladiablo.mp3",
+    "audio/lasustancia.mp3","audio/apocalypse.mp3","audio/requiemforadream.mp3","audio/mandy.mp3","audio/coloroutofspace.mp3",
+    "audio/elfaro.mp3"];
   const totalAudios = audios.length;
   const estimacionMB = Math.ceil(totalAudios * 1.95);
   progresoEl.textContent = `0 MB de ${estimacionMB} MB`;
