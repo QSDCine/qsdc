@@ -21,7 +21,7 @@ const movies = [
         ]
     },
     {
-        title: ["Ip Man", "Ip-Man"],
+        title: ["Ip Man", "Ip-Man", "IpMan"],
         description: "Pelicula de acción estrenada en 2008",
         audio: "audio/ipman.mp3",
         hints: [
@@ -1712,7 +1712,7 @@ const movies = [
         ]
     },
     {
-        title: ["El gran Stan (Big Stan)", "El gran Stan", "Big Stan"],
+        title: ["El gran Stan (Big Stan)", "El gran Stan", "Big Stan", "Gran Stan"],
         description: "Película de comedia estrenada en el año 2007",
         audio: "audio/granstan.mp3",
         hints: [
@@ -2306,7 +2306,10 @@ const movies = [
             "DND Honor entre Ladrones",
             "DND",
             "DND: Honor entre ladrones",
-            "Dnd Honor among thieves"
+            "Dnd Honor among thieves",
+            "Dungeons and Dragons",
+            "Dungeons n Dragons",
+            "Dragones y Mazmorras"
         ],
         description: "Película de aventura y fantasía heroica estrenada en 2023.",
         audio: "audio/dnd.mp3",
@@ -2352,7 +2355,8 @@ const movies = [
             "El Señor de los Anillos La Guerra de los Rohirrim",
             "LOTR: La guerra de los Rohirrim",
             "LOTR La Guerra de los Rohirrim",
-            "La Guerra de los Rohirrim"
+            "La Guerra de los Rohirrim",
+            "Rohirrim"
         ],
         description: "Película de animación de género fantástico estrenada en el año 2024.",
         audio: "audio/rohirrim.mp3",
@@ -2560,7 +2564,7 @@ const movies = [
         ]
     },
     {
-        title: ["Señora Doubtfire", "Mrs. Doubtfire", "Mrs Doubfire", "La señora Doubtfire"],
+        title: ["Señora Doubtfire", "Mrs. Doubtfire", "Mrs Doubtfire", "La señora Doubtfire"],
         description: "Película de comedia estrenada en el año 1993.",
         audio: "audio/doubtfire.mp3",
         hints: [
@@ -2921,7 +2925,7 @@ const movies = [
         ]
     },
     {
-        title: ["Cisne Negro, El Cisne Negro, Black Swan", "The Black Swan"],
+        title: ["Cisne Negro", "El Cisne Negro", "Black Swan", "The Black Swan"],
         description: "Película de suspense, terror y drama estrenada en el año 2010.",
         audio: "audio/blackswan.mp3",
         hints: [
