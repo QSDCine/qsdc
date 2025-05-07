@@ -1991,8 +1991,1085 @@ const movies = [
             "Protagonizada por Leonardo DiCaprio y Kate Winslet",
             "Ganó once premios Óscar"
         ]
+    },
+    {
+        title: ["Tuno Negro", "El Tuno Negro"],
+        description: "Pelicula de terror estrenada en 2001.",
+        audio: "audio/tunonegro.mp3",
+        hints: [
+            "Fue filmada principalmente en Salamanca.",
+            "Nescencia Necat.",
+            "Se basa en una leyenda urbana para mostrar la existencia de un asesino en serie que acaba con estudiantes universitarios."
+        ]
+    },
+    {
+        title: ["Kill Bill"],
+        description: "Pelicula de acción y suspenso constituida por dos partes estrenadas en el año 2003 y 2004.",
+        audio: "audio/killbill.mp3",
+        hints: [
+            "Es una historia presentada en 10 capítulos, 5 por volumen, de manera no lineal.",
+            "Protagonizada por Uma Thurman y David Carradine junto a Lucy Liu, Michael Madsen, Daryl Hannah y Julie Dreyfus entre otros.",
+            "Cinco puntos de presión para explotar un corazón."
+        ]
+    },
+    {
+        title: ["Mortal Kombat", "Mortal Combat"],
+        description: "Pelicula de fantasía oscura, artes marciales y gore estrenada en 2021.",
+        audio: "audio/mortalkombat.mp3",
+        hints: [
+            "Basada en una famosa saga de videojuegos.",
+            "Se hicieron dos películas de acción real en el año 1995 y 1997 que precedieron a esta.",
+            "En esta película Sub-Zero y Scorpion se parten la cara. Get over here!!!"
+        ]
+    },
+    {
+        title: ["Días Extraños", "Strange Days"],
+        description: "Pelicula ciberpunk estrenada en 1995.",
+        audio: "audio/diasextraños.mp3",
+        hints: [
+            "Dirigida por Kathryn Bigelow.",
+            "Protagonizada por Ralph Fiennes, Julette Lewis, Angela Bassett, Michael Wincott, Vincent D'Onofrio y Tom Sizemore.",
+            "La tecnología SQUID permite experimentar como propios los recuerdos y sensaciones grabados por otros."
+        ]
+    },
+    {
+        title: ["Avatar"],
+        description: "Pelicula épica de ciencia ficción y animación estrenada en 2009.",
+        audio: "audio/avatar.mp3",
+        hints: [
+            "Está ambientada en el año 2154 y los acontecimientos narran la historia de Pandora.",
+            "Protagonizada por Sam Worthington, Zoe Saldaña, Sigourney Weaver y Stephen Lang entre otros.",
+            "Dirigida por James Cameron."
+        ]
+    },
+    {
+        title: ["Event Horizon", "Horizonte Final"],
+        description: "Pelicula de ciencia ficción y terror estrenada en el año 1997.",
+        audio: "audio/eventhorizon.mp3",
+        hints: [
+            "Dirigida por Paul W.S. Anderson, y protagonizada por Laurence Fishburne y Sam Neill.",
+            "La música de la película fue escrita y realizada por el dúo británico Orbital y por el músico estadounidense Michael Kamen.",
+            "A donde vamos no necesitamos ojos para ver..."
+        ]
+    },
+    {
+        title: ["El Fantasma de la Ópera", "Fantasma de la Ópera", "Phantom of the Opera"],
+        description: "Película musical de drama romántico estrenada en 2004.",
+        audio: "audio/fantasmaopera.mp3",
+        hints: [
+            "Es una adaptación cinematográfica de la novela homónima de Gastón Leroux.",
+            "Protagonizada por Gerard Butler, Emmy Rossum, Patrick Wilson y Miranda Richardson.",
+            "Dirigida por Joel Schumacher."
+        ]
+    },
+    {
+        title: ["El Silencio de los Corderos", "The Silence Of The Lambs", "Silence Of The Lambs"],
+        description: "Película de terror y suspense estrenada en el año 1991.",
+        audio: "audio/silenciocorderos.mp3",
+        hints: [
+            "Basada en la novela homónima de Thomas Harris.",
+            "Hasta la fecha, es la única película de terror que ha ganado el Óscar y la tercera en ser candidata, después de El Exorcista y Tiburón.",
+            "Protagonizada por Jodie Foster y Anthony Hopkins entre otros."
+        ]
+    },
+    {
+        title: ["El Exorcista"],
+        description: "Película de terror estrenada en el año 1973.",
+        audio: "audio/elexorcista.mp3",
+        hints: [
+            "Su tema principal está compuesto por Mike Oldfield.",
+            "El guión fue escrito por Willam Peter Blatty, basado en su propia novela homónima.",
+            "Se considera una película maldita por las desgracias que rodearon el rodaje."
+        ]
+    },
+    {
+        title: ["La Profecía", "The Omen"],
+        description: "Película de terror estrenada en el año 1976.",
+        audio: "audio/laprofecia.mp3",
+        hints: [
+            "Su banda sonora está compuesta por Jerry Goldsmith.",
+            "Dirigida por Richard Donner.",
+            "La película está basada en el nacimiento del Anticristo."
+        ]
+    },
+    {
+        title: [
+            "Dragon Ball: Broly",
+            "Dragon ball Broly",
+            "Broly",
+            "Dragon Ball",
+            "Dragon Ball Super: Broly",
+            "Dragon Ball Super Broly"
+        ],
+        description: "Película de animación estrenada en el año 2018.",
+        audio: "audio/dragonball.mp3",
+        hints: [
+            "Basada en una famosa serie de anime de fantasía/aventuras de artes marciales.",
+            "Escrita por el creador de la serie: Akira Toriyama.",
+            "Fusión! Ya!"
+        ]
+    },
+    {
+        title: ["Intocable", "Intocables"],
+        description: "Película de drama estrenado en el año 2011.",
+        audio: "audio/intocable.mp3",
+        hints: [
+            "La banda sonora es de Ludovico Einaudi.",
+            "Protagonizada por Omar Sy y François Cluzet.",
+            "Una oda a la amistad."
+        ]
+    },
+    {
+        title: ["Carrie"],
+        description: "Película de terror sobrenatural estrenada en el año 1976.",
+        audio: "audio/carrie.mp3",
+        hints: [
+            "Dirigida por Brian De Palma.",
+            "Basada en una novela de Stephen King.",
+            "Se hizo un remake de la misma en el año 2013, lo protagonizaron Julianne Moore y Chloë Grace Moretz."
+        ]
+    },
+    {
+        title: ["La Niebla", "The Mist"],
+        description: "Película de terror estrenada en el año 2007.",
+        audio: "audio/laniebla.mp3",
+        hints: [
+            "Basada en una novela corta de Stephen King, sin embargo su final es distinto, a Stephen King le gustó tanto el que hicieron en la película que mencionó varias veces que ojalá se le hubiera ocurrido a él.",
+            "Protagonizada por Thomas Jane.",
+            "La desoladora música final, The Host of Seraphim, es del grupo australiano Dead Can Dance y fue concebida como un himno fúnebre por toda la humanidad."
+        ]
+    },
+    {
+        title: ["Alita: Ángel de Combate", "Alita Ángel de Combate", "Alita", "Ángel de Combate"],
+        description: "Película de ciberpunk estrenada en el año 2019.",
+        audio: "audio/alita.mp3",
+        hints: [
+            "Basada en un manga japonés.",
+            "La película fue producida por James Cameron, quien también ayudó con el guión, y dirigida por Robert Rodriguez.",
+            "Está protagonizada por Rosa Salazar, cuyo personaje fue realizado por WETA Digital con captura de movimiento. Entre los nombres que podemos encontrar en la película están: Christoph Waltz, Jennifer Connelly, Mahershala Ali, Jackie Earle Haley, Ed Skrein, Jai Courney, Michelle Rodríguez y Edward Norton."
+        ]
+    },
+    {
+        title: ["Whiplash", "Wiplash", "Whiplas"],
+        description: "Película de drama musical estrenada en 2014.",
+        audio: "audio/whiplash.mp3",
+        hints: [
+            "Protagonizada por Miles Teller y J.K. Simmons",
+            "Ganadora de 3 premios Óscar.",
+            "No es exactamente mi tempo... Dime... ¡¿Te adelantas o te atrasas?!"
+        ]
+    },
+    {
+        title: ["Guardianes de la Galaxia", "Los Guardianes de la Galaxia", "Guardians of the Galaxy"],
+        description: "Película de ciencia ficción y superhéroes estrenada en 2014.",
+        audio: "audio/guardianesgalaxia.mp3",
+        hints: [
+            "Es producto de la Casa de las Ideas.",
+            "Actualmente es una trilogía y fue dirigida por James Gunn.",
+            "Yo soy Groot."
+        ]
+    },
+    {
+        title: ["Norbit"],
+        description: "Película de comedia romántica estrenada en 2007.",
+        audio: "audio/norbit.mp3",
+        hints: [
+            "Eddie Murphy la protagoniza, realizando 3 papeles al mismo tiempo.",
+            "Es la historia de un niño abandonado, adoptado por el dueño de un restaurante chino.",
+            "Rasputia ha llegado."
+        ]
+    },
+    {
+        title: ["Star Trek"],
+        description: "Trilogía de películas de ciencia ficción que comenzó en 2009.",
+        audio: "audio/startrek.mp3",
+        hints: [
+            "La trilogía es un reboot cinematográfico de una serie que comenzó en el año 1966.",
+            "Protagonizada por Chris Pine, Zachary Quinto, Karl Urban, Zoe Saldaña y Simon Pegg entre otros.",
+            "Larga vida y prosperidad."
+        ]
+    },
+    {
+        title: [
+            "La trilogía de Robert Langdon",
+            "Robert Langdon",
+            "El Código Da Vinci",
+            "Ángeles y Demonios",
+            "Inferno"
+        ],
+        description: "Trilogía de misterio y suspenso que inició en el año 2006.",
+        audio: "audio/langdon.mp3",
+        hints: [
+            "Dirigidas por Ron Howard.",
+            "Basadas en las novelas homónimas de Dan Brown.",
+            "Protagonizadas por Tom Hanks."
+        ]
+    },
+    {
+        title: ["Karate Kid", "The Karate Kid"],
+        description: "Saga dramática de artes marciales cuya primera película fue estrenada en el año 1984.",
+        audio: "audio/karatekid.mp3",
+        hints: [
+            "Protagonizada por Ralph Macchio y Noriyuki Pat Morita.",
+            "Permitió el surgimiento de una franquicia con 3 películas, así como una serie y dos nuevas adaptaciones cinematográficas.",
+            "Está inspirada en los acontecimientos de la vida real de un estudiante de Tum Pai de 8 años en Hawái."
+        ]
+    },
+    {
+        title: ["Temblores", "Tremors"],
+        description: "Saga de ciencia ficción, terror y comedia que comenzó en 1990.",
+        audio: "audio/temblores.mp3",
+        hints: [
+            "Es una saga que consta de siete películas y una serie de televisión homónima.",
+            "El protagonista de la primera película es Kevin Bacon.",
+            "¡Malditos graboides!"
+        ]
+    },
+    {
+        title: ["REC"],
+        description: "Saga de películas de terror que comenzó en 2007.",
+        audio: "audio/rec.mp3",
+        hints: [
+            "Dirigidas por Jaume Balagueró y Paco Plaza.",
+            "La infección de estos zombies tiene un origen sobrenatural.",
+            "Muchas de las escenas de la saga, especialmente en la primera película, se rodaron sin decirle a los actores lo que sucedería, buscando reacciones reales y no actuadas."
+        ]
+    },
+    {
+        title: ["Burlesque"],
+        description: "Película musical y romántica estrenada en el año 2010.",
+        audio: "audio/burlesque.mp3",
+        hints: [
+            "Protagonizada por Christina Aguilera, Cher y Stanley Tucci.",
+            "Su banda sonora llegó al número 1 de Billboard Soundtracks durante 63 semanas. Logró tener 2 veces el disco de platino y varios discos de oro.",
+            "Una chica de pueblo llega a la gran ciudad con la intención de demostrar a todos lo bien que canta."
+        ]
+    },
+    {
+        title: ["Moulin Rouge", "Moulin Rouge!"],
+        description: "Película de musical estrenada en el año 2001.",
+        audio: "audio/moulinrouge.mp3",
+        hints: [
+            "Protagonizada por Nicole Kidman y Ewan McGregor.",
+            "Está basada en gran parte de la ópera de Giuseppe Verdi La Traviata, así como en la novela La Dama de las Camelias, de Alejandro Dumas (Hijo).",
+            "Ozzy Osbourne hace un pequeño cameo sonoro, y su voz se utiliza para un grito gutural cuando el hada verde se vuelve mala."
+        ]
+    },
+    {
+        title: ["La Niñera Mágica", "Nanny McPhee"],
+        description: "Película de comedia y fantasía estrenada en el año 2005.",
+        audio: "audio/nannymcphee.mp3",
+        hints: [
+            "Está protagonizada por Emma Thompson, quien también participó en el guion.",
+            "Recibió una secuela en el año 2010.",
+            "Es una adaptación de la serie de libros Nurse Matilda."
+        ]
+    },
+    {
+        title: ["Warcraft"],
+        description: "Película épica de fantasía estrenada en el año 2016.",
+        audio: "audio/warcraft.mp3",
+        hints: [
+            "Está basada en el universo de un popular videojuego.",
+            "Está protagonizada por Travis Fimmel, Paula Patton y Ben Foster, entre otros.",
+            "En 2023 se convirtió en la segunda película basada en un videojuego más taquillera."
+        ]
+    },
+    {
+        title: ["Tenet"],
+        description: "Película de ciencia ficción y thriller estrenada en el año 2020.",
+        audio: "audio/tenet.mp3",
+        hints: [
+            "Escrita, dirigida y producida por Christopher Nolan.",
+            "Protagonizada por John David Washington, Robert Pattinson, Elizabeth Debicki, Kenneth Branagh y Michael Caine.",
+            "Narra la hostoria de un agente de la CIA que busca controlar la flecha del tiempo para prevenir la Tercera Guerra Mundial."
+        ]
+    },
+    {
+        title: ["Bullet Train"],
+        description: "Película de acción y comedia estrenada en el año 2022.",
+        audio: "audio/bullettrain.mp3",
+        hints: [
+            "Dirigida por David Leitch.",
+            "Protagonizada por Brad Pitt, Joey King, Aaron Taylor-Johnson, Brian Tyree Henry, Andrew Koji, Hiroyuki Sanada, Michael Shannon y Sandra Bullock.",
+            "Basada en la novela Maria Beetle de Kōtarō Isaka."
+        ]
+    },
+    {
+        title: [
+            "Dungeons & Dragons: Honor entre ladrones",
+            "Dungeons & Dragons Honor entre Ladrones",
+            "Dungeons & Dragons",
+            "Honor entre ladrones",
+            "D&D: Honor entre ladrones",
+            "D&D",
+            "DND Honor entre Ladrones",
+            "DND",
+            "DND: Honor entre ladrones",
+            "Dnd Honor among thieves"
+        ],
+        description: "Película de aventura y fantasía heroica estrenada en 2023.",
+        audio: "audio/dnd.mp3",
+        hints: [
+            "Está basada en el juego de rol más importante del mundo.",
+            "Protagonizada por Chris Pine, Michelle Rodriguez, Regé-Jean Page, Justice Smith, Sophia Lillis, Hugh Grant y Daisy Head.",
+            "Mejora infinitamente el primer intento de adaptación que se hizo en el año 2000."
+        ]
+    },
+    {
+        title: ["El Vacío", "The Void", "Void", "Vacío"],
+        description: "Película de terror y ciencia ficción estrenada en 2016.",
+        audio: "audio/thevoid.mp3",
+        hints: [
+            "Es una película Lovecraftiana que tuvo un presupuesto de unos 83000 dólares.",
+            "Fue escrita y dirigida por Steven Kostanski y Jeremy Fillespie.",
+            "Un culto intenta abrir un portal hacia otro mundo, ajeno a toda lógica terrestre, amenazador y oscuro, donde hay una enorme pirámide hecha de oscuridad."
+        ]
+    },
+    {
+        title: ["La Trampa"],
+        description: "Película de suspense estrenada en el año 2024.",
+        audio: "audio/latrampa.mp3",
+        hints: [
+            "Escrita y dirigida por M. Night Shyamalan.",
+            "Protagonizada por un impresionante Josh Hartnett.",
+            "En esta película nos ponen en la perspectiva de un asesino en serie."
+        ]
+    },
+    {
+        title: ["Dune"],
+        description: "Trilogía épica de ciencia ficción que comenzó en 2021.",
+        audio: "audio/dune2.mp3",
+        hints: [
+            "Esta trilogía está basada en una nueva versión revisada fuel a la novela homónima de 1965 de Frank Herbert.",
+            "Dirigida por Denis Villeneuve. Su banda sonora está compuesta por Hans Zimmer.",
+            "Gran parte de la trilogía tiene lugar en un planeta llamado Arrakis, donde unos terribles gusanos gigantes dominan el desierto."
+        ]
+    },
+    {
+        title: [
+            "El Señor de los Anillos: La Guerra de los Rohirrim",
+            "El Señor de los Anillos La Guerra de los Rohirrim",
+            "LOTR: La guerra de los Rohirrim",
+            "LOTR La Guerra de los Rohirrim",
+            "La Guerra de los Rohirrim"
+        ],
+        description: "Película de animación de género fantástico estrenada en el año 2024.",
+        audio: "audio/rohirrim.mp3",
+        hints: [
+            "Está basada en un fragmento de los Apéndices del Señor de los Anillos, de J.R.R. Tolkien.",
+            "La película narra la historia de Helm Mano de Hierro y de su única hija Héra.",
+            "Philippa Boyens, coescritora de la trilogía cinematográfica de El Señor de los Anillos, participó en el guion."
+        ]
+    },
+    {
+        title: ["La Sirenita"],
+        description: "Película de animación estrenada en el año 1989.",
+        audio: "audio/lasirenita.mp3",
+        hints: [
+            "Está basada en el cuento homónimo de Hans Christian Andersen.",
+            "Se hizo un remake de acción real en el año 2023.",
+            "Es la vigésima octava película en el canon de largometrajes de Walt Disney Animation Studios. Se convirtió en todo un éxito, dando inicio a una nueva época dorada a la compañía y a la que siguieron otros grandes éxitos como La Bella y la Bestia, Aladdín y el Rey León."
+        ]
+    },
+    {
+        title: ["La Bella y la Bestia", "Bella y Bestia", "The Beauty and The Beast"],
+        description: "Película de acción real de género fantástica y musical estrenada en el año 2017.",
+        audio: "audio/bellaybestia.mp3",
+        hints: [
+            "Es un remake de un clásico de Disney del año 1991.",
+            "Está protagonizada por Emma Watson, Dan Stevens, Luke Evans, Ewan McGregor, Ian McKellen, Emma Thompson y Stanley Tucci.",
+            "Su historia se basa en la versión revisada y abreviada que Jeanne-Marie Leprince de Beaumont escribió a partir de la historia original de Gabrielle-Suzanne Barbot de Villeneuve."
+        ]
+    },
+    {
+        title: ["Barbie"],
+        description: "Película de comedia fantástica estrenada en el año 2023.",
+        audio: "audio/barbie.mp3",
+        hints: [
+            "Dirigida por Greta Gerwig.",
+            "Basada en una popular línea de muñecas de Mattel.",
+            "Está protagonizada por Margot Robbie y Ryan Gosling."
+        ]
+    },
+    {
+        title: ["Showgirls", "Showgirl", "Show Girls"],
+        description: "Película de drama con tintes eróticos estrenada en 1995.",
+        audio: "audio/showgirls.mp3",
+        hints: [
+            "Dirigida por Paul Verhoeven.",
+            "Protagonizada por Elizabeth Berkley, Kyle MacLachlan y Gina Gershon.",
+            "El filme narra las peripecias de una chica provinciana llamada Nomi Malone en Las Vegas, donde acude con la intención de convertirse en estrella de los shows de los grandes casinos de la ciudad."
+        ]
+    },
+    {
+        title: ["13 Fantasmas", "Trece Fantasmas"],
+        description: "Película de terror sobrenatural estrenada en el año 2013.",
+        audio: "audio/13fantasmas.mp3",
+        hints: [
+            "Es una versión de una película de terror homónima estrenada en el año 1960.",
+            "La película se basa en la máquina del astrólogo del siglo XV Basileus, quien creó los planos para la máquina en el libro Arcanum mientras estaba bajo una posesión demoníaca, con la intención de completar el Zodiaco Negro y abrir el Ocularis.",
+            "El orden en el que los entes están dispuestos se define proporcionalmente a la intensidad del daño que pueden provocar."
+        ]
+    },
+    {
+        title: ["Uncharted"],
+        description: "Película de acción y aventuras estrenada en el año 2022.",
+        audio: "audio/uncharted.mp3",
+        hints: [
+            "Está basada en una popular saga de videojuegos.",
+            "Sic Parvis Magna",
+            "Protagonizada por Tom Holland y Mark Wahlberg en los papeles de Nathan Drake y Victor Sullivan."
+        ]
+    },
+    {
+        title: ["The Sadness", "Sadness"],
+        description: "Película de terror estrenada en el año 2021.",
+        audio: "audio/thesadness.mp3",
+        hints: [
+            "Escrita, dirigida y editada por Rob Jabbaz. Esta película fue su debut.",
+            "La historia está fuertemente inspirada en el comic Crossed, de Garth Ennis.",
+            "Un virus causa que los infectados se sientan libres de consecuencias, creando maníacos homicidas."
+        ]
+    },
+    {
+        title: ["Hellraiser", "Hellriser"],
+        description: "Saga de terror cuya primera película se estrenó en el año 1987.",
+        audio: "audio/hellraiser.mp3",
+        hints: [
+            "Fue escrita y dirigida por Clive Barker, basada en su propia novela titulada The Hellbound Heart.",
+            "Explora temas como el sadomasoquismo, la relación entre el dolor y el placer, y la moralidad de personajes sometidos al temor y la tentación.",
+            "Es considerada un clásico del género y una película de culto. Presenta al personaje Pinhead y la Configuración del Lamento."
+        ]
+    },
+    {
+        title: ["Al Filo del Mañana", "Edge Of Tomorrow"],
+        description: "Película de ciencia ficción y acción estrenada en el año 2014.",
+        audio: "audio/alfilodelmañana.mp3",
+        hints: [
+            "Inspirada en la novela ligera All You Need Is Kill de Hiroshi Sakurazaka.",
+            "Live. Die. Repeat.",
+            "Protagonizada por Tom Cruise y Emily Blunt."
+        ]
+    },
+    {
+        title: ["Elvis"],
+        description: "Película musical de drama estrenada en el año 2022.",
+        audio: "audio/elvis.mp3",
+        hints: [
+            "Escrita y dirigida por Baz Luhrmann.",
+            "Protagonizada por Austin Butler y Tom Hanks, entre otros.",
+            "Cuenta la vida del rey del rock and roll."
+        ]
+    },
+    {
+        title: [
+            "Top Gun: Maverick",
+            "Top Gun Maverick",
+            "Maverick",
+            "Top Gun",
+            "Top Gun 2",
+            "Top Gun 2: Maverick",
+            "Top Gun 2 Maverick"
+        ],
+        description: "Película de acción estrenada en el año 2022.",
+        audio: "audio/topgun.mp3",
+        hints: [
+            "Dirigida por Joseph Kosinski con un guión de Christopher McQuarrie.",
+            "Protagonizada por Tom Cruise, Val Kilmer, Miles Teller, Jennifer Connelly, Glen Powell, Lyliana Wray y Ed Harris entre otros.",
+            "Es la secuela de una película de 1986."
+        ]
+    },
+    {
+        title: ["Midsommar", "Midsomar"],
+        description: "Película de terror estrenada en el año 2019.",
+        audio: "audio/midsommar.mp3",
+        hints: [
+            "Escrita y dirigida por Ari Aster.",
+            "Una pareja viaja a Suecia con un grupo de amigos para un festival de verano solo para encontrarse en las garras de un culto siniestro.",
+            "El diseñador de producción de la película Henrik Svensson, se inspiró en tradiciones de Hårga así como de otros elementos folclóricos para desarrollar el festival sueco de la película."
+        ]
+    },
+    {
+        title: ["Batman: El Caballero Oscuro", "Batman el caballero oscuro", "El Caballero Oscuro", "Batman"],
+        description: "Trilogía de acción y suspense estrenada entre los años 2005 y 2012.",
+        audio: "audio/batmannolan.mp3",
+        hints: [
+            "Escritas por Christopher y Jonathan Nolan, dirigidas por Christopher Nolan.",
+            "Protagonizadas por Christian Bale, Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, Morgan Freeman, Liam Neeson y Tom Hardy.",
+            "Basada en un popular superhéroe de DC Comics."
+        ]
+    },
+    {
+        title: ["The Batman", "Batman"],
+        description: "Película de acción y suspense estrenada en el año 2022.",
+        audio: "audio/batmanpattinson.mp3",
+        hints: [
+            "Escrita y dirigida por Matt Reeves.",
+            "Protagonizada por Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Andy Serkis y Colin Farrell.",
+            "Su banda sonora está compuesta por Michael Giacchino, aunque se utilizó Something in the Way de Nirvana también. ¡Yo soy la Venganza!"
+        ]
+    },
+    {
+        title: ["Jackie Brown"],
+        description: "Película de suspense estrenada en el año 1997.",
+        audio: "audio/jackiebrown.mp3",
+        hints: [
+            "Escrita y dirigida por Quentin Tarantino.",
+            "Basada en la novela Rum Punch (Cóctel explosivo) de Elmore Leonard.",
+            "El filme se inspira en el llamado género cinematográfico Blaxploitation, como Reservoir Dogs y Pulp Fiction."
+        ]
+    },
+    {
+        title: ["Malos tiempos en el Royale", "Royale"],
+        description: "Película de suspense estrenada en el año 2018.",
+        audio: "audio/royale.mp3",
+        hints: [
+            "Escrita y dirigida por Drew Goddard.",
+            "La banda sonora está creada por Michael Giacchino.",
+            "Protagonizada por Jeff Bridges, Cynthia Erivo, Dakota Johnson, Jon Hamm, Cailee Spaeny, Lewis Pullman, Nick Offerman y Chris Hemsworth"
+        ]
+    },
+    {
+        title: ["Hasta el último hombre", "Hacksaw Ridge"],
+        description: "Película bélica y dramática estrenada en el año 2016.",
+        audio: "audio/hacksawridge.mp3",
+        hints: [
+            "Dirigida por Mel Gibson.",
+            "Protagonizada por Andrew Garfield, Vince Vaughn, Sam Worthington, Luke Bracey, Hugo Weaving, Ryan Corr, Teresa Palmer, Richard Pyros y Rachel Griffiths.",
+            "La película está basada en la historia real de un soldado del Ejército de EE.UU. que se negó a portar armas en el frente, siendo objeto de burla y persecución, y que a pesar de ello, fue condecorado con la Medalla de Honor por haber salvado la vida a más de 75 hombres bajo el constante fuego enemigo."
+        ]
+    },
+    {
+        title: [
+            "Millennium",
+            "Milenium",
+            "Millenium",
+            "Milennium",
+            "Saga Millennium",
+            "Los Hombres que no amaban a las Mujeres",
+            "La chica que soñaba con una cerilla y un bidón de gasolina",
+            "La reina en el palacio de las corrientes de aire"
+        ],
+        description: "Trilogía de películas de suspense estrenadas en el año 2009.",
+        audio: "audio/millennium.mp3",
+        hints: [
+            "Basadas en una serie de novelas suecas creadas por Stieg Larsson.",
+            "Protagonizadas por Noomi Rapace y Mikael Nyqvist.",
+            "La trilogía cuenta la historia de Lisbeth Salander y de Mikael Blomkvist."
+        ]
+    },
+    {
+        title: ["Señora Doubtfire", "Mrs. Doubtfire", "Mrs Doubfire", "La señora Doubtfire"],
+        description: "Película de comedia estrenada en el año 1993.",
+        audio: "audio/doubtfire.mp3",
+        hints: [
+            "Dirigida por Chris Columbus. Howard Shore realizó la banda sonora.",
+            "Fue ganadora de un Óscar y dos globos de oro.",
+            "Protagonizada por Robin Williams, Sally Field y Pierce Brosnan entre otros."
+        ]
+    },
+    {
+        title: ["Good morning Vietnam", "Good morning, Vietnam"],
+        description: "Película bélica, dramática y de comedia estrenada en el año 1987.",
+        audio: "audio/vietnam.mp3",
+        hints: [
+            "Protagonizada por Robin Williams y Forest Whitaker.",
+            "Robin Williams improvisó todas las transmisiones de su personaje, Adrian Cronauer.",
+            "Durante la guerra de Vietnam, un disc-jokey de la Fuerza Aérea de los Estados Unidos llega a Saigón para entretener a los soldados desplegados en Vietnam."
+        ]
+    },
+    {
+        title: ["El Único", "The One"],
+        description: "Película de acción y ciencia ficción estrenada en el año 2001.",
+        audio: "audio/theone.mp3",
+        hints: [
+            "Escrita y dirigida por James Wong.",
+            "Protagonizada por Jet Li, Jason Statham y Carla Gugino.",
+            "Disturbed con su Down with the Sickness rematan esta película repleta de artes marciales y efectos especiales."
+        ]
+    },
+    {
+        title: ["Dos Policias Rebeldes", "Bad Boys"],
+        description: "Saga de películas de acción y comedia que comenzó en 1995.",
+        audio: "audio/badboys.mp3",
+        hints: [
+            "Fue el debut como director de Michael Bay.",
+            "Protagonizadas por Martin Lawrence y Will Smith.",
+            "Es una película estadounidense del género buddy cop."
+        ]
+    },
+    {
+        title: [
+            "Escape from New York",
+            "Escape from LA",
+            "Escape from L.A.",
+            "1997: rescate en Nueva York",
+            "1997 rescate en Nueva York",
+            "1997 escape de Nueva York",
+            "1997: escape de Nueva York",
+            "Fuga de Los Ángeles",
+            "2013: rescate en LA",
+            "2013: rescate en L.A.",
+            "2013 rescate en LA",
+            "2013 rescate en L.A.",
+            "2013 escape de L.A.",
+            "2013: escape de L.A.",
+            "2013 escape de LA",
+            "2013 escape de L.A.",
+            "Escape from NY",
+            "Escape from N.Y.",
+            "Escape from NYLA",
+            "Escape from N.Y.L.A."
+        ],
+        description: "Película de acción y ciencia ficción estrenada en 1981.",
+        audio: "audio/escapefrom.mp3",
+        hints: [
+            "Escrita y dirigida por John Carpenter, quien también realizó la banda sonora.",
+            "Protagonizada por Kurt Russell como Snake Serpiente Plissken.",
+            "Su secuela se estrenó en 1996, también escrita, dirigida y con la banda sonora de John Carpenter y protagonizada por Kurt Russell."
+        ]
+    },
+    {
+        title: ["Chacal", "Jackal", "The Jackal", "El Chacal"],
+        description: "Película de acción y suspense estrenada en el año 1997.",
+        audio: "audio/chacal.mp3",
+        hints: [
+            "Protagonizada por Bruce Willis, Richard Gere y Sídney Poitier. Con un pequeño papel de Jack Black.",
+            "Es una adaptación de una novela de 1971 así como de una película de 1973.",
+            "En esta película un asesino a sueldo es contratado por Rusia para atentar contra los Estados Unidos."
+        ]
+    },
+    {
+        title: ["El sexto sentido"],
+        description: "Película de suspense estrenada en el año 1999.",
+        audio: "audio/sextosentido.mp3",
+        hints: [
+            "Escrita y dirigida por M. Night Shyamalan.",
+            "Protagonizada por Bruce Willis y Haley Joel Osment.",
+            "En ocasiones... Veo muertos..."
+        ]
+    },
+    {
+        title: ["Cocodrilo Dundee"],
+        description: "Película de comedia y aventuras estrenada en el año 1986.",
+        audio: "audio/cocodrilodundee.mp3",
+        hints: [
+            "Protagonizada por Paul Hogan y Linda Kozlowski.",
+            "Michael Dundee, apodado Cocodrilo Dundee, es un cazador de cocodrilos en un lugar alejado de Australia. Casualmente llegan noticias sobre él a los Estados Unidos y un periódico de Nueva York decide enviar a un periodista para realizar un reportaje sobre este exótico personaje.",
+            "La película también incluyó a un cocodrilo real de agua salada llamado Burt."
+        ]
+    },
+    {
+        title: ["Doom"],
+        description: "Película de ciencia ficción y acción estrenada en el año 2005.",
+        audio: "audio/doom.mp3",
+        hints: [
+            "Se basa en una popular saga de videojuegos homónima de ciencia ficción y disparos en primera persona creada por id Software.",
+            "Protagonizada por Karl Urban, Dwayne Johnson y Rosamund Pike.",
+            "BFG 9000: ¿Bio Force Gun o Big Fucking Gun?"
+        ]
+    },
+    {
+        title: ["Powder (Pura Energía)", "Pura energía", "Powder", "Powder: Pura Energía", "Powder Pura Energía"],
+        description: "Película de fantasía y drama estrenada en el año 1995.",
+        audio: "audio/powder.mp3",
+        hints: [
+            "Escrita y dirigida por Victor Salva, la banda sonora es de Jerry Goldsmith.",
+            "Protagonizada por Sean Patrick Flanery, Jeff Goldblum, Mary Steenburgen y Lance Henriksen.",
+            "Un niño albino tiene poderes paranormales relacionados con la electricidad."
+        ]
+    },
+    {
+        title: ["Insomnio", "Insomnia"],
+        description: "Película de suspense estrenada en el año 2002.",
+        audio: "audio/insomnio.mp3",
+        hints: [
+            "Dirigida por Christopher Nolan.",
+            "Protagonizada por Al Pacino, Robin Williams y Hilary Swank.",
+            "Es una adaptación de la película noruega homónima estrenada en 1997."
+        ]
+    },
+    {
+        title: ["Zoolander"],
+        description: "Película de comedia estrenada en el año 2001.",
+        audio: "audio/zoolander.mp3",
+        hints: [
+            "Fue escrita, dirigida y protagonizada por Ben Stiller.",
+            "Tuvo una secuela estrenada en 2016, también escrita, dirigida y protagonizada por Ben Stiller.",
+            "Acero Azul."
+        ]
+    },
+    {
+        title: ["La Celda", "The Cell"],
+        description: "Película de ciencia ficción y suspense estrenada en el año 2000.",
+        audio: "audio/thecell.mp3",
+        hints: [
+            "Protagonizada por Jennifer Lopez, Vince Vaughn y Vincent DOnofrio.",
+            "La banda sonora es de Howard Shore.",
+            "La historia sigue a un grupo de científicos que utilizan tecnología experimental para adentrarse en la mente de un asesino en serie en estado de coma, con el objetivo de descubrir el paradero de su última victima seuestrada."
+        ]
+    },
+    {
+        title: ["Silent Hill", "Sirento Hiro", "Sairento Hiru", "Sairento Hiro"],
+        description: "Película de terror y suspense estrenada en el año 2006.",
+        audio: "audio/silenthill.mp3",
+        hints: [
+            "Protagonizada por Rasha Mitchell, Laurie Holden, Sean Bean, Alice Krige y Jodelle Ferland.",
+            "La película está basada en una saga de videojuegos de terror que llevan el mismo nombre.",
+            "In my restless dreams… I see that town..."
+        ]
+    },
+    {
+        title: ["La Liga de los Hombres Extraordinarios", "LLDLHE"],
+        description: "Película de fantasía y acción con toques steampunk estrenada en el año 2003.",
+        audio: "audio/laliga.mp3",
+        hints: [
+            "La película está basada en una serie de cómics homónima.",
+            "Protagonizada por Peta Wilson, Sean Connery, Jason Flemyng y Naseeruddin Shah.",
+            "Fue la última aparición de Sean Connery en la pantalla grande."
+        ]
+    },
+    {
+        title: ["Jeepers Creepers", "Jepers Crepers"],
+        description: "Película de terror y suspense que se estrenó en el año 2001.",
+        audio: "audio/jeeperscreepers.mp3",
+        hints: [
+            "Protagonizada por Justin Long y Gina Philips.",
+            "Escrita y dirigida por Victor Salva y producida por Francis Ford Coppola.",
+            "Cada 23 años, durante 23 días, le toca comer."
+        ]
+    },
+    {
+        title: ["Ravenous"],
+        description: "Película de terror con toques western estrenada en 1999.",
+        audio: "audio/ravenous.mp3",
+        hints: [
+            "Protagonizada por Guy Pearce y Robert Carlyle.",
+            "Tiene lugar en 1847, donde un teniente es aclamado como un héroe por conquistar sin ayuda un fuerte enemigo, sin embargo esconde un terrible secreto.",
+            "La moralidad es el último bastión de un cobarde."
+        ]
+    },
+    {
+        title: ["Mil maneras de morder el polvo en el oeste", "Mil maneras de morder el polvo"],
+        description: "Película de comedia y western estrenada en el año 2014.",
+        audio: "audio/milmanerasoeste.mp3",
+        hints: [
+            "Escrita y dirigida por Seth MacFarlane.",
+            "La película está protagonizada por Seth MacFarlane y está acompañado por Charlize Theron, Amanda Seyfried, Liam Neeson, Giovanni Ribisi, Sarah Silverman y Neil Patrick Harris.",
+            "En 1882, en un pueblo de Arizona, un cobarde ganadero de ovejas llamado Albert Stark es abandonado por su amado novia Louise tras retirarse de un duelo."
+        ]
+    },
+    {
+        title: ["Vampiros de John Carpenter", "Vampiros"],
+        description: "Película de terror y western estrenada en el año 1998.",
+        audio: "audio/vampiros.mp3",
+        hints: [
+            "Dirigida por John Carpenter, quien también realizó la banda sonora.",
+            "Tuvo dos secuelas, una de ellas protagonizada por Jon Bon Jovi.",
+            "Protagonizada por James Woods, Daniel Baldwin, Sheryl Lee y Thomas Ian Griffith."
+        ]
+    },
+    {
+        title: ["Rockstar", "Rock Star"],
+        description: "Película musical de comedia dramática estrenada en el año 2001.",
+        audio: "audio/rockstar.mp3",
+        hints: [
+            "Está inspirada en la vida real de Tim Ripper Owens, cantante de una banda tributo a Judas Priest, que fue elegido para reemplazar a Rob Halford cuando se fue de la banda.",
+            "Se creó una banda ficticia llamada Steel Dragon para los temas de la película.",
+            "Protagonizada por Mark Wahlberg, Jennifer Aniston, Timothy Olyphant, Dominic West, Jason Flemyng, Zakk Wylde, Jason Bonham, Myles Kennedy y Timothy Spall."
+        ]
+    },
+    {
+        title: ["Rock Of Ages", "La Era del Rock"],
+        description: "Película musical y de comedia estrenada en el año 2012.",
+        audio: "audio/rockofages.mp3",
+        hints: [
+            "La película es una adaptación del musical de Broadway homónimo de Chris DArienzo.",
+            "Todos los actores cantan todas sus partes propias de la película.",
+            "Protagonizada por la cantante de country Julianne Hough y Diego Boneta con un reparto coral que incluye a Tom Cruise, Russell Brand, Catherine Zeta-Jones, Kevin Nash, Paul Giamatti, Malin Åkerman, Alec Baldwin y Mary J. Blige."
+        ]
+    },
+    {
+        title: ["Los Inmortales", "Highlander"],
+        description: "Película de acción y fantasía estrenada en el año 1986.",
+        audio: "audio/losinmortales.mp3",
+        hints: [
+            "La banda sonora fue realizada por Queen.",
+            "Protagonizada por Christopher Lambert, Sean Connery y Clancy Brown.",
+            "Solo puede quedar uno."
+        ]
+    },
+    {
+        title: ["Dos rubias de pelo en pecho", "White Chicks"],
+        description: "Película de comedia estrenada en el año 2004.",
+        audio: "audio/rubiaspelo.mp3",
+        hints: [
+            "Escrita, producida, dirigida y protagonizada por los hermanos Wayans.",
+            "Terry Crews improvisó la escena más famosa de la película.",
+            "Unos policías deben hacerse pasar por unas pijas para poder atrapar a unos criminales."
+        ]
+    },
+    {
+        title: ["Battle Royale"],
+        description: "Película de suspense y acción estrenada en el año 2000.",
+        audio: "audio/battleroyale.mp3",
+        hints: [
+            "Dirigida por Kinji Fukasaku y protagonizada por Takeshi Kitano, Tatsuya Fujiwara y Aki Maeda.",
+            "Es una adaptación de la novela homónima escrita por Koushun Takami.",
+            "Tuvo una secuela en el año 2003."
+        ]
+    },
+    {
+        title: ["Verónica"],
+        description: "Película de terror estrenada en el año 2017.",
+        audio: "audio/veronica.mp3",
+        hints: [
+            "Escrita y dirigida por Paco Plaza.",
+            "Está inspirada en un caso real, el de una joven de 18 años que murió en extrañas circunstancias en el verano de 1991.",
+            "La investigación posterior, conocida como Expediente Vallecas, fue la primera en España que barajaba circunstancias paranormales en torno a un caso."
+        ]
+    },
+    {
+        title: [
+            "Las aventuras de Priscilla, reina del desierto",
+            "Las aventuras de Priscilla reina del desierto",
+            "Priscilla, reina del desierto",
+            "Priscilla reina del desierto"
+        ],
+        description: "Película de comedia, musical y drama estrenada en el año 1994.",
+        audio: "audio/priscilla.mp3",
+        hints: [
+            "Protagonizada por Terence Stamp, Hugo Weaving y Guy Pearce.",
+            "Desde su estreno en el año 1994 fue una película de culto y dio origen en Broadway a un musical.",
+            "Ha tenido un profundo impacto en la comunidad gay. La película explora los estereotipos de gays, travestis y transexuales sin ridiculizarlos ni caricaturizarlos. Los personajes tampoco son pecadores, antisociales, malvados, perfectos, mártires o lastimeros, solo un grupo de amigos ganándose la vida."
+        ]
+    },
+    {
+        title: ["Leyendas de Pasión"],
+        description: "Película dramática con romances y toques western estrenada en el año 1994.",
+        audio: "audio/leyendasdepasion.mp3",
+        hints: [
+            "Basada en la novela homónima que escribió Jim Harrison en 1979.",
+            "Ganó un premio Óscar a la mejor fotografía.",
+            "Protagonizada por Brad Pitt, Anthony Hopkins, Aidan Quinn, Julia Ormond, Henry Thomas y Karina Lombard."
+        ]
+    },
+    {
+        title: ["Sleepy Hollow"],
+        description: "Película de terror y fantasía oscura estrenada en el año 1999.",
+        audio: "audio/sleepyhollow.mp3",
+        hints: [
+            "Recibió el premio Óscar a la mejor dirección artística.",
+            "Dirigida por Tim Burton.",
+            "Protagonizada por Johnny Depp, Christina Ricci, Michael Gambon y Christopher Walken entre otros."
+        ]
+    },
+    {
+        title: ["La vida de Brian"],
+        description: "Película de comedia y drama estrenada en el año 1979.",
+        audio: "audio/vidabrian.mp3",
+        hints: [
+            "Es el tercer largometraje del grupo de comedia inglés Monty Python.",
+            "Algunos gags famosos están protagonizados por un ficticio Frente Popular de Judea y sus rivales políticos.",
+            "Trata sobre un judío que nace el mismo día que Jesucristo y, ya de adulto, es varias veces confundido con él."
+        ]
+    },
+    {
+        title: ["Entrevista con el Vampiro"],
+        description: "Película de terror y drama estrenada en el año 1994.",
+        audio: "audio/entrevistavampiro.mp3",
+        hints: [
+            "Basada en la novela homónima de 1976 de Anne Rice.",
+            "Protagonizada por Tom Cruise, Brad Pitt, Christian Slater, Antonio Banderas y Kirsten Dunst.",
+            "Relata la historia de Louis de Pointe du Lac desde finales del siglo xviii hasta la década de 1990, su relación con Lestat de Lioncourt y su lucha por sobreponerse a su peculiar condición."
+        ]
+    },
+    {
+        title: ["Las amistades peligrosas", "Amistades Peligrosas"],
+        description: "Película dramática estrenada en el año 1988.",
+        audio: "audio/amistadespeligrosas.mp3",
+        hints: [
+            "Fue ganadora de 3 Óscars.",
+            "Adapta la obra de teatro de Christopher Hampton que es, a su vez, una adaptación de la novela epistolar del siglo XVIII del francés Pierre Choderlos de Laclos.",
+            "Protagonizada por Glenn Close, John Malkovich, Michelle Pfeiffer, Swoosie Kurtz, Uma Thurman, Keanu Reeves y Peter Capaldi."
+        ]
+    },
+    {
+        title: ["Poltergeist"],
+        description: "Película de terror sobrenatural estrenada en el año 1982.",
+        audio: "audio/poltergeist.mp3",
+        hints: [
+            "Fue la primera de una trilogía.",
+            "Dirigida por Tobe Hooper.",
+            "La película es a menudo citada como maldita por el asesinato de Dominique Dunne y temprana muerte de Heather O'Rourke, así como el hecho de que la actriz JoBeth Williams ha señalado en entrevistas de televisión que los esqueletos utilizados en la conocida escena de la piscina eran reales."
+        ]
+    },
+    {
+        title: [
+            "Starship Troopers",
+            "Starship Troopers: Las brigadas del espacio",
+            "Starship Troopers Las brigadas del espacio",
+            "Las brigadas del espacio"
+        ],
+        description: "Película de acción y ciencia ficción estrenada en el año 1997.",
+        audio: "audio/starshiptroopers.mp3",
+        hints: [
+            "Dirigida por Paul Verhoeven.",
+            "Protagonizada por Casper Van Dien, Michael Ironside, Dina Meyer y Denise Richards.",
+            "Basada en una novela de 1959 escrita por Robert A. Heinlein."
+        ]
+    },
+    {
+        title: ["Cisne Negro, El Cisne Negro, Black Swan", "The Black Swan"],
+        description: "Película de suspense, terror y drama estrenada en el año 2010.",
+        audio: "audio/blackswan.mp3",
+        hints: [
+            "Dirigida por Darren Aronofsky.",
+            "Natalie Portman se ganó un Óscar con esta película.",
+            "Protagonizada por Natalie Portman, Vincent Cassel, Mila Kunis, Barbara Hershey y Winona Ryder."
+        ]
+    },
+    {
+        title: ["π (PI)", "PI", "Pi, Fe en el caos", "Pi Fe en el caos", "Fe en el caos", "π"],
+        description: "Película de suspense y ciencia ficción estrenada en el año 1998.",
+        audio: "audio/pi.mp3",
+        hints: [
+            "Dirigida por Darren Aronofsky.",
+            "Lanzó la carrera de Clint Mansell como compositor cinematográfico.",
+            "Fue filmada en película en blanco y negro de alto contraste."
+        ]
+    },
+    {
+        title: ["Encuentros en la tercera fase"],
+        description: "Película de ciencia ficción y suspense estrenada en el año 1977.",
+        audio: "audio/encuentros.mp3",
+        hints: [
+            "Escrita y dirigida por Steven Spielberg.",
+            "Su banda sonora es de John Williams.",
+            "Protagonizada por Richard Dreyfuss, Melinda Dillon, François Truffaut, Teri Garr y Bob Balaban."
+        ]
+    },
+    {
+        title: ["Excalibur", "Excalibor"],
+        description: "Película de fantasía y aventuras estrenada en el año 1981.",
+        audio: "audio/excalibur.mp3",
+        hints: [
+            "Basada en la obra de Thomas Malory de 1485.",
+            "Protagonizada por Nigel Terry, Helen Mirren, Nicol Williamson, Nicholas Clay y Liam Neeson entre otros.",
+            "En un principio, John Boorman fue el gran interesado en adaptar al cine la obra de J.R.R. Tolkien, El Señor de los Anillos. Debido a que no consiguió adquirir los derechos de la obra, decidió hacer esta película en su lugar."
+        ]
+    },
+    {
+        title: ["Copying Beethoven", "Copiando a Beethoven"],
+        description: "Película de ficción dramática estrenada en el año 2006.",
+        audio: "audio/beethoven.mp3",
+        hints: [
+            "Protagonizada por Ed Harris y Diane Kruger.",
+            "La película se remonta al año 1824 durante la composición de la Novena Sinfonía.",
+            "Varios detalles de la película están representados tal y como ocurrieron en la realidad, como el hecho de que le giraron hacia la audiencia para que viera el aplauso durante el estreno."
+        ]
+    },
+    {
+        title: ["Guerra Mundial Z"],
+        description: "Película de terror y acción estrenada en el año 2013.",
+        audio: "audio/guerramundialz.mp3",
+        hints: [
+            "Protagonizada por Brad Pitt.",
+            "Está basada en la novela homónima de Max Brooks.",
+            "La producción de la película acumuló dificultades desde su inicio: tensiones y cambio de guionistas, necesidad de rodas nuevas escenas, problemas con los efectos especiales, y un largo etc. Hasta que Brad Pitt consiguió encaminar el proyecto como productor."
+        ]
+    },
+    {
+        title: ["Anticristo", "Antichrist"],
+        description: "Película de terror y suspense estrenada en el año 2009.",
+        audio: "audio/antichrist.mp3",
+        hints: [
+            "Escrita y dirigida por Lars von Trier.",
+            "Protagonizada por Willem Dafoe y Charlotte Gainsbourg.",
+            "Inspirada por The Ring: El círculo y Dark Water."
+        ]
+    },
+    {
+        title: ["Danny the Dog", "Unleashed", "La bestia", "Desencadenado"],
+        description: "Película de acción y suspense estrenada en el año 2005.",
+        audio: "audio/dannythedog.mp3",
+        hints: [
+            "Escrita por Luc Besson.",
+            "Protagonizada por Jet Li, Morgan Freeman, Bob Hoskins y Kerry Condon.",
+            "La banda sonora estuvo a cargo del grupo británico de trip-hop, Massive Attack."
+        ]
+    },
+    {
+        title: ["La Semilla del Diablo", "Rosemary's Baby", "Rosemarys Baby"],
+        description: "Película de terror y suspense estrenada en el año 1968.",
+        audio: "audio/semilladiablo.mp3",
+        hints: [
+            "Escrita y dirigida por Roman Polanski.",
+            "Basada en la novela homónima de Ira Levin.",
+            "La película narra la historia de una mujer embarazada que sospecha que una secta maligna quiere llevarse a su bebé para usarlo en sus rituales."
+        ]
+    },
+    {
+        title: ["La Sustancia", "The Substance"],
+        description: "Película de terror y ciencia ficción estrenada en el año 2024.",
+        audio: "audio/lasustancia.mp3",
+        hints: [
+            "Escrita, producida y dirigida por Coralie Fargeat.",
+            "Protagonizada por Demi Moore, Margaret Qualley y Dennis Quaid.",
+            "¿Alguna vez has soñado con una mejor versión de ti mismo?"
+        ]
+    },
+    {
+        title: ["Apocalypse Now", "Apocalipsis ahora", "Apocalipsis now"],
+        description: "Película bélica de acción estrenada en el año 1979.",
+        audio: "audio/apocalypse.mp3",
+        hints: [
+            "Fue ganadora de dos premios Óscar.",
+            "Dirigida por Francis Ford Coppola.",
+            "Protagonizada por Martin Sheen, Marlon Brando, Robert Duvall, Frederic Forrest, Sam Bottoms, Laurence Fishburne, Harrison Ford y Dennis Hopper."
+        ]
+    },
+    {
+        title: ["Réquiem por un sueño", "Requiem for a dream"],
+        description: "Película dramática estrenada en el año 2000.",
+        audio: "audio/requiemforadream.mp3",
+        hints: [
+            "Escrita y dirigida por Darren Aronofsky.",
+            "Basada en la novela homónima de Hubert Selby Jr de 1978.",
+            "Protagonizada por Ellen Burstyn, Jared Leto, Jennifer Connelly y Marlon Wayans."
+        ]
+    },
+    {
+        title: ["Mandy"],
+        description: "Película de terror y acción con influencias lovecraftianas estrenada en el año 2018.",
+        audio: "audio/mandy.mp3",
+        hints: [
+            "Escrita y dirigida por Panos Cosmatos.",
+            "Protagonizada por Nicolas Cage, Andrea Riseborough, Linus Roache y Richard Brake.",
+            "Es una de las últimas películas anotadas por el compositor islandés Jóhann Jóhannsson, quien falleció en febrero de 2018. La película está dedicada a él."
+        ]
+    },
+    {
+        title: ["Color Out Of Space"],
+        description: "Película de terror y ciencia ficción lovecraftiana estrenada en el año 2019.",
+        audio: "audio/coloroutofspace.mp3",
+        hints: [
+            "Producida por Spectrevisión, la productora de Elijah Wood. Basada en el relato homónimo de H.P. Lovecraft.",
+            "Es el primer largometraje dirigido por Richard Stanley desde La isla del Dr. Moreau en 1996.",
+            "Protagonizada por Nicolas Cage,​ Joely Richardson, Madeleine Arthur, Q'orianka Kilcher y Tommy Chong."
+        ]
+    },
+    {
+        title: ["El Faro", "The Lighthouse"],
+        description: "Película de terror y fantasía estrenada en el año 2019.",
+        audio: "audio/elfaro.mp3",
+        hints: [
+            "Escrita y dirigida por Robert Eggers.",
+            "Protagonizada por Willem Dafoe y Robert Pattinson.",
+            "Está grabada en blanco y negro, y con una relación de aspecto de 1.19:1."
+        ]
     }
-
 ];
 
 // Juego creado sin ánimo de lucro por Wildcrow
