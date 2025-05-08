@@ -2408,7 +2408,7 @@ const movies = [
     },
     {
         title: ["13 Fantasmas", "Trece Fantasmas"],
-        description: "Película de terror sobrenatural estrenada en el año 2013.",
+        description: "Película de terror sobrenatural estrenada en el año 2001.",
         audio: "audio/13fantasmas.mp3",
         hints: [
             "Es una versión de una película de terror homónima estrenada en el año 1960.",
