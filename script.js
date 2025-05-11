@@ -766,7 +766,7 @@ const movies = [
     },
     {
         title: ["Erin Brockovich"],
-        description: "Película dramática briográfica estrenada en el año 2000",
+        description: "Película dramática biográfica estrenada en el año 2000",
         audio: "audio/erinbrockovich.mp3",
         hints: [
             "Basada en una historia verídica",
