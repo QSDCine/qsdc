@@ -33,28 +33,34 @@ function initFirestore() {
   }
 }
 
-initFirestore();
-
-async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
-  try {
-    if (!db) throw new Error("Firestore no está disponible.");
-
-    const ref = db.collection("ranking");
-    const docRef = await ref.add({
-      nombre,
-      puntuacion,
-      modo,
-      racha,
-      tiempo,
-      fecha: new Date()
-    });
-
-    console.log(`✅ Resultado guardado con ID: ${docRef.id}`);
-  } catch (error) {
-    console.error("❌ Error al guardar el resultado:", error);
-  }
+let pendingFirestore;
+function loadRankingScript(file) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = "https://www.gstatic.com/firebasejs/11.6.0/" + file;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error("No se pudo conectar con el ranking."));
+    document.head.appendChild(script);
+  });
 }
 
-window.guardarResultadoEnFirestore = guardarResultadoEnFirestore;
+function getRankingDatabase() {
+  if (!pendingFirestore) {
+    pendingFirestore = (async () => {
+      if (!window.firebase) await loadRankingScript("firebase-app-compat.js");
+      if (!window.firebase.firestore) await loadRankingScript("firebase-firestore-compat.js");
+      initFirestore();
+      if (!db) throw new Error("Firestore no está disponible.");
+      return db;
+    })().catch(error => {
+      pendingFirestore = null;
+      throw error;
+    });
+  }
+  return pendingFirestore;
+}
 
-
+async function guardarResultadoEnFirestore(nombre, puntuacion, modo, racha, tiempo = null) {
+  const database = await getRankingDatabase();
+  await database.collection("ranking").add({ nombre, puntuacion, modo, racha, tiempo, fecha: new Date() });
+}

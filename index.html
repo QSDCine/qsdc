@@ -96,17 +96,11 @@
         <p id="total-answered">Películas respondidas: 0</p>
     </div>
          </div>
-   <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app-compat.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore-compat.js"></script>
+
+
     <script src="firestore-utils.js"></script>
     <script type="module" src="script.js"></script>
-    <script>
-  if ('serviceWorker' in navigator) {
-   const basePath = window.location.pathname.split('/').slice(0, 2).join('/');
-navigator.serviceWorker.register(`${basePath}/service-worker.js`)
-      .then(() => console.log("Service Worker registrado"));
-  }
-</script>
+    <script src="register.js"></script>
     <script>
   const themeBtn = document.getElementById("theme-toggle-btn");
 

@@ -114,3 +114,5 @@ body.dark-mode #offline-warning {
 }
 
 
+#online-ui a { color: inherit; display: inline-block; padding: 0.75rem; }
+#bar { width: min(100%, 22rem); }

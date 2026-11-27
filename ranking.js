@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   async function mostrarRanking(modo) {
     rankingList.innerHTML = "Cargando...";
     try {
-      const ref = window.db?.collection?.("ranking");
+      const database = await getRankingDatabase();
+      const ref = database.collection("ranking");
       if (!ref) throw new Error("Firestore no disponible.");
 
       const q = ref.where("modo", "==", modo).orderBy("puntuacion", "desc").limit(10);

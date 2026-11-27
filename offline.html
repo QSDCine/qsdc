@@ -1,41 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Descargar audios - ¿Qué sabes de cine?</title>
-  <link rel="stylesheet" href="offline.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego sin conexión · QSDCine</title>
+  <link rel="stylesheet" href="offline.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div id="app">
-  <div id="offline-container">
-     <div id="offline-warning" style="display: none;">
-    <p>No tienes conexión a Internet. No se puede realizar la descarga.</p>
-    <button id="volver-juego-btn">Volver al juego</button>
-  </div>
-    <div id="online-ui">
-  <h1>Modo Offline</h1>
-  <p>Desde aquí puedes descargar todos los audios del juego para poder jugar sin conexión.</p>
-      <p>Algunas veces puede ocasionarse un error en la descarga debido al navegador o al servidor, si es así vuelve a intentarlo, retomará la descarga desde el error.</p>
-
-    <button id="descargar-btn">Iniciar descarga</button>
-    <div id="status">
-      <div id="progreso">0 MB de 380 MB</div>
-      <div id="success" style="display: none;">✅ Descarga completada</div>
-      <div id="error" style="display: none;">❌ Error al descargar</div>
-    </div>
-    <button id="volver-juego-online">Volver al juego</button>
-  </div>
-    </div>
-    </div>
-  <script type="module" src="offline.js"></script>
-        <script>
-  // Aplicar modo oscuro si está activado
-  if (localStorage.getItem("tema") === "oscuro") {
-    document.body.classList.add("dark-mode");
-  }
-</script>
-
+  <main id="app"><section id="online-ui">
+    <h1>Juego sin conexión</h1>
+    <p>Descarga las 300 bandas sonoras (unos 600 MB). Mantén esta pantalla abierta durante la descarga. Si se interrumpe, podrás continuar donde lo dejaste.</p>
+    <progress id="bar" max="300" value="0" aria-label="Bandas sonoras guardadas"></progress>
+    <div id="progreso"></div>
+    <p id="status" role="status"></p>
+    <button id="download" disabled>Descargar audios</button>
+    <a href="./index.html">Volver al juego</a>
+  </section></main>
+  <script src="./register.js"></script>
+  <script type="module" src="./offline.js"></script>
 </body>
 </html>
-

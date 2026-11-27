@@ -2,7 +2,7 @@
     "name": "¿Qué sabes de cine?",
     "short_name": "QSDCine",
     "start_url": "./index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "background_color": "#f0f0f0",
     "theme_color": "#ffffff",
     "orientation": "portrait",
