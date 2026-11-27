@@ -1,5 +1,5 @@
 const scope = self.registration.scope;
-const shellCache = 'qsdcine-original-shell:' + scope + ':v2';
+const shellCache = 'qsdcine-original-shell:' + scope + ':v3';
 const audioCache = 'qsdcine';
 const assets = [
   'index.html', 'style.css', 'script.js', 'movies.js', 'register.js',
