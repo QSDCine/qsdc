@@ -104,7 +104,8 @@ nameInput.addEventListener("keydown", (e) => {
 
 answerInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        submitBtn.click();
+        e.preventDefault();
+        if (!e.repeat) submitBtn.click();
     }
 });
 
@@ -191,6 +192,9 @@ function loadNextMovie() {
 
   usedIndexes.push(index);
   currentMovie = movies[index];
+  submitBtn.disabled = false;
+  surrenderBtn.disabled = false;
+  answerInput.readOnly = false;
   hintPenalty = 0;
   intentosRestantes = 3;
   document.getElementById("total-answered").textContent = `Películas respondidas: ${usedIndexes.length}`;
@@ -240,6 +244,14 @@ if (modo === "locura") {
   answerInput.focus();
 }
 
+function finishRound() {
+    currentMovie = null;
+    submitBtn.disabled = true;
+    surrenderBtn.disabled = true;
+    answerInput.readOnly = true;
+    setTimeout(loadNextMovie, 2000);
+}
+
 function updateScore(points) {
     if (points) currentScore += points;
     scoreEl.textContent = `Puntuación de ${playerName}: ${currentScore}`;
@@ -249,6 +261,7 @@ submitBtn.onclick = () => {
     if (!currentMovie) return;
 
     const answer = limpiarTexto(answerInput.value.trim());
+    if (!answer) return;
     const titles = Array.isArray(currentMovie.title) ? currentMovie.title : [currentMovie.title];
     const isCorrect = titles.some((t) => limpiarTexto(t) === answer);
 
@@ -280,7 +293,7 @@ submitBtn.onclick = () => {
     resultMessage.className = "incorrecto";
   }
 
-  setTimeout(loadNextMovie, 2000);
+  finishRound();
   return;
 }
     
@@ -310,7 +323,7 @@ submitBtn.onclick = () => {
         resultMessage.className = "correcto";
         updateScore(score);
         updateStreak();
-        setTimeout(loadNextMovie, 2000);
+        finishRound();
     } else {
         if (modo === "extremo") {
             intentosRestantes--;
@@ -322,7 +335,7 @@ submitBtn.onclick = () => {
                 const mostrarTitulo = Array.isArray(currentMovie.title) ? currentMovie.title[0] : currentMovie.title;
                 resultMessage.textContent = "Intentos agotados. Era: " + mostrarTitulo;
                 resultMessage.className = "incorrecto";
-                setTimeout(loadNextMovie, 2000);
+                finishRound();
             } else {
                 updateScore(-3);
                 rachaCorrectas = 0;
@@ -357,7 +370,7 @@ surrenderBtn.onclick = () => {
     resultMessage.className = "incorrecto";
     rachaCorrectas = 0;
     updateStreak();
-    setTimeout(loadNextMovie, 2000);
+    finishRound();
 };
 
 
